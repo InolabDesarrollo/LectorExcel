@@ -45,7 +45,7 @@ namespace LecturaExcel
         string con_ocu = "no";
         string con_dif = "no";
 
-        //Listas de valores de datos de empresas 
+        //Listas de valores de datos de empresas fdfdfdc
         List<string> Nombres = new List<string>();
         List<string> Fecha = new List<string>();
         List<string> Usuarios = new List<string>();
