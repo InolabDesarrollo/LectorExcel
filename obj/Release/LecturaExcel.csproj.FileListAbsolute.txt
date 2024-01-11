@@ -1,0 +1,746 @@
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel - copia - copia\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.exe.config
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel - copia - copia\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.exe
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel - copia - copia\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel - copia - copia\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel - copia - copia\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel - copia - copia\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel - copia - copia\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.xml
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel - copia - copia\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel - copia - copia\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.xml
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel - copia - copia\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csprojAssemblyReference.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel - copia - copia\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.ResolveComReference.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel - copia - copia\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Form1.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel - copia - copia\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Properties.Resources.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel - copia - copia\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Vista_i.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel - copia - copia\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.GenerateResource.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel - copia - copia\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.CoreCompileInputs.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel - copia - copia\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.CopyComplete
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel - copia - copia\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.exe
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel - copia - copia\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 1.0 (Editando)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csprojAssemblyReference.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 1.0 (Editando)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.ResolveComReference.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 1.0 (Editando)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Form1.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 1.0 (Editando)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Properties.Resources.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 1.0 (Editando)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Vista_i.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 1.0 (Editando)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.GenerateResource.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 1.0 (Editando)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.CoreCompileInputs.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 1.0 (Editando)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.exe
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 1.0 (Editando)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 1.0 (Editando)\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.exe.config
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 1.0 (Editando)\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.exe
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 1.0 (Editando)\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 1.0 (Editando)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 1.0 (Editando)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 1.0 (Editando)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 1.0 (Editando)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.xml
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 1.0 (Editando)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 1.0 (Editando)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.xml
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 1.0 (Editando)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.CopyComplete
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.exe.config
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.exe
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.Common.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.Design.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\Microsoft.SqlServer.Types.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\EnvDTE.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\stdole.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\Microsoft.MSXML.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.xml
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.xml
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csprojAssemblyReference.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.ResolveComReference.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Form1.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Properties.Resources.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Vista_i.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.GenerateResource.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\obj\Release\RdlCompile.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\obj\Release\RdlCompile.compiled
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.CoreCompileInputs.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.CopyComplete
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.exe
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.0\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.exe.config
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.exe
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.Common.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.Design.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.SqlServer.Types.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\EnvDTE.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\stdole.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.MSXML.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.xml
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.xml
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csprojAssemblyReference.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.ResolveComReference.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Form1.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Properties.Resources.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Vista_i.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.GenerateResource.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\obj\Release\RdlCompile.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\obj\Release\RdlCompile.compiled
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.CoreCompileInputs.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.CopyComplete
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.exe
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1 (Adicion de cementos)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Vista2.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.exe.config
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.exe
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.Common.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.Design.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.SqlServer.Types.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\EnvDTE.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\stdole.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.MSXML.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.xml
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.xml
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csprojAssemblyReference.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.ResolveComReference.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Form1.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Properties.Resources.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Vista2.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Vista_i.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.GenerateResource.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\obj\Release\RdlCompile.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\obj\Release\RdlCompile.compiled
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.CoreCompileInputs.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.CopyComplete
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.exe
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.pdb
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.exe.config
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.exe
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.pdb
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.Common.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.Design.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.SqlServer.Types.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\EnvDTE.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\stdole.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.MSXML.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.pdb
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.xml
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.pdb
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.xml
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csprojAssemblyReference.cache
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.ResolveComReference.cache
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Form1.resources
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Properties.Resources.resources
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Vista2.resources
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Vista_i.resources
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.GenerateResource.cache
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\obj\Release\RdlCompile.cache
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\obj\Release\RdlCompile.compiled
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.CoreCompileInputs.cache
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.CopyComplete
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.exe
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.1.1 (Cambio 1.44 a 3.15)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.exe.config
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.exe
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.Common.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.Design.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.SqlServer.Types.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\EnvDTE.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\stdole.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.MSXML.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.xml
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.xml
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csprojAssemblyReference.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.ResolveComReference.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Form1.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Properties.Resources.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Vista2.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Vista_i.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.GenerateResource.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\obj\Release\RdlCompile.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\obj\Release\RdlCompile.compiled
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.CoreCompileInputs.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.CopyComplete
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.exe
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.2 (Bugfix 1 tabla)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.exe.config
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.exe
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.Common.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.Design.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.SqlServer.Types.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\EnvDTE.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\stdole.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.MSXML.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.xml
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.xml
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csprojAssemblyReference.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.ResolveComReference.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Form1.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Properties.Resources.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Vista2.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Vista_i.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.GenerateResource.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\obj\Release\RdlCompile.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\obj\Release\RdlCompile.compiled
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.CoreCompileInputs.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.CopyComplete
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.exe
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.pdb
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.exe.config
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.exe
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.pdb
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.Common.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.Design.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.SqlServer.Types.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\EnvDTE.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\stdole.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\Microsoft.MSXML.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.pdb
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.xml
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.pdb
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.xml
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csprojAssemblyReference.cache
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.ResolveComReference.cache
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Form1.resources
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Properties.Resources.resources
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Vista2.resources
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Vista_i.resources
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.GenerateResource.cache
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\obj\Release\RdlCompile.cache
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\obj\Release\RdlCompile.compiled
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.CoreCompileInputs.cache
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.CopyComplete
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.exe
+C:\Users\Luis INOLAB\Desktop\Proyectos Terminados\Proyecto lectura de excel 2.3 (Version Cemex)\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.exe.config
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.exe
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.Common.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.Design.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\Microsoft.SqlServer.Types.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\EnvDTE.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\stdole.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\Microsoft.MSXML.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.xml
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.pdb
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.xml
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csprojAssemblyReference.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.ResolveComReference.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Form1.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Properties.Resources.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Vista2.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Vista_i.resources
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.GenerateResource.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\obj\Release\RdlCompile.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\obj\Release\RdlCompile.compiled
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.CoreCompileInputs.cache
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.CopyComplete
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.exe
+C:\Users\Luis INOLAB\Desktop\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.pdb
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.exe.config
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.exe
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\LecturaExcel.pdb
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.Common.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.Design.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\Microsoft.SqlServer.Types.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\EnvDTE.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\stdole.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\Microsoft.MSXML.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.pdb
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.xml
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.pdb
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ExcelDataReader.DataSet.xml
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\bin\Release\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.AssemblyReference.cache
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.SuggestedBindingRedirects.cache
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.ResolveComReference.cache
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Form1.resources
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Properties.Resources.resources
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Vista2.resources
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.Vista_i.resources
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.GenerateResource.cache
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.CoreCompileInputs.cache
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.csproj.CopyComplete
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.exe
+C:\Users\Carlos Flores\Desktop\LS\Proyecto lectura de excel version Pisa\LecturaExcel\LecturaExcel\obj\Release\LecturaExcel.pdb
