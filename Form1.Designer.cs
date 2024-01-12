@@ -31,12 +31,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button1 = new System.Windows.Forms.Button();
+            this.Btn_Load_File = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.datos = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Btn_Go_To_Manual_Mesh_Selection = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.FilaSeleccionada2 = new System.Windows.Forms.DataGridView();
             this.dataGridView15 = new System.Windows.Forms.DataGridView();
@@ -187,17 +187,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // Btn_Load_File
             // 
-            this.button1.BackColor = System.Drawing.Color.Turquoise;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(444, 21);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 33);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Upload File";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Btn_Load_File.BackColor = System.Drawing.Color.Turquoise;
+            this.Btn_Load_File.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Load_File.Location = new System.Drawing.Point(444, 21);
+            this.Btn_Load_File.Name = "Btn_Load_File";
+            this.Btn_Load_File.Size = new System.Drawing.Size(111, 33);
+            this.Btn_Load_File.TabIndex = 0;
+            this.Btn_Load_File.Text = "Upload File";
+            this.Btn_Load_File.UseVisualStyleBackColor = false;
+            this.Btn_Load_File.Click += new System.EventHandler(this.Btn_Load_File_Click);
             // 
             // dataGridView1
             // 
@@ -229,9 +229,9 @@
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.tabPage1.Controls.Add(this.datos);
-            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.Btn_Go_To_Manual_Mesh_Selection);
             this.tabPage1.Controls.Add(this.dataGridView1);
-            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.Btn_Load_File);
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -250,18 +250,19 @@
             this.datos.Size = new System.Drawing.Size(44, 39);
             this.datos.TabIndex = 5;
             this.datos.Visible = false;
+            this.datos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datos_CellContentClick);
             // 
-            // button2
+            // Btn_Go_To_Manual_Mesh_Selection
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Control;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(663, 16);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(158, 42);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Go To Manual Mesh Selection";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Btn_Go_To_Manual_Mesh_Selection.BackColor = System.Drawing.SystemColors.Control;
+            this.Btn_Go_To_Manual_Mesh_Selection.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Go_To_Manual_Mesh_Selection.Location = new System.Drawing.Point(663, 16);
+            this.Btn_Go_To_Manual_Mesh_Selection.Name = "Btn_Go_To_Manual_Mesh_Selection";
+            this.Btn_Go_To_Manual_Mesh_Selection.Size = new System.Drawing.Size(158, 42);
+            this.Btn_Go_To_Manual_Mesh_Selection.TabIndex = 3;
+            this.Btn_Go_To_Manual_Mesh_Selection.Text = "Go To Manual Mesh Selection";
+            this.Btn_Go_To_Manual_Mesh_Selection.UseVisualStyleBackColor = false;
+            this.Btn_Go_To_Manual_Mesh_Selection.Click += new System.EventHandler(this.Btn_Go_To_Manual_Mesh_Selection_Click);
             // 
             // tabPage2
             // 
@@ -1587,7 +1588,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Btn_Load_File;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
@@ -1595,7 +1596,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Btn_Go_To_Manual_Mesh_Selection;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridView Referencias;

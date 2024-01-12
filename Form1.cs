@@ -6,16 +6,18 @@ using System.IO;
 using ExcelDataReader;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
+using MaterialSkin.Controls;
 
 namespace LecturaExcel
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        public Form1(string filePath)
         {
             InitializeComponent();
-
+            this.ExcelFileReader(filePath);
         }
+
         //Declaracion de variables 
         string filaecu;
         string filaecu2;
@@ -45,7 +47,7 @@ namespace LecturaExcel
         string con_ocu = "no";
         string con_dif = "no";
 
-        //Listas de valores de datos de empresas fdfdfdc
+        //Listas de valores de datos de empresas 
         List<string> Nombres = new List<string>();
         List<string> Fecha = new List<string>();
         List<string> Usuarios = new List<string>();
@@ -55,9 +57,8 @@ namespace LecturaExcel
         List<string> Lotes = new List<string>();
         List<string> Comentarios = new List<string>();
         List<string> Clientes = new List<string>();
-        List<string> Ase = new List<string>();
-
         List<string> valor_nominal= new List<string>();
+        private readonly string filePath;
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -65,7 +66,7 @@ namespace LecturaExcel
             WindowState = FormWindowState.Maximized;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Btn_Load_File_Click(object sender, EventArgs e)
         {
             //Se hace la subida de un archivo de excel ccon las especificaciones de laboratorios Pisa
             OpenFileDialog fil = new OpenFileDialog();
@@ -75,13 +76,14 @@ namespace LecturaExcel
             {
                 ExcelFileReader(path);
             }
-            catch (Exception es)
+            catch (Exception ex)
             {
-                MessageBox.Show("Please select an excel file with the correct format");
-            }          
+                MessageBox.Show("Please select an excel file with the correct format " + ex.Message.ToString());
+            }
             dataGridView1.ReadOnly = true;
             datos.ReadOnly = true;
         }
+
 
         public void ExcelFileReader(string path)
         {
@@ -104,7 +106,7 @@ namespace LecturaExcel
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Btn_Go_To_Manual_Mesh_Selection_Click(object sender, EventArgs e)
         {
             valor_nominal.Add("-");
             try
@@ -203,8 +205,8 @@ namespace LecturaExcel
                 }
 
                 //Agregar la primera fila del datagrid1 a Fila Seleccionada
-                FilaSeleccionada.Rows.Add(dataGridView1.Rows[0].Cells[0].Value.ToString(), 
-                    dataGridView1.Rows[0].Cells[2].Value.ToString(), dataGridView1.Rows[0].Cells[3].Value.ToString(), 
+                FilaSeleccionada.Rows.Add(dataGridView1.Rows[0].Cells[0].Value.ToString(),
+                    dataGridView1.Rows[0].Cells[2].Value.ToString(), dataGridView1.Rows[0].Cells[3].Value.ToString(),
                     dataGridView1.Rows[0].Cells[4].Value.ToString());
 
                 //llenar FilaSeleccoinada2 con las columnas que son
@@ -225,9 +227,9 @@ namespace LecturaExcel
                     dataGridView1.Rows[0].Cells[2].Value.ToString(), dataGridView1.Rows[0].Cells[3].Value.ToString(),
                     dataGridView1.Rows[0].Cells[4].Value.ToString());
             }
-            catch (Exception f)
+            catch (Exception ex)
             {
-                MessageBox.Show("Please select an Excel file to continue");
+                MessageBox.Show(" Please select an Excel file to continue "+ex.Message.ToString());
             }
             //Limpieza de loa que habia antes de los GridCorrespondientes
             dataGridView2.ReadOnly = true;
@@ -294,6 +296,7 @@ namespace LecturaExcel
 
             }
         }
+
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -810,9 +813,9 @@ namespace LecturaExcel
                         }
                     }
                 }
-                catch (Exception df)
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Columns have been removed");
+                    MessageBox.Show("Columns have been removed "+ex.Message);
                 }
             }
             else if (num_corr == "2")
@@ -4594,6 +4597,11 @@ namespace LecturaExcel
             button8.Visible = false;
             dataGridView6.Visible = false;
             dataGridView12.Visible = false;
+        }
+
+        private void datos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
