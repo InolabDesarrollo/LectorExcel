@@ -38,7 +38,7 @@ namespace LecturaExcel.View
 
             if (fileIsValid)
             {
-                Form1 mainForm = new Form1(path);
+                Main_Menu mainForm = new Main_Menu(path);
                 mainForm.Show();
             }
         }
@@ -58,7 +58,6 @@ namespace LecturaExcel.View
                 MessageBox.Show("Elije un archivo valido "+ex.Message);
                 return false;
             }
-            
         }
     }
 }

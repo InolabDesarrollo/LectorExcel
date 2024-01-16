@@ -334,7 +334,6 @@ C:\Users\Omar Sotomayor\Desktop\LecturaExcel\bin\Debug\zh-CHS\Microsoft.ReportVi
 C:\Users\Omar Sotomayor\Desktop\LecturaExcel\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Omar Sotomayor\Desktop\LecturaExcel\obj\Debug\LecturaExcel.csproj.AssemblyReference.cache
 C:\Users\Omar Sotomayor\Desktop\LecturaExcel\obj\Debug\LecturaExcel.csproj.ResolveComReference.cache
-C:\Users\Omar Sotomayor\Desktop\LecturaExcel\obj\Debug\LecturaExcel.Form1.resources
 C:\Users\Omar Sotomayor\Desktop\LecturaExcel\obj\Debug\LecturaExcel.Properties.Resources.resources
 C:\Users\Omar Sotomayor\Desktop\LecturaExcel\obj\Debug\LecturaExcel.Vista2.resources
 C:\Users\Omar Sotomayor\Desktop\LecturaExcel\obj\Debug\LecturaExcel.Vista_i.resources
@@ -360,3 +359,4 @@ C:\Users\Omar Sotomayor\Desktop\LecturaExcel\bin\Debug\System.Buffers.xml
 C:\Users\Omar Sotomayor\Desktop\LecturaExcel\bin\Debug\System.Memory.xml
 C:\Users\Omar Sotomayor\Desktop\LecturaExcel\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Omar Sotomayor\Desktop\LecturaExcel\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Omar Sotomayor\Desktop\LecturaExcel\obj\Debug\LecturaExcel.Main_Menu.resources
