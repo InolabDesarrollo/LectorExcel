@@ -59,13 +59,11 @@ namespace LecturaExcel
         List<string> Clientes = new List<string>();
         List<string> valor_nominal= new List<string>();
         private readonly string filePath;
-
         private void Form1_Load(object sender, EventArgs e)
         {
             //Maximizar el tamaño de la ventana del form
             WindowState = FormWindowState.Maximized;
         }
-
         private void Btn_Load_File_Click(object sender, EventArgs e)
         {
             //Se hace la subida de un archivo de excel ccon las especificaciones de laboratorios Pisa
@@ -83,7 +81,6 @@ namespace LecturaExcel
             Dgv_Particle_Data.ReadOnly = true;
             datos.ReadOnly = true;
         }
-
 
         public void ExcelFileReader(string path)
         {
@@ -149,7 +146,7 @@ namespace LecturaExcel
 
                 //Añadir los campos de "Nominal Sieve size" y "Mesh#"
                 DataGridViewTextBoxColumn NominalSieveSize = new DataGridViewTextBoxColumn();
-                NominalSieveSize.HeaderText = "nominalSieveSize Sieve Size";
+                NominalSieveSize.HeaderText = "SieveSize Sieve Size";
                 NominalSieveSize.Width = 100;
 
                 DataGridViewTextBoxColumn Mesh = new DataGridViewTextBoxColumn();
@@ -169,84 +166,23 @@ namespace LecturaExcel
                 Dgv_ASTM95_Record.Columns.Add(ValuesToCalculate);
                 Dgv_ASTM95_Record.Columns.Add(Record);
 
-                //Añadir los campos de "Nominal Sieve size" y "Mesh#"
-                DataGridViewTextBoxColumn nominalSieveSize = new DataGridViewTextBoxColumn();
-                nominalSieveSize.HeaderText = "Nominal Sieve Size";
-                nominalSieveSize.Width = 100;
+                dataGridView13.Columns.Add(NominalSieveSize);
+                dataGridView13.Columns.Add(Mesh);
+                dataGridView13.Columns.Add(ValuesToCalculate);
+                dataGridView13.Columns.Add(Record);
 
-                DataGridViewTextBoxColumn mesh = new DataGridViewTextBoxColumn();
-                mesh.HeaderText = "Mesh #";
-                mesh.Width = 70;
-
-                DataGridViewTextBoxColumn valuesToCalculate = new DataGridViewTextBoxColumn();
-                valuesToCalculate.HeaderText = "Values To Calculate";
-                valuesToCalculate.Width = 70;
-
-                DataGridViewTextBoxColumn record = new DataGridViewTextBoxColumn();
-                valuesToCalculate.HeaderText = "Record";
-                valuesToCalculate.Width = 50;
-
-                dataGridView13.Columns.Add(nominalSieveSize);
-                dataGridView13.Columns.Add(mesh);
-                dataGridView13.Columns.Add(valuesToCalculate);
-                dataGridView13.Columns.Add(record);
-
-                //llenar FilaSeleccoinada con las columnas que son
-                foreach (DataGridViewColumn cols in Dgv_Particle_Data.Columns)
-                {
-                    if (cols.HeaderText != "")
-                    {
-                        //Añadir los campos de "Columna" del datagrid1
-                        DataGridViewTextBoxColumn columnas = new DataGridViewTextBoxColumn();
-                        columnas.HeaderText = cols.Name;
-                        columnas.Width = 100;
-                        FilaSeleccionada.Columns.Add(columnas);
-                    }
-                }
-
-                //Agregar la primera fila del datagrid1 a Fila Seleccionada
-                FilaSeleccionada.Rows.Add(Dgv_Particle_Data.Rows[0].Cells[0].Value.ToString(),
-                    Dgv_Particle_Data.Rows[0].Cells[2].Value.ToString(), Dgv_Particle_Data.Rows[0].Cells[3].Value.ToString(),
-                    Dgv_Particle_Data.Rows[0].Cells[4].Value.ToString());
-
-                //llenar FilaSeleccoinada2 con las columnas que son
-                foreach (DataGridViewColumn cols in Dgv_Particle_Data.Columns)
-                {
-                    if (cols.HeaderText != "")
-                    {
-                        //Añadir los campos de "Columna" del datagrid1
-                        DataGridViewTextBoxColumn columnas1 = new DataGridViewTextBoxColumn();
-                        columnas1.HeaderText = cols.Name;
-                        columnas1.Width = 100;
-                        FilaSeleccionada2.Columns.Add(columnas1);
-                    }
-                }
-
-                //Agregar la primera fila del datagrid1 a Fila Seleccionada
-                FilaSeleccionada2.Rows.Add(Dgv_Particle_Data.Rows[0].Cells[0].Value.ToString(),
-                    Dgv_Particle_Data.Rows[0].Cells[2].Value.ToString(), Dgv_Particle_Data.Rows[0].Cells[3].Value.ToString(),
-                    Dgv_Particle_Data.Rows[0].Cells[4].Value.ToString());
+                this.copyInformationOfDataGridViewToOther(Dgv_Particle_Data, Dgv_Selected_Row);
+                this.copyInformationOfDataGridViewToOther(Dgv_Particle_Data, FilaSeleccionada2);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(" Please select an Excel file to continue "+ex.Message.ToString());
             }
-            //Limpieza de loa que habia antes de los GridCorrespondientes
-            Dgv_ASTM95_Record.ReadOnly = true;
-            dataGridView13.ReadOnly = true;
-            Dgv_ASTM95_Record.Rows.Clear();
-            Dgv_ASTM_D95.Rows.Clear();
-            dataGridView4.Rows.Clear();
-            dataGridView5.Rows.Clear();
-            dataGridView11.Rows.Clear();
-            dataGridView6.Rows.Clear();
-            dataGridView12.Rows.Clear();
-            Dgv_ASTM_Single_Aperture.Rows.Clear();
-            dataGridView15.Rows.Clear();
+
+            cleanOldInformationOfDataGridViews();
 
             ch1 = true;
             ch2 = true;
-
             try
             {
                 while (true)
@@ -297,26 +233,84 @@ namespace LecturaExcel
             }
         }
 
+        private void copyInformationOfDataGridViewToOther(DataGridView Dgv_Original, DataGridView Dgv_ToCopy )
+        {
+            try
+            {
+                foreach(DataGridViewColumn column in Dgv_Original.Columns)
+                {
+                    if (column.HeaderText != "")
+                    {
+                        DataGridViewTextBoxColumn columnNew = new DataGridViewTextBoxColumn();
+                        columnNew.HeaderText = column.Name;
+                        columnNew.Width = 100;
+                        Dgv_ToCopy.Columns.Add(columnNew);
+                    }
+                }
 
+                Dgv_ToCopy.Rows.Add(Dgv_Original.Rows[0].Cells[0].Value.ToString(),
+                    Dgv_Original.Rows[0].Cells[2].Value.ToString(), Dgv_Original.Rows[0].Cells[3].Value.ToString(),
+                    Dgv_Original.Rows[0].Cells[4].Value.ToString());
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error " + ex.Message);
+            }
+        }
+
+        private void cleanOldInformationOfDataGridViews()
+        {
+            Dgv_ASTM95_Record.ReadOnly = true;
+            dataGridView13.ReadOnly = true;
+            Dgv_ASTM95_Record.Rows.Clear();
+            Dgv_ASTM_D95.Rows.Clear();
+            dataGridView4.Rows.Clear();
+            dataGridView5.Rows.Clear();
+            dataGridView11.Rows.Clear();
+            dataGridView6.Rows.Clear();
+            dataGridView12.Rows.Clear();
+            Dgv_ASTM_Single_Aperture.Rows.Clear();
+            dataGridView15.Rows.Clear();
+        }
+        
+        private void removeUselessGridColumns(DataGridView dataGridView)
+        {
+            try
+            {
+                while (true)
+                {
+                    dataGridView.Columns.RemoveAt(2);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error " + ex.Message);
+            }
+        }
         private void ComboBox_Mesh_SelectedIndexChanged(object sender, EventArgs e)
         {
             //Despues de seleccionar una malla que se quiera conocer sus datos dentro del excel, se hace una lista de referencia correspondiendo a lo que hay en el grid de el excel que se subio y con los datos de referencia que marcan los limites de cada malla
-            Dgv_ASTM95_Record.Rows.Add(Dgv_Tolerance_Table_Reference.Rows[Combo_Box_Mesh.SelectedIndex].Cells[2].Value.ToString(), 
+            string micronsSingleAperture = Dgv_Tolerance_Table_Reference.Rows[Combo_Box_Mesh.SelectedIndex].Cells[2].Value.ToString();
+            string selectedMesh = Combo_Box_Mesh.SelectedItem.ToString();
+            string micronsMax95 = Dgv_Tolerance_Table_Reference.Rows[Combo_Box_Mesh.SelectedIndex].Cells[3].Value.ToString();//66
 
-                Combo_Box_Mesh.SelectedItem.ToString(), Dgv_Tolerance_Table_Reference.Rows[Combo_Box_Mesh.SelectedIndex].Cells[2].Value.ToString(), true);
+            Dgv_ASTM95_Record.Rows.Add(micronsSingleAperture,
+                selectedMesh, micronsSingleAperture, true);
 
-            dataGridView13.Rows.Add(Dgv_Tolerance_Table_Reference.Rows[Combo_Box_Mesh.SelectedIndex].Cells[3].Value.ToString(),
-                Combo_Box_Mesh.SelectedItem.ToString(), Dgv_Tolerance_Table_Reference.Rows[Combo_Box_Mesh.SelectedIndex].Cells[3].Value.ToString(), true);
+            dataGridView13.Rows.Add(micronsMax95,
+                selectedMesh, micronsMax95, true);
 
-            Dgv_ASTM_D95.Rows.Add(Dgv_Tolerance_Table_Reference.Rows[Combo_Box_Mesh.SelectedIndex].Cells[2].Value.ToString(), 
-                Combo_Box_Mesh.SelectedItem.ToString(), Dgv_Tolerance_Table_Reference.Rows[Combo_Box_Mesh.SelectedIndex].Cells[2].Value.ToString(), true);
+            Dgv_ASTM_D95.Rows.Add(micronsSingleAperture,
+                selectedMesh, micronsSingleAperture, true);
 
-            Dgv_ASTM_Single_Aperture.Rows.Add(Dgv_Tolerance_Table_Reference.Rows[Combo_Box_Mesh.SelectedIndex].Cells[3].Value.ToString(),
-                Combo_Box_Mesh.SelectedItem.ToString(), Dgv_Tolerance_Table_Reference.Rows[Combo_Box_Mesh.SelectedIndex].Cells[3].Value.ToString(), true);
-            dataGridView5.Rows.Add(Dgv_Tolerance_Table_Reference.Rows[Combo_Box_Mesh.SelectedIndex].Cells[2].Value.ToString(), 
-                Combo_Box_Mesh.SelectedItem.ToString(), Dgv_Tolerance_Table_Reference.Rows[Combo_Box_Mesh.SelectedIndex].Cells[2].Value.ToString(), true);
-            dataGridView11.Rows.Add(Dgv_Tolerance_Table_Reference.Rows[Combo_Box_Mesh.SelectedIndex].Cells[3].Value.ToString(),
-                Combo_Box_Mesh.SelectedItem.ToString(), Dgv_Tolerance_Table_Reference.Rows[Combo_Box_Mesh.SelectedIndex].Cells[3].Value.ToString(), true);
+            Dgv_ASTM_Single_Aperture.Rows.Add(micronsMax95,
+                selectedMesh, micronsMax95, true);
+
+            dataGridView5.Rows.Add(micronsSingleAperture,    
+                selectedMesh, micronsSingleAperture, true);
+
+            dataGridView11.Rows.Add(micronsMax95,
+                selectedMesh, micronsMax95, true);
 
             //Configuracion de los Grid
             Dgv_ASTM95_Record.AllowUserToAddRows = false;
@@ -325,7 +319,7 @@ namespace LecturaExcel
             Dgv_ASTM_Single_Aperture.AllowUserToAddRows = false;
 
             //Se limpia el campo del listbox
-            FilaSeleccionada.Rows.Clear();
+            Dgv_Selected_Row.Rows.Clear();
             foreach (DataGridViewColumn cols in Dgv_Particle_Data.Columns)
             {
                 if (cols.HeaderText != "")
@@ -334,7 +328,7 @@ namespace LecturaExcel
                     DataGridViewTextBoxColumn columnas = new DataGridViewTextBoxColumn();
                     columnas.HeaderText = cols.Name;
                     columnas.Width = 100;
-                    FilaSeleccionada.Columns.Add(columnas);
+                    Dgv_Selected_Row.Columns.Add(columnas);
                 }
                 else
                 {
@@ -358,7 +352,7 @@ namespace LecturaExcel
                 }
             }
             //Agregar la primera fila del datagrid1 a Fila Seleccionada
-            FilaSeleccionada.Rows.Add(Dgv_Particle_Data.Rows[0].Cells[0].Value.ToString(), Dgv_Particle_Data.Rows[0].Cells[2].Value.ToString(), Dgv_Particle_Data.Rows[0].Cells[3].Value.ToString(), Dgv_Particle_Data.Rows[0].Cells[4].Value.ToString());
+            Dgv_Selected_Row.Rows.Add(Dgv_Particle_Data.Rows[0].Cells[0].Value.ToString(), Dgv_Particle_Data.Rows[0].Cells[2].Value.ToString(), Dgv_Particle_Data.Rows[0].Cells[3].Value.ToString(), Dgv_Particle_Data.Rows[0].Cells[4].Value.ToString());
             FilaSeleccionada2.Rows.Add(Dgv_Particle_Data.Rows[0].Cells[0].Value.ToString(), Dgv_Particle_Data.Rows[0].Cells[2].Value.ToString(), Dgv_Particle_Data.Rows[0].Cells[3].Value.ToString(), Dgv_Particle_Data.Rows[0].Cells[4].Value.ToString());
             //Para dgv2
             try
@@ -498,7 +492,7 @@ namespace LecturaExcel
                     if (j.ToString() == num)
                     {
                         //Agregar esa fila a el datagrid "FilaSeleccionada"
-                        FilaSeleccionada.Rows.Add(Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[0].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[2].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[3].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[4].Value.ToString());
+                        Dgv_Selected_Row.Rows.Add(Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[0].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[2].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[3].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[4].Value.ToString());
                         filaecu = strFila;
                         check = 1;
                     }
@@ -524,7 +518,7 @@ namespace LecturaExcel
                     if (j.ToString() == num)
                     {
                         //Agregar esa fila a el datagrid "FilaSeleccionada"
-                        FilaSeleccionada.Rows.Add(Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[0].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[2].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[3].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[4].Value.ToString());
+                        Dgv_Selected_Row.Rows.Add(Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[0].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[2].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[3].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[4].Value.ToString());
                         filaecu = strFila;
                         check = 1;
                     }
@@ -1219,7 +1213,7 @@ namespace LecturaExcel
                     if (j.ToString() == num)
                     {
                         //Agregar esa fila a el datagrid "FilaSeleccionada"
-                        FilaSeleccionada.Rows.Add(Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[0].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[2].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[3].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[4].Value.ToString());
+                        Dgv_Selected_Row.Rows.Add(Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[0].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[2].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[3].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[4].Value.ToString());
                         filaecu = strFila;
                         check = 1;
                     }
@@ -1499,32 +1493,32 @@ namespace LecturaExcel
                 }
 
                 //tercera Corrida para 95%
-                foreach (DataGridViewRow row3 in Dgv_ASTM95_Record.Rows)
+                foreach (DataGridViewRow row in Dgv_ASTM95_Record.Rows)
                 {
-                    double acumarr3 = 0;
+                    double accumulated = 0;
                     int n3 = 1;
                     //aumentar a la fila los valores acumulativos a la derecha (los que van arriba)
                     try
                     {
-                        while (n3 <= Convert.ToInt32(row3.Cells[3].Value))
+                        while (n3 <= Convert.ToInt32(row.Cells[3].Value))
                         {
-                            acumarr3 = acumarr3 + Convert.ToDouble(Dgv_Particle_Data.Rows[n3].Cells[4].Value);
+                            accumulated = accumulated + Convert.ToDouble(Dgv_Particle_Data.Rows[n3].Cells[4].Value);
                             n3++;
-                            if (acumarr3 > 100)
+                            if (accumulated > 100)
                             {
-                                acumarr3 = 100;
+                                accumulated = 100;
                             }
-                            Dgv_ASTM_D95.Rows[row3.Index].Cells[4].Value = Math.Round(acumarr3, 2);
-                            dataGridView5.Rows[row3.Index].Cells[4].Value = Math.Round(acumarr3, 2);
+                            Dgv_ASTM_D95.Rows[row.Index].Cells[4].Value = Math.Round(accumulated, 2);
+                            dataGridView5.Rows[row.Index].Cells[4].Value = Math.Round(accumulated, 2);
                         }
                         //Asignacion de valores para interpolación
                         string x0 = Convert.ToDouble(Dgv_Particle_Data.Rows[n3 - 1].Cells[0].Value).ToString();
                         string x1 = Convert.ToDouble(Dgv_Particle_Data.Rows[n3].Cells[0].Value).ToString();
-                        string y0 = dataGridView5.Rows[row3.Index].Cells[4].Value.ToString();
-                        acumarr3 = acumarr3 + Convert.ToDouble(Dgv_Particle_Data.Rows[n3].Cells[4].Value);
-                        string y1 = Math.Round(acumarr3, 2).ToString();
+                        string y0 = dataGridView5.Rows[row.Index].Cells[4].Value.ToString();
+                        accumulated = accumulated + Convert.ToDouble(Dgv_Particle_Data.Rows[n3].Cells[4].Value);
+                        string y1 = Math.Round(accumulated, 2).ToString();
 
-                        string texto = Convert.ToString(row3.Cells[2].Value);
+                        string texto = Convert.ToString(row.Cells[2].Value);
                         Match m = Regex.Match(texto, "(\\d+)");
                         string num = string.Empty;
                         if (m.Success)
@@ -1538,8 +1532,8 @@ namespace LecturaExcel
                         double abajo = Convert.ToDouble(x1) - Convert.ToDouble(x0);
                         double division = arriba / abajo;
                         double resultado = Convert.ToDouble(y0) + (division * (Convert.ToDouble(y1) - Convert.ToDouble(y0)));
-                        dataGridView5.Rows[row3.Index].Cells[4].Value = Math.Round(resultado, 2);
-                        Dgv_ASTM_D95.Rows[row3.Index].Cells[4].Value = Math.Round(resultado, 2);
+                        dataGridView5.Rows[row.Index].Cells[4].Value = Math.Round(resultado, 2);
+                        Dgv_ASTM_D95.Rows[row.Index].Cells[4].Value = Math.Round(resultado, 2);
                     }
                     catch (Exception r)
                     {

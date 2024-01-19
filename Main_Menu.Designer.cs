@@ -57,7 +57,7 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FilaSeleccionada = new System.Windows.Forms.DataGridView();
+            this.Dgv_Selected_Row = new System.Windows.Forms.DataGridView();
             this.Dgv_ASTM_D95 = new System.Windows.Forms.DataGridView();
             this.Columna1R = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tabla2R = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -175,7 +175,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM_Single_Aperture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FilaSeleccionada)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Selected_Row)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM_D95)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Tolerance_Table_Reference)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM95_Record)).BeginInit();
@@ -280,7 +280,7 @@
             this.Page_Mesh_Selection.Controls.Add(this.Go_To_Report_View);
             this.Page_Mesh_Selection.Controls.Add(this.Btn_Return_To_Excell_File);
             this.Page_Mesh_Selection.Controls.Add(this.dataGridView4);
-            this.Page_Mesh_Selection.Controls.Add(this.FilaSeleccionada);
+            this.Page_Mesh_Selection.Controls.Add(this.Dgv_Selected_Row);
             this.Page_Mesh_Selection.Controls.Add(this.Dgv_ASTM_D95);
             this.Page_Mesh_Selection.Controls.Add(this.Btn_Clean_Data);
             this.Page_Mesh_Selection.Controls.Add(this.Dgv_Tolerance_Table_Reference);
@@ -329,7 +329,6 @@
             this.FilaSeleccionada2.Name = "FilaSeleccionada2";
             this.FilaSeleccionada2.Size = new System.Drawing.Size(427, 119);
             this.FilaSeleccionada2.TabIndex = 22;
-            this.FilaSeleccionada2.Visible = false;
             // 
             // dataGridView15
             // 
@@ -396,6 +395,7 @@
             this.dataGridView13.Name = "dataGridView13";
             this.dataGridView13.Size = new System.Drawing.Size(210, 87);
             this.dataGridView13.TabIndex = 19;
+            this.dataGridView13.Visible = false;
             // 
             // Go_To_Report_View
             // 
@@ -459,15 +459,15 @@
             this.Column6.HeaderText = "Diferencial Run 3";
             this.Column6.Name = "Column6";
             // 
-            // FilaSeleccionada
+            // Dgv_Selected_Row
             // 
-            this.FilaSeleccionada.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
-            this.FilaSeleccionada.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.FilaSeleccionada.Location = new System.Drawing.Point(21, 563);
-            this.FilaSeleccionada.Name = "FilaSeleccionada";
-            this.FilaSeleccionada.Size = new System.Drawing.Size(421, 152);
-            this.FilaSeleccionada.TabIndex = 13;
-            this.FilaSeleccionada.Visible = false;
+            this.Dgv_Selected_Row.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
+            this.Dgv_Selected_Row.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_Selected_Row.Location = new System.Drawing.Point(21, 563);
+            this.Dgv_Selected_Row.Name = "Dgv_Selected_Row";
+            this.Dgv_Selected_Row.Size = new System.Drawing.Size(421, 152);
+            this.Dgv_Selected_Row.TabIndex = 13;
+            this.Dgv_Selected_Row.Visible = false;
             // 
             // Dgv_ASTM_D95
             // 
@@ -1614,7 +1614,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM_Single_Aperture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FilaSeleccionada)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Selected_Row)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM_D95)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Tolerance_Table_Reference)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM95_Record)).EndInit();
@@ -1650,7 +1650,7 @@
         private System.Windows.Forms.Button Btn_Clean_Data;
         private System.Windows.Forms.DataGridView Dgv_ASTM_D95;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridView FilaSeleccionada;
+        private System.Windows.Forms.DataGridView Dgv_Selected_Row;
         private System.Windows.Forms.DataGridView dataGridView4;
         private System.Windows.Forms.DataGridView dataGridView5;
         private System.Windows.Forms.Button button6;
