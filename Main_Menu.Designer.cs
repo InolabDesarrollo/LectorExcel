@@ -341,6 +341,7 @@
             this.Column31});
             this.dataGridView15.Location = new System.Drawing.Point(518, 530);
             this.dataGridView15.Name = "dataGridView15";
+            this.dataGridView15.ReadOnly = true;
             this.dataGridView15.Size = new System.Drawing.Size(427, 150);
             this.dataGridView15.TabIndex = 21;
             this.dataGridView15.Visible = false;
@@ -349,24 +350,30 @@
             // 
             this.Column28.HeaderText = "Mesh #";
             this.Column28.Name = "Column28";
+            this.Column28.ReadOnly = true;
             // 
             // Column29
             // 
             this.Column29.HeaderText = "Diferencial Run 1";
             this.Column29.Name = "Column29";
+            this.Column29.ReadOnly = true;
             // 
             // Column30
             // 
             this.Column30.HeaderText = "Diferencial Run 2";
             this.Column30.Name = "Column30";
+            this.Column30.ReadOnly = true;
             // 
             // Column31
             // 
             this.Column31.HeaderText = "Diferencial Run 3";
             this.Column31.Name = "Column31";
+            this.Column31.ReadOnly = true;
             // 
             // Dgv_ASTM_Single_Aperture
             // 
+            this.Dgv_ASTM_Single_Aperture.AllowUserToAddRows = false;
+            this.Dgv_ASTM_Single_Aperture.AllowUserToDeleteRows = false;
             this.Dgv_ASTM_Single_Aperture.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
             this.Dgv_ASTM_Single_Aperture.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Dgv_ASTM_Single_Aperture.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -374,6 +381,7 @@
             this.Column27});
             this.Dgv_ASTM_Single_Aperture.Location = new System.Drawing.Point(492, 299);
             this.Dgv_ASTM_Single_Aperture.Name = "Dgv_ASTM_Single_Aperture";
+            this.Dgv_ASTM_Single_Aperture.ReadOnly = true;
             this.Dgv_ASTM_Single_Aperture.Size = new System.Drawing.Size(824, 199);
             this.Dgv_ASTM_Single_Aperture.TabIndex = 20;
             // 
@@ -381,18 +389,22 @@
             // 
             this.Column26.HeaderText = "Nominal Sieve Size";
             this.Column26.Name = "Column26";
+            this.Column26.ReadOnly = true;
             // 
             // Column27
             // 
             this.Column27.HeaderText = "Mesh #";
             this.Column27.Name = "Column27";
+            this.Column27.ReadOnly = true;
             // 
             // dataGridView13
             // 
+            this.dataGridView13.AllowUserToAddRows = false;
             this.dataGridView13.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
             this.dataGridView13.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView13.Location = new System.Drawing.Point(21, 259);
             this.dataGridView13.Name = "dataGridView13";
+            this.dataGridView13.ReadOnly = true;
             this.dataGridView13.Size = new System.Drawing.Size(210, 87);
             this.dataGridView13.TabIndex = 19;
             this.dataGridView13.Visible = false;
@@ -434,6 +446,7 @@
             this.Column6});
             this.dataGridView4.Location = new System.Drawing.Point(38, 352);
             this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.ReadOnly = true;
             this.dataGridView4.Size = new System.Drawing.Size(427, 133);
             this.dataGridView4.TabIndex = 15;
             this.dataGridView4.Visible = false;
@@ -442,22 +455,26 @@
             // 
             this.Column7.HeaderText = "Mesh #";
             this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
             this.Column7.Width = 70;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Diferencial Run 1";
             this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "Diferencial Run 2";
             this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             // 
             // Column6
             // 
             this.Column6.HeaderText = "Diferencial Run 3";
             this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
             // 
             // Dgv_Selected_Row
             // 
@@ -471,6 +488,8 @@
             // 
             // Dgv_ASTM_D95
             // 
+            this.Dgv_ASTM_D95.AllowUserToAddRows = false;
+            this.Dgv_ASTM_D95.AllowUserToDeleteRows = false;
             this.Dgv_ASTM_D95.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
             this.Dgv_ASTM_D95.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Dgv_ASTM_D95.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -555,10 +574,12 @@
             // 
             // Dgv_ASTM95_Record
             // 
+            this.Dgv_ASTM95_Record.AllowUserToAddRows = false;
             this.Dgv_ASTM95_Record.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
             this.Dgv_ASTM95_Record.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Dgv_ASTM95_Record.Location = new System.Drawing.Point(150, 205);
             this.Dgv_ASTM95_Record.Name = "Dgv_ASTM95_Record";
+            this.Dgv_ASTM95_Record.ReadOnly = true;
             this.Dgv_ASTM95_Record.Size = new System.Drawing.Size(210, 150);
             this.Dgv_ASTM95_Record.TabIndex = 2;
             // 

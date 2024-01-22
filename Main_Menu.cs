@@ -23,7 +23,7 @@ namespace LecturaExcel
         string filaecu2;
         string Valor;
         string Valor2;
-        String strFila;
+        String row;
         String strFila2;
         string name;
         string namez;
@@ -102,7 +102,6 @@ namespace LecturaExcel
                 }
             }
         }
-
         private void Btn_Go_To_Manual_Mesh_Selection_Click(object sender, EventArgs e)
         {
             valor_nominal.Add("-");
@@ -112,7 +111,6 @@ namespace LecturaExcel
                 TabControl_Main_Menu.SelectedTab = Page_Mesh_Selection;
                 allowSelect = false;
 
-                //Tabla de valores de referencia para ejecutar el analisis de calculos
                 Dgv_Tolerance_Table_Reference.Rows.Add("20", "635", "29µm", "35µm");
                 Dgv_Tolerance_Table_Reference.Rows.Add("25", "500", "34µm", "41µm");
                 Dgv_Tolerance_Table_Reference.Rows.Add("32", "450", "42µm", "50µm");
@@ -144,32 +142,15 @@ namespace LecturaExcel
                 Dgv_Tolerance_Table_Reference.Rows.Add("2800", "7", "2.975mm", "3.070mm");
                 Dgv_Tolerance_Table_Reference.Rows.Add("3350", "6", "3.55mm", "3.66mm");
 
-                //Añadir los campos de "Nominal Sieve size" y "Mesh#"
-                DataGridViewTextBoxColumn NominalSieveSize = new DataGridViewTextBoxColumn();
-                NominalSieveSize.HeaderText = "SieveSize Sieve Size";
-                NominalSieveSize.Width = 100;
+                this.addColumnToDatagridView("SieveSize Sieve Size", Dgv_ASTM95_Record);
+                this.addColumnToDatagridView("Mesh #", Dgv_ASTM95_Record);
+                this.addColumnToDatagridView("Values To Calculate", Dgv_ASTM95_Record);
+                this.addColumnToDatagridView("Record", Dgv_ASTM95_Record);
 
-                DataGridViewTextBoxColumn Mesh = new DataGridViewTextBoxColumn();
-                Mesh.HeaderText = "Mesh #";
-                Mesh.Width = 70;
-
-                DataGridViewTextBoxColumn ValuesToCalculate = new DataGridViewTextBoxColumn();
-                ValuesToCalculate.HeaderText = "Values To Calculate";
-                ValuesToCalculate.Width = 70;
-
-                DataGridViewTextBoxColumn Record = new DataGridViewTextBoxColumn();
-                ValuesToCalculate.HeaderText = "Record";
-                ValuesToCalculate.Width = 50;
-
-                Dgv_ASTM95_Record.Columns.Add(NominalSieveSize);
-                Dgv_ASTM95_Record.Columns.Add(Mesh);
-                Dgv_ASTM95_Record.Columns.Add(ValuesToCalculate);
-                Dgv_ASTM95_Record.Columns.Add(Record);
-
-                dataGridView13.Columns.Add(NominalSieveSize);
-                dataGridView13.Columns.Add(Mesh);
-                dataGridView13.Columns.Add(ValuesToCalculate);
-                dataGridView13.Columns.Add(Record);
+                this.addColumnToDatagridView("SieveSize Sieve Size", dataGridView13);
+                this.addColumnToDatagridView("Mesh #", dataGridView13);
+                this.addColumnToDatagridView("Values To Calculate", dataGridView13);
+                this.addColumnToDatagridView("Record", dataGridView13);
 
                 this.copyInformationOfDataGridViewToOther(Dgv_Particle_Data, Dgv_Selected_Row);
                 this.copyInformationOfDataGridViewToOther(Dgv_Particle_Data, FilaSeleccionada2);
@@ -179,58 +160,23 @@ namespace LecturaExcel
                 MessageBox.Show(" Please select an Excel file to continue "+ex.Message.ToString());
             }
 
-            cleanOldInformationOfDataGridViews();
+            this.cleanOldInformationOfDataGridViews();
 
             ch1 = true;
             ch2 = true;
-            try
-            {
-                while (true)
-                {
-                    //remueve las columnas de el grid 5 desde l 3er columna en adelante
-                    dataGridView5.Columns.RemoveAt(2);
-                }
-            }
-            catch (Exception l)
-            {
 
-            }
-            try
-            {
-                while (true)
-                {
-                    //remueve las columnas de el grid 5 desde l 3er columna en adelante
-                    Dgv_ASTM_D95.Columns.RemoveAt(2);
-                }
-            }
-            catch (Exception l)
-            {
+            this.removeUselessGridColumns(dataGridView5);
+            this.removeUselessGridColumns(Dgv_ASTM_D95);       
+            this.removeUselessGridColumns(dataGridView11);
+            this.removeUselessGridColumns(Dgv_ASTM_Single_Aperture);        
+        }
 
-            }
-            try
-            {
-                while (true)
-                {
-                    //remueve las columnas de el grid 5 desde l 3er columna en adelante
-                    dataGridView11.Columns.RemoveAt(2);
-                }
-            }
-            catch (Exception l)
-            {
-
-            }
-            try
-            {
-                while (true)
-                {
-                    //remueve las columnas de el grid 5 desde l 3er columna en adelante
-                    Dgv_ASTM_Single_Aperture.Columns.RemoveAt(2);
-                }
-            }
-            catch (Exception l)
-            {
-
-            }
+        private void addColumnToDatagridView(string headerText, DataGridView dataGridView)
+        {
+            DataGridViewTextBoxColumn column = new DataGridViewTextBoxColumn();
+            column.HeaderText = headerText;
+            column.Width = 100;
+            dataGridView.Columns.Add(column);
         }
 
         private void copyInformationOfDataGridViewToOther(DataGridView Dgv_Original, DataGridView Dgv_ToCopy )
@@ -254,7 +200,7 @@ namespace LecturaExcel
             }
             catch(Exception ex)
             {
-                MessageBox.Show("Error " + ex.Message);
+                MessageBox.Show("Error  copyInformationOfDataGridViewToOther" + ex.Message);
             }
         }
 
@@ -277,16 +223,20 @@ namespace LecturaExcel
         {
             try
             {
-                while (true)
+                if (dataGridView.Columns.Count >= 3)
                 {
-                    dataGridView.Columns.RemoveAt(2);
+                    for (int i = 2; i <= dataGridView.Columns.Count; i++)
+                    {
+                        dataGridView.Columns.RemoveAt(i);
+                    }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error " + ex.Message);
+                MessageBox.Show("Error removeUselessGridColumns" + ex.Message);
             }
         }
+
         private void ComboBox_Mesh_SelectedIndexChanged(object sender, EventArgs e)
         {
             //Despues de seleccionar una malla que se quiera conocer sus datos dentro del excel, se hace una lista de referencia correspondiendo a lo que hay en el grid de el excel que se subio y con los datos de referencia que marcan los limites de cada malla
@@ -312,242 +262,157 @@ namespace LecturaExcel
             dataGridView11.Rows.Add(micronsMax95,
                 selectedMesh, micronsMax95, true);
 
-            //Configuracion de los Grid
-            Dgv_ASTM95_Record.AllowUserToAddRows = false;
-            dataGridView13.AllowUserToAddRows = false;
-            Dgv_ASTM_D95.AllowUserToAddRows = false;
-            Dgv_ASTM_Single_Aperture.AllowUserToAddRows = false;
-
-            //Se limpia el campo del listbox
             Dgv_Selected_Row.Rows.Clear();
-            foreach (DataGridViewColumn cols in Dgv_Particle_Data.Columns)
-            {
-                if (cols.HeaderText != "")
-                {
-                    //Añadir los campos de "Columna" del datagrid1
-                    DataGridViewTextBoxColumn columnas = new DataGridViewTextBoxColumn();
-                    columnas.HeaderText = cols.Name;
-                    columnas.Width = 100;
-                    Dgv_Selected_Row.Columns.Add(columnas);
-                }
-                else
-                {
-
-                }
-            }
+            this.copyInformationOfDataGridViewToOther(Dgv_Particle_Data, Dgv_Selected_Row);
+            
             FilaSeleccionada2.Rows.Clear();
-            foreach (DataGridViewColumn cols in Dgv_Particle_Data.Columns)
-            {
-                if (cols.HeaderText != "")
-                {
-                    //Añadir los campos de "Columna" del datagrid1
-                    DataGridViewTextBoxColumn columnas1 = new DataGridViewTextBoxColumn();
-                    columnas1.HeaderText = cols.Name;
-                    columnas1.Width = 100;
-                    FilaSeleccionada2.Columns.Add(columnas1);
-                }
-                else
-                {
-
-                }
-            }
-            //Agregar la primera fila del datagrid1 a Fila Seleccionada
-            Dgv_Selected_Row.Rows.Add(Dgv_Particle_Data.Rows[0].Cells[0].Value.ToString(), Dgv_Particle_Data.Rows[0].Cells[2].Value.ToString(), Dgv_Particle_Data.Rows[0].Cells[3].Value.ToString(), Dgv_Particle_Data.Rows[0].Cells[4].Value.ToString());
-            FilaSeleccionada2.Rows.Add(Dgv_Particle_Data.Rows[0].Cells[0].Value.ToString(), Dgv_Particle_Data.Rows[0].Cells[2].Value.ToString(), Dgv_Particle_Data.Rows[0].Cells[3].Value.ToString(), Dgv_Particle_Data.Rows[0].Cells[4].Value.ToString());
-            //Para dgv2
+            this.copyInformationOfDataGridViewToOther(Dgv_Particle_Data, FilaSeleccionada2);
+  
             try
             {
                 //Ya que hace la busqueda del valor mas cercano al de la lista de referencia lo coloca en el Grid2
                 foreach (DataGridViewRow Row in Dgv_ASTM95_Record.Rows)
                 {
-                    check = 0;
+                    double micron = getRoundedMicron(Row);
 
-                    string texto = Convert.ToString(Row.Cells[2].Value);
-                    Match m = Regex.Match(texto, "(\\d+)");
-                    string num = string.Empty;
-                    if (m.Success)
-                    {
-                        num = m.Value;
-                    }
-                    double h = Convert.ToDouble(num);
-                    double f = Math.Round(h, 0);
-                    if ((f == 1) || (f == 2) || (f == 3) || (f == 4))
-                    {
-                        //Bugfix de cuando tiene enteros
-                        double r = h;
-                        r = r * 1000;
-                        r = Math.Round(r, 0);
-                        BusquedaT(r.ToString());
-                        //Busqueda hasta que encuentre un valor aproximado al que hay en la lista de referencia
-                        double val2 = r;
-                        while (check == 0)
-                        {
-
-                            val2 = val2 - 1;
-                            //Busqueda al valor aproximado menor
-                            BusquedaT(val2.ToString());
-                        }
+                    if ((micron == 1) || (micron == 2) || (micron == 3) || (micron == 4))
+                    {       
+                        this.serchForMicronValueInLowerLimit(micron, Dgv_Selected_Row);
                     }
                     else
                     {
-                        Busqueda(f.ToString());
+                        Busqueda(micron.ToString(), Dgv_Selected_Row);
                         //Busqueda hasta que encuentre un valor aproximado al que hay en la lista de referencia
-                        double val2 = f;
+                        double val2 = micron;
                         while (check == 0)
                         {
-
                             val2 = val2 - 1;
                             //Busqueda al valor aproximado menor
-                            Busqueda(val2.ToString());
+                            Busqueda(val2.ToString(), Dgv_Selected_Row);
                         }
                     }
                     Row.Cells[3].Value = filaecu;
                 }
             }
-            catch (Exception f)
+            catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
-            //Para dgv13
             try
             {
                 //Ya que hace la busqueda del valor mas cercano al de la lista de referencia lo coloca en el Grid13
                 foreach (DataGridViewRow Row in dataGridView13.Rows)
                 {
-                    check = 0;
-
-                    string texto = Convert.ToString(Row.Cells[2].Value);
-                    Match m = Regex.Match(texto, "(\\d+)");
-                    string num = string.Empty;
-                    if (m.Success)
+                    double micron = getRoundedMicron(Row);
+                    if ((micron == 1) || (micron == 2) || (micron == 3) || (micron == 4))
                     {
-                        num = m.Value;
-                    }
-                    double h = Convert.ToDouble(num);
-                    double f = Math.Round(h, 0);
-                    if ((f == 1) || (f == 2) || (f == 3) || (f == 4))
-                    {
-                        //Bugfix de cuando tiene enteros
-                        double r = h;
-                        r = r * 1000;
-                        r = Math.Round(r, 0);
-                        BusquedaF2(r.ToString());
-                        //Busqueda hasta que encuentre un valor aproximado al que hay en la lista de referencia
-                        double val2 = r;
-                        while (check == 0)
-                        {
-
-                            val2 = val2 - 1;
-                            //Busqueda al valor aproximado menor
-                            BusquedaF2(val2.ToString());
-                        }
+                        this.serchForMicronValueInLowerLimit(micron, FilaSeleccionada2);
                     }
                     else
                     {
-                        BusquedaF2(f.ToString());
+                        Busqueda(micron.ToString(), FilaSeleccionada2);
                         //Busqueda hasta que encuentre un valor aproximado al que hay en la lista de referencia
-                        double val2 = f;
+                        double val2 = micron;
                         while (check == 0)
                         {
-
                             val2 = val2 - 1;
                             //Busqueda al valor aproximado menor
-                            BusquedaF2(val2.ToString());
+                            Busqueda(val2.ToString(), FilaSeleccionada2);
                         }
                     }
+
                     Row.Cells[3].Value = filaecu2;
                 }
             }
-            catch (Exception f)
+            catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
-            //Configuracion de los grid para que no admitan datos manuales
-            Dgv_ASTM95_Record.ReadOnly = true;
-            dataGridView4.ReadOnly = true;
-            dataGridView13.ReadOnly = true;
-            Dgv_ASTM_Single_Aperture.ReadOnly = true;
-            dataGridView15.ReadOnly = true;
-
             valor_nominal.Add(Dgv_Tolerance_Table_Reference.Rows[Combo_Box_Mesh.SelectedIndex].Cells[0].Value.ToString());
-
         }
 
-        public void Busqueda(string num)
+        private void findNearestValueInReferenceList(DataGridView dataGridViewWithValues, DataGridView dataGridViewToFill)
         {
-            //Busqueda Pruebas para que me traiga la fila
-            foreach (DataGridViewRow Row in Dgv_Particle_Data.Rows)
+            try
             {
-                strFila = Row.Index.ToString();
-                Valor = Convert.ToString(Row.Cells[0].Value);
-                if ((Valor == "Particle Size (µm)") || (Valor == ""))
+                foreach (DataGridViewRow row in dataGridViewWithValues.Rows)
                 {
-
-                }
-                else
-                {
-                    double i = Convert.ToDouble(Valor);
-                    i = i + .4;
-                    double j = Math.Round(i, 0);
-                    if (j.ToString() == num)
+                    double micron = getRoundedMicron(row);
+                    if ((micron == 1) || (micron == 2) || (micron == 3) || (micron == 4))
                     {
-                        //Agregar esa fila a el datagrid "FilaSeleccionada"
-                        Dgv_Selected_Row.Rows.Add(Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[0].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[2].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[3].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[4].Value.ToString());
-                        filaecu = strFila;
-                        check = 1;
+                        this.serchForMicronValueInLowerLimit(micron, dataGridViewToFill);
+                    }
+                    else
+                    {
+                        Busqueda(micron.ToString(), dataGridViewToFill);
+                        //Busqueda hasta que encuentre un valor aproximado al que hay en la lista de referencia
+                        double val2 = micron;
+                        while (check == 0)
+                        {
+                            val2 = val2 - 1;
+                            //Busqueda al valor aproximado menor
+                            Busqueda(val2.ToString(), dataGridViewToFill);
+                        }
+                        row.Cells[3].Value = filaecu2;
                     }
                 }
             }
-        }
-        public void BusquedaT(string num)
-        {
-            //Busqueda Pruebas para que me traiga la fila
-            foreach (DataGridViewRow Row in Dgv_Particle_Data.Rows)
+            catch (Exception ex)
             {
-                strFila = Row.Index.ToString();
-                Valor = Convert.ToString(Row.Cells[0].Value);
-                if ((Valor == "Particle Size (µm)") || (Valor == ""))
-                {
-
-                }
-                else
-                {
-                    double i = Convert.ToDouble(Valor);
-                    i = i + .4;
-                    double j = Math.Round(i, 0);
-                    if (j.ToString() == num)
-                    {
-                        //Agregar esa fila a el datagrid "FilaSeleccionada"
-                        Dgv_Selected_Row.Rows.Add(Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[0].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[2].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[3].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[4].Value.ToString());
-                        filaecu = strFila;
-                        check = 1;
-                    }
-                }
+                MessageBox.Show(ex.Message);
             }
         }
 
-        public void BusquedaF2(string num)
+        private double getRoundedMicron(DataGridViewRow Row)
         {
+            check = 0;
+            string micron = Convert.ToString(Row.Cells[2].Value);
+            Match numbersInMicron = Regex.Match(micron, "(\\d+)");
+            double roundedMicron = 0;
+            if (numbersInMicron.Success)
+            {
+                roundedMicron = Convert.ToDouble(numbersInMicron.Value);
+            }
+            return roundedMicron;
+        }
+
+        private void serchForMicronValueInLowerLimit(double microns, DataGridView dataGridView)
+        {
+            //Bugfix de cuando tiene enteros
+            double roundedMicrons = microns;
+            roundedMicrons = roundedMicrons * 1000;
+            roundedMicrons = Math.Round(roundedMicrons, 0);                       
+            Busqueda(roundedMicrons.ToString(), dataGridView);
+            //Busqueda hasta que encuentre un valor aproximado al que hay en la lista de referencia
+            while (check == 0)
+            {
+                double lowerLimit = roundedMicrons - 1;
+                Busqueda(lowerLimit.ToString(), dataGridView);
+            }       
+        }
+
+        public void Busqueda(string micron, DataGridView dataGridView)
+        {
+            string row;
+            string valueOfCell;
             //Busqueda Pruebas para que me traiga la fila
             foreach (DataGridViewRow Row in Dgv_Particle_Data.Rows)
             {
-                strFila2 = Row.Index.ToString();
-                Valor2 = Convert.ToString(Row.Cells[0].Value);
-                if ((Valor2 == "Particle Size (µm)") || (Valor2 == ""))
+                row = Row.Index.ToString();
+                valueOfCell = Convert.ToString(Row.Cells[0].Value);
+                if ((valueOfCell.Equals("Particle Size (µm)")) || (valueOfCell.Equals("")))
                 {
 
                 }
                 else
                 {
-                    //Correccion para los puntos decimales que hacen que suba o no suba el valor
-                    double i = Convert.ToDouble(Valor2);
-                    i = i + .4;
-                    double j = Math.Round(i, 0);
-                    if (j.ToString() == num)
+                    double value = Convert.ToDouble(valueOfCell);
+                    value = value + .4;
+                    double roundedValue = Math.Round(value, 0);
+                    if (roundedValue.ToString() == micron)
                     {
-                        //Agregar esa fila a el datagrid "FilaSeleccionada"
-                        FilaSeleccionada2.Rows.Add(Dgv_Particle_Data.Rows[Convert.ToInt32(strFila2)].Cells[0].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila2)].Cells[2].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila2)].Cells[3].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila2)].Cells[4].Value.ToString());
-                        filaecu2 = strFila2;
+                        dataGridView.Rows.Add(Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[0].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[2].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[3].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[4].Value.ToString());
+                        filaecu = row;
                         check = 1;
                     }
                 }
@@ -907,7 +772,7 @@ namespace LecturaExcel
             //Busqueda Pruebas para que me traiga la fila
             foreach (DataGridViewRow Row in Dgv_Particle_Data.Rows)
             {
-                strFila = Row.Index.ToString();
+                row = Row.Index.ToString();
                 Valor = Convert.ToString(Row.Cells[0].Value);
                 if ((Valor == "Particle Size (µm)") || (Valor == ""))
                 {
@@ -921,7 +786,7 @@ namespace LecturaExcel
                     if (j.ToString() == num)
                     {
                         //Agregar esa fila a el datagrid "FilaSeleccionada"
-                        filaecu = strFila;
+                        filaecu = row;
                         check = 1;
                     }
                 }
@@ -932,7 +797,7 @@ namespace LecturaExcel
             //Busqueda Pruebas para que me traiga la fila
             foreach (DataGridViewRow Row in Dgv_Particle_Data.Rows)
             {
-                strFila = Row.Index.ToString();
+                row = Row.Index.ToString();
                 Valor = Convert.ToString(Row.Cells[0].Value);
                 if ((Valor == "Particle Size (µm)") || (Valor == ""))
                 {
@@ -945,7 +810,7 @@ namespace LecturaExcel
                     if (j.ToString() == num)
                     {
                         //Agregar esa fila a el datagrid "FilaSeleccionada"
-                        filaecu = strFila;
+                        filaecu = row;
                         check = 1;
                     }
                 }
@@ -1200,7 +1065,7 @@ namespace LecturaExcel
             //Busqueda Pruebas para que me traiga la fila
             foreach (DataGridViewRow Row in Dgv_Particle_Data.Rows)
             {
-                strFila = Row.Index.ToString();
+                row = Row.Index.ToString();
                 Valor = Convert.ToString(Row.Cells[0].Value);
                 if ((Valor == "Particle Size (µm)") || (Valor == ""))
                 {
@@ -1213,8 +1078,8 @@ namespace LecturaExcel
                     if (j.ToString() == num)
                     {
                         //Agregar esa fila a el datagrid "FilaSeleccionada"
-                        Dgv_Selected_Row.Rows.Add(Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[0].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[2].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[3].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(strFila)].Cells[4].Value.ToString());
-                        filaecu = strFila;
+                        Dgv_Selected_Row.Rows.Add(Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[0].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[2].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[3].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[4].Value.ToString());
+                        filaecu = row;
                         check = 1;
                     }
                 }
