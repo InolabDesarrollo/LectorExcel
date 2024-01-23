@@ -267,30 +267,14 @@ namespace LecturaExcel
             
             FilaSeleccionada2.Rows.Clear();
             this.copyInformationOfDataGridViewToOther(Dgv_Particle_Data, FilaSeleccionada2);
-  
+
             try
             {
                 //Ya que hace la busqueda del valor mas cercano al de la lista de referencia lo coloca en el Grid2
                 foreach (DataGridViewRow Row in Dgv_ASTM95_Record.Rows)
                 {
                     double micron = getRoundedMicron(Row);
-
-                    if ((micron == 1) || (micron == 2) || (micron == 3) || (micron == 4))
-                    {       
-                        this.serchForMicronValueInLowerLimit(micron, Dgv_Selected_Row);
-                    }
-                    else
-                    {
-                        Busqueda(micron.ToString(), Dgv_Selected_Row);
-                        //Busqueda hasta que encuentre un valor aproximado al que hay en la lista de referencia
-                        double val2 = micron;
-                        while (check == 0)
-                        {
-                            val2 = val2 - 1;
-                            //Busqueda al valor aproximado menor
-                            Busqueda(val2.ToString(), Dgv_Selected_Row);
-                        }
-                    }
+                    this.serchMoreNearValueInReferenceList(micron, Dgv_Selected_Row);
                     Row.Cells[3].Value = filaecu;
                 }
             }
@@ -304,63 +288,15 @@ namespace LecturaExcel
                 foreach (DataGridViewRow Row in dataGridView13.Rows)
                 {
                     double micron = getRoundedMicron(Row);
-                    if ((micron == 1) || (micron == 2) || (micron == 3) || (micron == 4))
-                    {
-                        this.serchForMicronValueInLowerLimit(micron, FilaSeleccionada2);
-                    }
-                    else
-                    {
-                        Busqueda(micron.ToString(), FilaSeleccionada2);
-                        //Busqueda hasta que encuentre un valor aproximado al que hay en la lista de referencia
-                        double val2 = micron;
-                        while (check == 0)
-                        {
-                            val2 = val2 - 1;
-                            //Busqueda al valor aproximado menor
-                            Busqueda(val2.ToString(), FilaSeleccionada2);
-                        }
-                    }
-
+                    this.serchMoreNearValueInReferenceList(micron, FilaSeleccionada2);
                     Row.Cells[3].Value = filaecu2;
-                }
+                }                
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
             valor_nominal.Add(Dgv_Tolerance_Table_Reference.Rows[Combo_Box_Mesh.SelectedIndex].Cells[0].Value.ToString());
-        }
-
-        private void findNearestValueInReferenceList(DataGridView dataGridViewWithValues, DataGridView dataGridViewToFill)
-        {
-            try
-            {
-                foreach (DataGridViewRow row in dataGridViewWithValues.Rows)
-                {
-                    double micron = getRoundedMicron(row);
-                    if ((micron == 1) || (micron == 2) || (micron == 3) || (micron == 4))
-                    {
-                        this.serchForMicronValueInLowerLimit(micron, dataGridViewToFill);
-                    }
-                    else
-                    {
-                        Busqueda(micron.ToString(), dataGridViewToFill);
-                        //Busqueda hasta que encuentre un valor aproximado al que hay en la lista de referencia
-                        double val2 = micron;
-                        while (check == 0)
-                        {
-                            val2 = val2 - 1;
-                            //Busqueda al valor aproximado menor
-                            Busqueda(val2.ToString(), dataGridViewToFill);
-                        }
-                        row.Cells[3].Value = filaecu2;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
         }
 
         private double getRoundedMicron(DataGridViewRow Row)
@@ -376,22 +312,47 @@ namespace LecturaExcel
             return roundedMicron;
         }
 
-        private void serchForMicronValueInLowerLimit(double microns, DataGridView dataGridView)
+        private void serchMoreNearValueInReferenceList( double micron, DataGridView dataGridViewToFill)
         {
-            //Bugfix de cuando tiene enteros
-            double roundedMicrons = microns;
-            roundedMicrons = roundedMicrons * 1000;
-            roundedMicrons = Math.Round(roundedMicrons, 0);                       
-            Busqueda(roundedMicrons.ToString(), dataGridView);
-            //Busqueda hasta que encuentre un valor aproximado al que hay en la lista de referencia
-            while (check == 0)
+            bool micronHasIntegers = checkIfMicronHasIntegers(micron);
+            if (micronHasIntegers)
             {
-                double lowerLimit = roundedMicrons - 1;
-                Busqueda(lowerLimit.ToString(), dataGridView);
-            }       
+                double roundedMicrons = micron * 1000;
+                roundedMicrons = Math.Round(roundedMicrons, 0);
+
+                this.serchForMicronValueInLowerLimit(roundedMicrons, dataGridViewToFill);
+            }
+            else
+            {
+                this.serchForMicronValueInLowerLimit(micron, dataGridViewToFill);
+            }
         }
 
-        public void Busqueda(string micron, DataGridView dataGridView)
+        private bool checkIfMicronHasIntegers(double micron)
+        {
+            if ((micron == 1) || (micron == 2) || (micron == 3) || (micron == 4))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private void serchForMicronValueInLowerLimit(double micron, DataGridView dataGridViewToFill)
+        {
+            Busqueda(micron.ToString(), dataGridViewToFill);
+            //Busqueda hasta que encuentre un valor aproximado al que hay en la lista de referencia
+            double lowerLimit = micron;
+            while (check == 0)
+            {
+                lowerLimit = lowerLimit - 1;
+                Busqueda(lowerLimit.ToString(), dataGridViewToFill);
+            }
+        }
+
+        public void Busqueda(string micron, DataGridView dataGridViewToFill)
         {
             string row;
             string valueOfCell;
@@ -411,7 +372,7 @@ namespace LecturaExcel
                     double roundedValue = Math.Round(value, 0);
                     if (roundedValue.ToString() == micron)
                     {
-                        dataGridView.Rows.Add(Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[0].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[2].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[3].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[4].Value.ToString());
+                        dataGridViewToFill.Rows.Add(Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[0].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[2].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[3].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[4].Value.ToString());
                         filaecu = row;
                         check = 1;
                     }
