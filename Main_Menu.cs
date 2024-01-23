@@ -19,7 +19,7 @@ namespace LecturaExcel
         }
 
         //Declaracion de variables 
-        string filaecu;
+        string detectorNumber;
         string filaecu2;
         string Valor;
         string Valor2;
@@ -142,18 +142,18 @@ namespace LecturaExcel
                 Dgv_Tolerance_Table_Reference.Rows.Add("2800", "7", "2.975mm", "3.070mm");
                 Dgv_Tolerance_Table_Reference.Rows.Add("3350", "6", "3.55mm", "3.66mm");
 
-                this.addColumnToDatagridView("SieveSize Sieve Size", Dgv_ASTM95_Record);
-                this.addColumnToDatagridView("Mesh #", Dgv_ASTM95_Record);
-                this.addColumnToDatagridView("Values To Calculate", Dgv_ASTM95_Record);
-                this.addColumnToDatagridView("Record", Dgv_ASTM95_Record);
+                this.addColumnToDatagridView("Particle Size", Dgv_ASTM95_Detector_Number);
+                this.addColumnToDatagridView("Mesh #", Dgv_ASTM95_Detector_Number);
+                this.addColumnToDatagridView("Values To Calculate", Dgv_ASTM95_Detector_Number);
+                this.addColumnToDatagridView("Record", Dgv_ASTM95_Detector_Number);
 
-                this.addColumnToDatagridView("SieveSize Sieve Size", dataGridView13);
+                this.addColumnToDatagridView("Particle Size", dataGridView13);
                 this.addColumnToDatagridView("Mesh #", dataGridView13);
                 this.addColumnToDatagridView("Values To Calculate", dataGridView13);
                 this.addColumnToDatagridView("Record", dataGridView13);
 
-                this.copyInformationOfDataGridViewToOther(Dgv_Particle_Data, Dgv_Selected_Row);
-                this.copyInformationOfDataGridViewToOther(Dgv_Particle_Data, FilaSeleccionada2);
+                this.copyStructureOfDataGridViewToOther(Dgv_Particle_Data, Dgv_Selected_Row);
+                this.copyStructureOfDataGridViewToOther(Dgv_Particle_Data, FilaSeleccionada2);
             }
             catch (Exception ex)
             {
@@ -179,7 +179,7 @@ namespace LecturaExcel
             dataGridView.Columns.Add(column);
         }
 
-        private void copyInformationOfDataGridViewToOther(DataGridView Dgv_Original, DataGridView Dgv_ToCopy )
+        private void copyStructureOfDataGridViewToOther(DataGridView Dgv_Original, DataGridView Dgv_ToCopy )
         {
             try
             {
@@ -200,15 +200,15 @@ namespace LecturaExcel
             }
             catch(Exception ex)
             {
-                MessageBox.Show("Error  copyInformationOfDataGridViewToOther" + ex.Message);
+                MessageBox.Show("Error  copyStructureOfDataGridViewToOther" + ex.Message);
             }
         }
 
         private void cleanOldInformationOfDataGridViews()
         {
-            Dgv_ASTM95_Record.ReadOnly = true;
+            Dgv_ASTM95_Detector_Number.ReadOnly = true;
             dataGridView13.ReadOnly = true;
-            Dgv_ASTM95_Record.Rows.Clear();
+            Dgv_ASTM95_Detector_Number.Rows.Clear();
             Dgv_ASTM_D95.Rows.Clear();
             dataGridView4.Rows.Clear();
             dataGridView5.Rows.Clear();
@@ -244,7 +244,7 @@ namespace LecturaExcel
             string selectedMesh = Combo_Box_Mesh.SelectedItem.ToString();
             string micronsMax95 = Dgv_Tolerance_Table_Reference.Rows[Combo_Box_Mesh.SelectedIndex].Cells[3].Value.ToString();//66
 
-            Dgv_ASTM95_Record.Rows.Add(micronsSingleAperture,
+            Dgv_ASTM95_Detector_Number.Rows.Add(micronsSingleAperture,
                 selectedMesh, micronsSingleAperture, true);
 
             dataGridView13.Rows.Add(micronsMax95,
@@ -263,19 +263,19 @@ namespace LecturaExcel
                 selectedMesh, micronsMax95, true);
 
             Dgv_Selected_Row.Rows.Clear();
-            this.copyInformationOfDataGridViewToOther(Dgv_Particle_Data, Dgv_Selected_Row);
+            this.copyStructureOfDataGridViewToOther(Dgv_Particle_Data, Dgv_Selected_Row);
             
             FilaSeleccionada2.Rows.Clear();
-            this.copyInformationOfDataGridViewToOther(Dgv_Particle_Data, FilaSeleccionada2);
+            this.copyStructureOfDataGridViewToOther(Dgv_Particle_Data, FilaSeleccionada2);
 
             try
             {
                 //Ya que hace la busqueda del valor mas cercano al de la lista de referencia lo coloca en el Grid2
-                foreach (DataGridViewRow Row in Dgv_ASTM95_Record.Rows)
+                foreach (DataGridViewRow Row in Dgv_ASTM95_Detector_Number.Rows)
                 {
                     double micron = getRoundedMicron(Row);
                     this.serchMoreNearValueInReferenceList(micron, Dgv_Selected_Row);
-                    Row.Cells[3].Value = filaecu;
+                    Row.Cells[3].Value = detectorNumber;
                 }
             }
             catch (Exception ex)
@@ -342,38 +342,36 @@ namespace LecturaExcel
 
         private void serchForMicronValueInLowerLimit(double micron, DataGridView dataGridViewToFill)
         {
-            Busqueda(micron.ToString(), dataGridViewToFill);
-            //Busqueda hasta que encuentre un valor aproximado al que hay en la lista de referencia
+            bringTheDataOfTheValueClosestToTheMicron(micron.ToString(), dataGridViewToFill);
             double lowerLimit = micron;
             while (check == 0)
             {
                 lowerLimit = lowerLimit - 1;
-                Busqueda(lowerLimit.ToString(), dataGridViewToFill);
+                bringTheDataOfTheValueClosestToTheMicron(lowerLimit.ToString(), dataGridViewToFill);
             }
         }
 
-        public void Busqueda(string micron, DataGridView dataGridViewToFill)
+        public void bringTheDataOfTheValueClosestToTheMicron(string micron, DataGridView dataGridViewToFill)
         {
             string row;
             string valueOfCell;
-            //Busqueda Pruebas para que me traiga la fila
+
             foreach (DataGridViewRow Row in Dgv_Particle_Data.Rows)
             {
                 row = Row.Index.ToString();
                 valueOfCell = Convert.ToString(Row.Cells[0].Value);
-                if ((valueOfCell.Equals("Particle Size (µm)")) || (valueOfCell.Equals("")))
-                {
 
-                }
-                else
+                if (valueOfCell != "Particle Size (µm)" && valueOfCell != "")
                 {
                     double value = Convert.ToDouble(valueOfCell);
                     value = value + .4;
                     double roundedValue = Math.Round(value, 0);
                     if (roundedValue.ToString() == micron)
                     {
-                        dataGridViewToFill.Rows.Add(Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[0].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[2].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[3].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[4].Value.ToString());
-                        filaecu = row;
+                        dataGridViewToFill.Rows.Add(Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[0].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[2].Value.ToString(), 
+                            Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[3].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[4].Value.ToString());
+                        
+                        detectorNumber = row;
                         check = 1;
                     }
                 }
@@ -747,7 +745,7 @@ namespace LecturaExcel
                     if (j.ToString() == num)
                     {
                         //Agregar esa fila a el datagrid "FilaSeleccionada"
-                        filaecu = row;
+                        detectorNumber = row;
                         check = 1;
                     }
                 }
@@ -771,7 +769,7 @@ namespace LecturaExcel
                     if (j.ToString() == num)
                     {
                         //Agregar esa fila a el datagrid "FilaSeleccionada"
-                        filaecu = row;
+                        detectorNumber = row;
                         check = 1;
                     }
                 }
@@ -1040,7 +1038,7 @@ namespace LecturaExcel
                     {
                         //Agregar esa fila a el datagrid "FilaSeleccionada"
                         Dgv_Selected_Row.Rows.Add(Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[0].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[2].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[3].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[4].Value.ToString());
-                        filaecu = row;
+                        detectorNumber = row;
                         check = 1;
                     }
                 }
@@ -1122,7 +1120,7 @@ namespace LecturaExcel
 
                 //Aqui ira el calculo de la interpolacion de valores para 95%
                 //primera corrida 
-                foreach (DataGridViewRow row1 in Dgv_ASTM95_Record.Rows)
+                foreach (DataGridViewRow row1 in Dgv_ASTM95_Detector_Number.Rows)
                 {
 
                     double acumarr = 0;
@@ -1222,7 +1220,7 @@ namespace LecturaExcel
                 }
 
                 //segunda Corrida para 95%
-                foreach (DataGridViewRow row2 in Dgv_ASTM95_Record.Rows)
+                foreach (DataGridViewRow row2 in Dgv_ASTM95_Detector_Number.Rows)
                 {
                     double acumarr2 = 0;
                     int n2 = 1;
@@ -1319,7 +1317,7 @@ namespace LecturaExcel
                 }
 
                 //tercera Corrida para 95%
-                foreach (DataGridViewRow row in Dgv_ASTM95_Record.Rows)
+                foreach (DataGridViewRow row in Dgv_ASTM95_Detector_Number.Rows)
                 {
                     double accumulated = 0;
                     int n3 = 1;
@@ -1487,7 +1485,7 @@ namespace LecturaExcel
                 dataGridView11.Columns.Add(acu31z1);
 
                 //primera corrida 95%
-                foreach (DataGridViewRow row2 in Dgv_ASTM95_Record.Rows)
+                foreach (DataGridViewRow row2 in Dgv_ASTM95_Detector_Number.Rows)
                 {
                     double acumarr2 = 0;
                     int q = Convert.ToInt32(row2.Cells[3].Value) + 1;
@@ -1565,7 +1563,7 @@ namespace LecturaExcel
                 }
 
                 //segunda Corrida 95%
-                foreach (DataGridViewRow row2 in Dgv_ASTM95_Record.Rows)
+                foreach (DataGridViewRow row2 in Dgv_ASTM95_Detector_Number.Rows)
                 {
                     double acumarr2 = 0;
                     int q1 = Convert.ToInt32(row2.Cells[3].Value) + 1;
@@ -1639,7 +1637,7 @@ namespace LecturaExcel
                 }
 
                 //tercera Corrida 95%
-                foreach (DataGridViewRow row3 in Dgv_ASTM95_Record.Rows)
+                foreach (DataGridViewRow row3 in Dgv_ASTM95_Detector_Number.Rows)
                 {
                     double acumarr3 = 0;
                     int q3 = Convert.ToInt32(row3.Cells[3].Value) + 1;
@@ -1814,7 +1812,7 @@ namespace LecturaExcel
                 dataGridView11.Columns.Add(acu21z);
 
                 //primera corrida 95%
-                foreach (DataGridViewRow row1 in Dgv_ASTM95_Record.Rows)
+                foreach (DataGridViewRow row1 in Dgv_ASTM95_Detector_Number.Rows)
                 {
                     //primera corrida
                     double acumarr = 0;
@@ -1866,7 +1864,7 @@ namespace LecturaExcel
                     }
                 }
                 //segunda Corrida 95%
-                foreach (DataGridViewRow row2 in Dgv_ASTM95_Record.Rows)
+                foreach (DataGridViewRow row2 in Dgv_ASTM95_Detector_Number.Rows)
                 {
                     //primera corrida
                     double acumarr2 = 0;
@@ -1970,7 +1968,7 @@ namespace LecturaExcel
                 dataGridView11.Columns.Add(acu21z1x);
 
                 //primera corrida 95%
-                foreach (DataGridViewRow row1 in Dgv_ASTM95_Record.Rows)
+                foreach (DataGridViewRow row1 in Dgv_ASTM95_Detector_Number.Rows)
                 {
                     double acumarr = 0;
                     int q = Convert.ToInt32(row1.Cells[3].Value) + 1;
@@ -2021,7 +2019,7 @@ namespace LecturaExcel
                 }
 
                 //segunda Corrida 95%
-                foreach (DataGridViewRow row2 in Dgv_ASTM95_Record.Rows)
+                foreach (DataGridViewRow row2 in Dgv_ASTM95_Detector_Number.Rows)
                 {
                     double acumarr2 = 0;
                     int q1 = Convert.ToInt32(row2.Cells[3].Value) + 1;
@@ -2119,7 +2117,7 @@ namespace LecturaExcel
 
 
                 //primera corrida 95%
-                foreach (DataGridViewRow row1 in Dgv_ASTM95_Record.Rows)
+                foreach (DataGridViewRow row1 in Dgv_ASTM95_Detector_Number.Rows)
                 {
                     //primera corrida
                     double acumarr = 0;
@@ -2204,7 +2202,7 @@ namespace LecturaExcel
                 dataGridView11.Columns.Add(acu11z1x);
 
                 //primera corrida 95%
-                foreach (DataGridViewRow row1 in Dgv_ASTM95_Record.Rows)
+                foreach (DataGridViewRow row1 in Dgv_ASTM95_Detector_Number.Rows)
                 {
                     double acumarr = 0;
                     int q = Convert.ToInt32(row1.Cells[3].Value) + 1;
@@ -4393,7 +4391,7 @@ namespace LecturaExcel
             Dgv_ASTM_D95.Visible = false;
             dataGridView4.Visible = false;
 
-            Dgv_ASTM95_Record.Rows.Clear();
+            Dgv_ASTM95_Detector_Number.Rows.Clear();
             Dgv_ASTM_D95.Rows.Clear();
             dataGridView4.Rows.Clear();
             dataGridView5.Rows.Clear();

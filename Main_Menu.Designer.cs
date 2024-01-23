@@ -68,7 +68,7 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Lbl_Selected_Mesh = new System.Windows.Forms.Label();
-            this.Dgv_ASTM95_Record = new System.Windows.Forms.DataGridView();
+            this.Dgv_ASTM95_Detector_Number = new System.Windows.Forms.DataGridView();
             this.Combo_Box_Mesh = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Page_Report_View = new System.Windows.Forms.TabPage();
@@ -178,7 +178,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Selected_Row)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM_D95)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Tolerance_Table_Reference)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM95_Record)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM95_Detector_Number)).BeginInit();
             this.Page_Report_View.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView11)).BeginInit();
@@ -285,7 +285,7 @@
             this.Page_Mesh_Selection.Controls.Add(this.Btn_Clean_Data);
             this.Page_Mesh_Selection.Controls.Add(this.Dgv_Tolerance_Table_Reference);
             this.Page_Mesh_Selection.Controls.Add(this.Lbl_Selected_Mesh);
-            this.Page_Mesh_Selection.Controls.Add(this.Dgv_ASTM95_Record);
+            this.Page_Mesh_Selection.Controls.Add(this.Dgv_ASTM95_Detector_Number);
             this.Page_Mesh_Selection.Controls.Add(this.Combo_Box_Mesh);
             this.Page_Mesh_Selection.Controls.Add(this.label1);
             this.Page_Mesh_Selection.Location = new System.Drawing.Point(4, 22);
@@ -329,6 +329,7 @@
             this.FilaSeleccionada2.Name = "FilaSeleccionada2";
             this.FilaSeleccionada2.Size = new System.Drawing.Size(427, 119);
             this.FilaSeleccionada2.TabIndex = 22;
+            this.FilaSeleccionada2.Visible = false;
             // 
             // dataGridView15
             // 
@@ -484,7 +485,6 @@
             this.Dgv_Selected_Row.Name = "Dgv_Selected_Row";
             this.Dgv_Selected_Row.Size = new System.Drawing.Size(421, 152);
             this.Dgv_Selected_Row.TabIndex = 13;
-            this.Dgv_Selected_Row.Visible = false;
             // 
             // Dgv_ASTM_D95
             // 
@@ -572,16 +572,16 @@
             this.Lbl_Selected_Mesh.Text = "Selected meshes:";
             this.Lbl_Selected_Mesh.Visible = false;
             // 
-            // Dgv_ASTM95_Record
+            // Dgv_ASTM95_Detector_Number
             // 
-            this.Dgv_ASTM95_Record.AllowUserToAddRows = false;
-            this.Dgv_ASTM95_Record.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
-            this.Dgv_ASTM95_Record.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv_ASTM95_Record.Location = new System.Drawing.Point(150, 205);
-            this.Dgv_ASTM95_Record.Name = "Dgv_ASTM95_Record";
-            this.Dgv_ASTM95_Record.ReadOnly = true;
-            this.Dgv_ASTM95_Record.Size = new System.Drawing.Size(210, 150);
-            this.Dgv_ASTM95_Record.TabIndex = 2;
+            this.Dgv_ASTM95_Detector_Number.AllowUserToAddRows = false;
+            this.Dgv_ASTM95_Detector_Number.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
+            this.Dgv_ASTM95_Detector_Number.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_ASTM95_Detector_Number.Location = new System.Drawing.Point(150, 205);
+            this.Dgv_ASTM95_Detector_Number.Name = "Dgv_ASTM95_Detector_Number";
+            this.Dgv_ASTM95_Detector_Number.ReadOnly = true;
+            this.Dgv_ASTM95_Detector_Number.Size = new System.Drawing.Size(210, 150);
+            this.Dgv_ASTM95_Detector_Number.TabIndex = 2;
             // 
             // Combo_Box_Mesh
             // 
@@ -1638,7 +1638,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Selected_Row)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM_D95)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Tolerance_Table_Reference)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM95_Record)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM95_Detector_Number)).EndInit();
             this.Page_Report_View.ResumeLayout(false);
             this.Page_Report_View.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView12)).EndInit();
@@ -1664,7 +1664,7 @@
         private System.Windows.Forms.ComboBox Combo_Box_Mesh;
         private System.Windows.Forms.Button Btn_Go_To_Manual_Mesh_Selection;
         private System.Windows.Forms.Label Lbl_Selected_Mesh;
-        private System.Windows.Forms.DataGridView Dgv_ASTM95_Record;
+        private System.Windows.Forms.DataGridView Dgv_ASTM95_Detector_Number;
         private System.Windows.Forms.DataGridView Dgv_Tolerance_Table_Reference;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
