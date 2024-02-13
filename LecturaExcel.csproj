@@ -124,6 +124,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Responsabilitis\Manage_Data.cs" />
+    <Compile Include="Responsabilitis\Micron.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="View\Load_File.cs">
       <SubType>Form</SubType>
@@ -246,6 +248,10 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controller\" />
+    <Folder Include="Model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

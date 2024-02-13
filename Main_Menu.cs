@@ -7,6 +7,8 @@ using ExcelDataReader;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
 using MaterialSkin.Controls;
+using System.Diagnostics;
+using LecturaExcel.Responsabilitis;
 
 namespace LecturaExcel
 {
@@ -102,58 +104,30 @@ namespace LecturaExcel
                 }
             }
         }
+
+#region PageMesh_Selection
+
         private void Btn_Go_To_Manual_Mesh_Selection_Click(object sender, EventArgs e)
         {
             valor_nominal.Add("-");
+            Manage_Data data = new Manage_Data();
             try
             {
                 allowSelect = true;
                 TabControl_Main_Menu.SelectedTab = Page_Mesh_Selection;
                 allowSelect = false;
 
-                Dgv_Tolerance_Table_Reference.Rows.Add("20", "635", "29µm", "35µm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("25", "500", "34µm", "41µm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("32", "450", "42µm", "50µm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("38", "400", "48µm", "57µm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("45", "325", "57µm", "66µm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("53", "270", "66µm", "76µm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("63", "230", "77µm", "89µm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("75", "200", "91µm", "103µm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("90", "170", "108µm", "122µm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("106", "140", "126µm", "141µm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("125", "120", "147µm", "163µm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("150", "100", "174µm", "192µm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("180", "80", "207µm", "227µm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("212", "70", "242µm", "263µm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("250", "60", "283µm", "306µm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("300", "50", "337µm", "363µm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("355", "45", "396µm", "425µm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("425", "40", "471µm", "502µm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("500", "35", "550µm", "585µm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("600", "30", "660µm", "695µm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("710", "25", "775µm", "815µm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("850", "20", "925µm", "970µm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("1000", "18", "1.083mm", "1.135mm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("1180", "16", "1.270mm", "1.330mm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("1400", "14", "1.505mm", "1.565mm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("1700", "12", "1.820mm", "1.890mm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("2000", "10", "2.135mm", "2.215mm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("2360", "8", "2.515mm", "2.609mm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("2800", "7", "2.975mm", "3.070mm");
-                Dgv_Tolerance_Table_Reference.Rows.Add("3350", "6", "3.55mm", "3.66mm");
-
-                this.addColumnToDatagridView("Particle Size", Dgv_ASTM95_Detector_Number);
-                this.addColumnToDatagridView("Mesh #", Dgv_ASTM95_Detector_Number);
-                this.addColumnToDatagridView("Values To Calculate", Dgv_ASTM95_Detector_Number);
-                this.addColumnToDatagridView("Record", Dgv_ASTM95_Detector_Number);
-
-                this.addColumnToDatagridView("Particle Size", dataGridView13);
-                this.addColumnToDatagridView("Mesh #", dataGridView13);
-                this.addColumnToDatagridView("Values To Calculate", dataGridView13);
-                this.addColumnToDatagridView("Record", dataGridView13);
-
-                this.copyStructureOfDataGridViewToOther(Dgv_Particle_Data, Dgv_Selected_Row);
-                this.copyStructureOfDataGridViewToOther(Dgv_Particle_Data, FilaSeleccionada2);
+                data.createDgvToleranceTableReference(Dgv_Tolerance_Table_Reference);
+                data.addColumnToDatagridView("Particle Size", Dgv_ASTM95_Detector_Number);
+                data.addColumnToDatagridView("Mesh #", Dgv_ASTM95_Detector_Number);
+                data.addColumnToDatagridView("Values To Calculate", Dgv_ASTM95_Detector_Number);
+                data.addColumnToDatagridView("Detector Number", Dgv_ASTM95_Detector_Number);
+                data.addColumnToDatagridView("Particle Size", dataGridView13);
+                data.addColumnToDatagridView("Mesh #", dataGridView13);
+                data.addColumnToDatagridView("Values To Calculate", dataGridView13);
+                data.addColumnToDatagridView("Record", dataGridView13);
+                data.copyStructureOfDataGridViewToOther(Dgv_Particle_Data, Dgv_MAX_D95_Selected_Row);
+                data.copyStructureOfDataGridViewToOther(Dgv_Particle_Data, Dgv_Single_Aperture_Selected_Row);
             }
             catch (Exception ex)
             {
@@ -164,44 +138,10 @@ namespace LecturaExcel
 
             ch1 = true;
             ch2 = true;
-
-            this.removeUselessGridColumns(dataGridView5);
-            this.removeUselessGridColumns(Dgv_ASTM_D95);       
-            this.removeUselessGridColumns(dataGridView11);
-            this.removeUselessGridColumns(Dgv_ASTM_Single_Aperture);        
-        }
-
-        private void addColumnToDatagridView(string headerText, DataGridView dataGridView)
-        {
-            DataGridViewTextBoxColumn column = new DataGridViewTextBoxColumn();
-            column.HeaderText = headerText;
-            column.Width = 100;
-            dataGridView.Columns.Add(column);
-        }
-
-        private void copyStructureOfDataGridViewToOther(DataGridView Dgv_Original, DataGridView Dgv_ToCopy )
-        {
-            try
-            {
-                foreach(DataGridViewColumn column in Dgv_Original.Columns)
-                {
-                    if (column.HeaderText != "")
-                    {
-                        DataGridViewTextBoxColumn columnNew = new DataGridViewTextBoxColumn();
-                        columnNew.HeaderText = column.Name;
-                        columnNew.Width = 100;
-                        Dgv_ToCopy.Columns.Add(columnNew);
-                    }
-                }
-
-                Dgv_ToCopy.Rows.Add(Dgv_Original.Rows[0].Cells[0].Value.ToString(),
-                    Dgv_Original.Rows[0].Cells[2].Value.ToString(), Dgv_Original.Rows[0].Cells[3].Value.ToString(),
-                    Dgv_Original.Rows[0].Cells[4].Value.ToString());
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("Error  copyStructureOfDataGridViewToOther" + ex.Message);
-            }
+            data.removeUselessGridColumns(Dgv_Accumulated_rigth_left);
+            data.removeUselessGridColumns(Dgv_ASTM_D95);
+            data.removeUselessGridColumns(dataGridView11);
+            data.removeUselessGridColumns(Dgv_ASTM_Single_Aperture);        
         }
 
         private void cleanOldInformationOfDataGridViews()
@@ -211,7 +151,7 @@ namespace LecturaExcel
             Dgv_ASTM95_Detector_Number.Rows.Clear();
             Dgv_ASTM_D95.Rows.Clear();
             dataGridView4.Rows.Clear();
-            dataGridView5.Rows.Clear();
+            Dgv_Accumulated_rigth_left.Rows.Clear();
             dataGridView11.Rows.Clear();
             dataGridView6.Rows.Clear();
             dataGridView12.Rows.Clear();
@@ -219,30 +159,12 @@ namespace LecturaExcel
             dataGridView15.Rows.Clear();
         }
         
-        private void removeUselessGridColumns(DataGridView dataGridView)
-        {
-            try
-            {
-                if (dataGridView.Columns.Count >= 3)
-                {
-                    for (int i = 2; i <= dataGridView.Columns.Count; i++)
-                    {
-                        dataGridView.Columns.RemoveAt(i);
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error removeUselessGridColumns" + ex.Message);
-            }
-        }
-
         private void ComboBox_Mesh_SelectedIndexChanged(object sender, EventArgs e)
         {
             //Despues de seleccionar una malla que se quiera conocer sus datos dentro del excel, se hace una lista de referencia correspondiendo a lo que hay en el grid de el excel que se subio y con los datos de referencia que marcan los limites de cada malla
             string micronsSingleAperture = Dgv_Tolerance_Table_Reference.Rows[Combo_Box_Mesh.SelectedIndex].Cells[2].Value.ToString();
             string selectedMesh = Combo_Box_Mesh.SelectedItem.ToString();
-            string micronsMax95 = Dgv_Tolerance_Table_Reference.Rows[Combo_Box_Mesh.SelectedIndex].Cells[3].Value.ToString();//66
+            string micronsMax95 = Dgv_Tolerance_Table_Reference.Rows[Combo_Box_Mesh.SelectedIndex].Cells[3].Value.ToString();
 
             Dgv_ASTM95_Detector_Number.Rows.Add(micronsSingleAperture,
                 selectedMesh, micronsSingleAperture, true);
@@ -256,25 +178,30 @@ namespace LecturaExcel
             Dgv_ASTM_Single_Aperture.Rows.Add(micronsMax95,
                 selectedMesh, micronsMax95, true);
 
-            dataGridView5.Rows.Add(micronsSingleAperture,    
+            Dgv_Accumulated_rigth_left.Rows.Add(micronsSingleAperture,    
                 selectedMesh, micronsSingleAperture, true);
 
             dataGridView11.Rows.Add(micronsMax95,
                 selectedMesh, micronsMax95, true);
 
-            Dgv_Selected_Row.Rows.Clear();
-            this.copyStructureOfDataGridViewToOther(Dgv_Particle_Data, Dgv_Selected_Row);
+            Dgv_MAX_D95_Selected_Row.Rows.Clear();
+            Manage_Data data = new Manage_Data();
+            data.copyStructureOfDataGridViewToOther(Dgv_Particle_Data, Dgv_MAX_D95_Selected_Row);
             
-            FilaSeleccionada2.Rows.Clear();
-            this.copyStructureOfDataGridViewToOther(Dgv_Particle_Data, FilaSeleccionada2);
+            Dgv_Single_Aperture_Selected_Row.Rows.Clear();
 
+            data.copyStructureOfDataGridViewToOther(Dgv_Particle_Data, Dgv_Single_Aperture_Selected_Row);
+            data.copyStructureOfDataGridViewToOther(Dgv_Particle_Data, Dgv_MAX_D95_Selected_Row);
+            Micron _micron = new Micron();
             try
-            {
+            {              
                 //Ya que hace la busqueda del valor mas cercano al de la lista de referencia lo coloca en el Grid2
                 foreach (DataGridViewRow Row in Dgv_ASTM95_Detector_Number.Rows)
                 {
-                    double micron = getRoundedMicron(Row);
-                    this.serchMoreNearValueInReferenceList(micron, Dgv_Selected_Row);
+                    check = 0;
+                    string micronInString = Convert.ToString(Row.Cells[2].Value);
+                    double micron = _micron.getRoundedMicron(micronInString);
+                    this.serchMoreNearValueInReferenceList(micron, Dgv_MAX_D95_Selected_Row);
                     Row.Cells[3].Value = detectorNumber;
                 }
             }
@@ -287,8 +214,10 @@ namespace LecturaExcel
                 //Ya que hace la busqueda del valor mas cercano al de la lista de referencia lo coloca en el Grid13
                 foreach (DataGridViewRow Row in dataGridView13.Rows)
                 {
-                    double micron = getRoundedMicron(Row);
-                    this.serchMoreNearValueInReferenceList(micron, FilaSeleccionada2);
+                    check = 0;
+                    string micronInString = Convert.ToString(Row.Cells[2].Value);
+                    double micron = _micron.getRoundedMicron(micronInString);
+                    this.serchMoreNearValueInReferenceList(micron, Dgv_Single_Aperture_Selected_Row);
                     Row.Cells[3].Value = filaecu2;
                 }                
             }
@@ -297,19 +226,6 @@ namespace LecturaExcel
                 MessageBox.Show(ex.Message);
             }
             valor_nominal.Add(Dgv_Tolerance_Table_Reference.Rows[Combo_Box_Mesh.SelectedIndex].Cells[0].Value.ToString());
-        }
-
-        private double getRoundedMicron(DataGridViewRow Row)
-        {
-            check = 0;
-            string micron = Convert.ToString(Row.Cells[2].Value);
-            Match numbersInMicron = Regex.Match(micron, "(\\d+)");
-            double roundedMicron = 0;
-            if (numbersInMicron.Success)
-            {
-                roundedMicron = Convert.ToDouble(numbersInMicron.Value);
-            }
-            return roundedMicron;
         }
 
         private void serchMoreNearValueInReferenceList( double micron, DataGridView dataGridViewToFill)
@@ -339,7 +255,6 @@ namespace LecturaExcel
                 return false;
             }
         }
-
         private void serchForMicronValueInLowerLimit(double micron, DataGridView dataGridViewToFill)
         {
             bringTheDataOfTheValueClosestToTheMicron(micron.ToString(), dataGridViewToFill);
@@ -350,12 +265,11 @@ namespace LecturaExcel
                 bringTheDataOfTheValueClosestToTheMicron(lowerLimit.ToString(), dataGridViewToFill);
             }
         }
-
+        
         public void bringTheDataOfTheValueClosestToTheMicron(string micron, DataGridView dataGridViewToFill)
         {
             string row;
             string valueOfCell;
-
             foreach (DataGridViewRow Row in Dgv_Particle_Data.Rows)
             {
                 row = Row.Index.ToString();
@@ -365,7 +279,7 @@ namespace LecturaExcel
                 {
                     double value = Convert.ToDouble(valueOfCell);
                     value = value + .4;
-                    double roundedValue = Math.Round(value, 0);
+                    double roundedValue = Math.Round(value, 0);                
                     if (roundedValue.ToString() == micron)
                     {
                         dataGridViewToFill.Rows.Add(Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[0].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[2].Value.ToString(), 
@@ -377,193 +291,18 @@ namespace LecturaExcel
                 }
             }
         }
-
-        public void renombrar()
+        #endregion
+        private void Return_To_Mesh_Selection_Click(object sender, EventArgs e)
         {
-            //Renombrar 95%
-            //Se renombran las celdas 0 de los grids 4, 6
-            foreach (DataGridViewRow renombre in dataGridView4.Rows)
-            {
-                try
-                {
-                    renombre.Cells[0].Value = Dgv_ASTM_D95.Rows[renombre.Index].Cells[1].Value;
-                }
-                catch (Exception re)
-                {
-
-                }
-            }
-            foreach (DataGridViewRow renombre1 in dataGridView6.Rows)
-            {
-                try
-                {
-                    renombre1.Cells[0].Value = Dgv_ASTM_D95.Rows[renombre1.Index].Cells[1].Value;
-                }
-                catch (Exception re)
-                {
-
-                }
-            }
-            //Renombrar max%
-            //Se renombran las celdas 0 de los grids 12, 15
-            foreach (DataGridViewRow renombre in dataGridView15.Rows)
-            {
-                try
-                {
-                    renombre.Cells[0].Value = Dgv_ASTM_Single_Aperture.Rows[renombre.Index].Cells[1].Value;
-                }
-                catch (Exception re)
-                {
-
-                }
-            }
-            foreach (DataGridViewRow renombre1 in dataGridView12.Rows)
-            {
-                try
-                {
-                    renombre1.Cells[0].Value = Dgv_ASTM_Single_Aperture.Rows[renombre1.Index].Cells[1].Value;
-                }
-                catch (Exception re)
-                {
-
-                }
-            }
-            try
-            {
-                //Para 95%
-                dataGridView4.Rows[(dataGridView4.Rows.Count - 4)].Cells[0].Value = ("999");
-                dataGridView4.Rows[(dataGridView4.Rows.Count - 3)].Cells[0].Value = (Dgv_ASTM_D95.Rows[(Dgv_ASTM_D95.Rows.Count - 2)].Cells[1].Value);
-                dataGridView4.Rows[(dataGridView4.Rows.Count - 2)].Cells[0].Value = (Dgv_ASTM_D95.Rows[(Dgv_ASTM_D95.Rows.Count - 1)].Cells[1].Value);
-
-                dataGridView6.Rows[(dataGridView4.Rows.Count - 4)].Cells[0].Value = ("999");
-                dataGridView6.Rows[(dataGridView4.Rows.Count - 3)].Cells[0].Value = (Dgv_ASTM_D95.Rows[(Dgv_ASTM_D95.Rows.Count - 2)].Cells[1].Value);
-                dataGridView6.Rows[(dataGridView4.Rows.Count - 2)].Cells[0].Value = (Dgv_ASTM_D95.Rows[(Dgv_ASTM_D95.Rows.Count - 1)].Cells[1].Value);
-                
-                //Para max%
-                dataGridView15.Rows[(dataGridView15.Rows.Count - 4)].Cells[0].Value = ("999");
-                dataGridView15.Rows[(dataGridView15.Rows.Count - 3)].Cells[0].Value = (Dgv_ASTM_Single_Aperture.Rows[(Dgv_ASTM_Single_Aperture.Rows.Count - 2)].Cells[1].Value);
-                dataGridView15.Rows[(dataGridView15.Rows.Count - 2)].Cells[0].Value = (Dgv_ASTM_Single_Aperture.Rows[(Dgv_ASTM_Single_Aperture.Rows.Count - 1)].Cells[1].Value);
-
-                dataGridView12.Rows[(dataGridView15.Rows.Count - 4)].Cells[0].Value = ("999");
-                dataGridView12.Rows[(dataGridView15.Rows.Count - 3)].Cells[0].Value = (Dgv_ASTM_Single_Aperture.Rows[(Dgv_ASTM_Single_Aperture.Rows.Count - 2)].Cells[1].Value);
-                dataGridView12.Rows[(dataGridView15.Rows.Count - 2)].Cells[0].Value = (Dgv_ASTM_Single_Aperture.Rows[(Dgv_ASTM_Single_Aperture.Rows.Count - 1)].Cells[1].Value);
-
-            }
-            catch (Exception df)
-            {
-
-            }
-        }
-
-        public void renombrar1()
-        {
-            //Para 95%
-            //Se renombran las celdas 0 de los grids 4, 6
-            foreach (DataGridViewRow renombre in dataGridView4.Rows)
-            {
-                try
-                {
-                    renombre.Cells[0].Value = Dgv_ASTM_D95.Rows[renombre.Index].Cells[1].Value;
-                }
-                catch (Exception re)
-                {
-
-                }
-            }
-            foreach (DataGridViewRow renombre1 in dataGridView6.Rows)
-            {
-                try
-                {
-                    renombre1.Cells[0].Value = Dgv_ASTM_D95.Rows[renombre1.Index].Cells[1].Value;
-                }
-                catch (Exception re)
-                {
-
-                }
-            }
-            //Para max%
-            //Se renombran las celdas 0 de los grids 12, 5
-            foreach (DataGridViewRow renombre in dataGridView15.Rows)
-            {
-                try
-                {
-                    renombre.Cells[0].Value = Dgv_ASTM_Single_Aperture.Rows[renombre.Index].Cells[1].Value;
-                }
-                catch (Exception re)
-                {
-
-                }
-            }
-            foreach (DataGridViewRow renombre1 in dataGridView12.Rows)
-            {
-                try
-                {
-                    renombre1.Cells[0].Value = Dgv_ASTM_Single_Aperture.Rows[renombre1.Index].Cells[1].Value;
-                }
-                catch (Exception re)
-                {
-
-                }
-            }
-            //Recorrido de los nombres hacia abajo dependiendo del numero de filas que haya 
-            //Para 95%
-            try
-            {
-                int rep = Convert.ToInt32(dataGridView4.RowCount) + 2;
-                int cont = 2;
-                int cont2 = 1;
-                while (cont < rep)
-                {
-                    dataGridView4.Rows[dataGridView4.RowCount - cont2].Cells[0].Value = dataGridView4.Rows[dataGridView4.RowCount - cont].Cells[0].Value;
-                    dataGridView6.Rows[dataGridView4.RowCount - cont2].Cells[0].Value = dataGridView4.Rows[dataGridView4.RowCount - cont].Cells[0].Value;
-
-                    cont++;
-                    cont2++;
-                }
-            }
-            catch (Exception gh)
-            {
-
-            }
-
-            //Para max%
-            try
-            {
-                int rep1 = Convert.ToInt32(dataGridView15.RowCount) + 2;
-                int cont1 = 2;
-                int cont21 = 1;
-                while (cont1 < rep1)
-                {
-                    dataGridView15.Rows[dataGridView15.RowCount - cont21].Cells[0].Value = dataGridView15.Rows[dataGridView15.RowCount - cont1].Cells[0].Value;
-                    dataGridView12.Rows[dataGridView15.RowCount - cont21].Cells[0].Value = dataGridView15.Rows[dataGridView15.RowCount - cont1].Cells[0].Value;
-
-                    cont1++;
-                    cont21++;
-                }
-            }
-            catch (Exception gh)
-            {
-
-            }
-            //Valores por Default en las celdas 0 row 0
-            dataGridView4.Rows[0].Cells[0].Value = "999";
-            dataGridView6.Rows[0].Cells[0].Value = "999";
-            dataGridView15.Rows[0].Cells[0].Value = "999";
-            dataGridView12.Rows[0].Cells[0].Value = "999";
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            //regresa a la seleccion de las mallas para la realizacion del reporte
             allowSelect = true;
             TabControl_Main_Menu.SelectedTab = Page_Mesh_Selection;
             allowSelect = false;
 
-            dataGridView5.Rows.Clear();
+            Dgv_Accumulated_rigth_left.Rows.Clear();
             dataGridView6.Rows.Clear();
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void Hide_Cumulatives_Click(object sender, EventArgs e)
         {
             //Esconde los acumulativos a la derecha dependiendo del numero de corridas que se esten manejando
             con_ocu = "si";
@@ -572,13 +311,13 @@ namespace LecturaExcel
             {
                 try
                 {
-                    foreach (DataGridViewRow row in dataGridView5.Rows)
+                    foreach (DataGridViewRow row in Dgv_Accumulated_rigth_left.Rows)
                     {
-                        foreach (DataGridViewColumn col in dataGridView5.Columns)
+                        foreach (DataGridViewColumn col in Dgv_Accumulated_rigth_left.Columns)
                         {
                             if (col.Index >= 5)
                             {
-                                dataGridView5.Rows[row.Index].Cells[col.Index].Value = "";
+                                Dgv_Accumulated_rigth_left.Rows[row.Index].Cells[col.Index].Value = "";
                             }
                         }
                     }
@@ -603,13 +342,13 @@ namespace LecturaExcel
                 //Para 2 corridas
                 try
                 {
-                    foreach (DataGridViewRow row in dataGridView5.Rows)
+                    foreach (DataGridViewRow row in Dgv_Accumulated_rigth_left.Rows)
                     {
-                        foreach (DataGridViewColumn col in dataGridView5.Columns)
+                        foreach (DataGridViewColumn col in Dgv_Accumulated_rigth_left.Columns)
                         {
                             if (col.Index >= 4)
                             {
-                                dataGridView5.Rows[row.Index].Cells[col.Index].Value = "";
+                                Dgv_Accumulated_rigth_left.Rows[row.Index].Cells[col.Index].Value = "";
                             }
                         }
                     }
@@ -624,9 +363,9 @@ namespace LecturaExcel
                         }
                     }
                 }
-                catch (Exception df)
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Columns have been removed");
+                    MessageBox.Show("Columns have been removed "+ex.Message);
                 }
             }
             else if (num_corr == "1")
@@ -634,13 +373,13 @@ namespace LecturaExcel
                 //Para 1 corrida
                 try
                 {
-                    foreach (DataGridViewRow row in dataGridView5.Rows)
+                    foreach (DataGridViewRow row in Dgv_Accumulated_rigth_left.Rows)
                     {
-                        foreach (DataGridViewColumn col in dataGridView5.Columns)
+                        foreach (DataGridViewColumn col in Dgv_Accumulated_rigth_left.Columns)
                         {
                             if (col.Index >= 3)
                             {
-                                dataGridView5.Rows[row.Index].Cells[col.Index].Value = "";
+                                Dgv_Accumulated_rigth_left.Rows[row.Index].Cells[col.Index].Value = "";
                             }
                         }
                     }
@@ -655,15 +394,13 @@ namespace LecturaExcel
                         }
                     }
                 }
-                catch (Exception df)
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Columns have been removed");
+                    MessageBox.Show("Columns have been removed "+ex.Message);
                 }
             }
-            button7.Visible = false;
+            Btn_Hide_Cumulatives.Visible = false;
         }
-
-    
 
         private void tabControl1_Selecting(object sender, TabControlCancelEventArgs e)
         {
@@ -726,56 +463,6 @@ namespace LecturaExcel
             }
         }
 
-        public void Busqueda2(string num)
-        {
-            //Busqueda Pruebas para que me traiga la fila
-            foreach (DataGridViewRow Row in Dgv_Particle_Data.Rows)
-            {
-                row = Row.Index.ToString();
-                Valor = Convert.ToString(Row.Cells[0].Value);
-                if ((Valor == "Particle Size (µm)") || (Valor == ""))
-                {
-
-                }
-                else
-                {
-                    double i = Convert.ToDouble(Valor);
-                    i = i + .4;
-                    double j = Math.Round(i, 0);
-                    if (j.ToString() == num)
-                    {
-                        //Agregar esa fila a el datagrid "FilaSeleccionada"
-                        detectorNumber = row;
-                        check = 1;
-                    }
-                }
-            }
-        }
-        public void Busqueda3(string num)
-        {
-            //Busqueda Pruebas para que me traiga la fila
-            foreach (DataGridViewRow Row in Dgv_Particle_Data.Rows)
-            {
-                row = Row.Index.ToString();
-                Valor = Convert.ToString(Row.Cells[0].Value);
-                if ((Valor == "Particle Size (µm)") || (Valor == ""))
-                {
-
-                }
-                else
-                {
-                    double i = Convert.ToDouble(Valor);
-                    double j = Math.Round(i, 1);
-                    if (j.ToString() == num)
-                    {
-                        //Agregar esa fila a el datagrid "FilaSeleccionada"
-                        detectorNumber = row;
-                        check = 1;
-                    }
-                }
-            }
-        }
-
         //Aqui busco el que manda datos al reporte para modificarlo
         public void Finalizar()
         {
@@ -797,7 +484,7 @@ namespace LecturaExcel
 
             dt = ds.Tables["Datos_Reporte"];
 
-            while (dataGridView5.Rows.Count != valor_nominal.Count)
+            while (Dgv_Accumulated_rigth_left.Rows.Count != valor_nominal.Count)
             {
                 valor_nominal.Add("");
             }
@@ -806,18 +493,18 @@ namespace LecturaExcel
             {
                 //dgv5 = 8 columnas
                 //Lectura de todos los datos para generar el reporte
-                for (int i = 0; i < (dataGridView5.Rows.Count); i++)
+                for (int i = 0; i < (Dgv_Accumulated_rigth_left.Rows.Count); i++)
                 {
 
                     dt.Rows.Add(
-                        dataGridView5.Rows[i].Cells[0].Value,
-                        dataGridView5.Rows[i].Cells[1].Value,
-                        dataGridView5.Rows[i].Cells[2].Value,
-                        dataGridView5.Rows[i].Cells[3].Value,
-                        dataGridView5.Rows[i].Cells[4].Value,
-                        dataGridView5.Rows[i].Cells[5].Value,
-                        dataGridView5.Rows[i].Cells[6].Value,
-                        dataGridView5.Rows[i].Cells[7].Value,
+                        Dgv_Accumulated_rigth_left.Rows[i].Cells[0].Value,
+                        Dgv_Accumulated_rigth_left.Rows[i].Cells[1].Value,
+                        Dgv_Accumulated_rigth_left.Rows[i].Cells[2].Value,
+                        Dgv_Accumulated_rigth_left.Rows[i].Cells[3].Value,
+                        Dgv_Accumulated_rigth_left.Rows[i].Cells[4].Value,
+                        Dgv_Accumulated_rigth_left.Rows[i].Cells[5].Value,
+                        Dgv_Accumulated_rigth_left.Rows[i].Cells[6].Value,
+                        Dgv_Accumulated_rigth_left.Rows[i].Cells[7].Value,
 
                         dataGridView6.Rows[i].Cells[1].Value,
                         dataGridView6.Rows[i].Cells[2].Value,
@@ -878,15 +565,15 @@ namespace LecturaExcel
             {
                 //dgv5 = 6 columnas
                 //Lectura de todos los datos para generar el reporte
-                for (int i = 0; i < (dataGridView5.Rows.Count); i++)
+                for (int i = 0; i < (Dgv_Accumulated_rigth_left.Rows.Count); i++)
                 {
                     dt.Rows.Add(
-                        dataGridView5.Rows[i].Cells[0].Value,
-                        dataGridView5.Rows[i].Cells[1].Value,
-                        dataGridView5.Rows[i].Cells[2].Value,
-                        dataGridView5.Rows[i].Cells[3].Value,
-                        dataGridView5.Rows[i].Cells[4].Value,
-                        dataGridView5.Rows[i].Cells[5].Value,
+                        Dgv_Accumulated_rigth_left.Rows[i].Cells[0].Value,
+                        Dgv_Accumulated_rigth_left.Rows[i].Cells[1].Value,
+                        Dgv_Accumulated_rigth_left.Rows[i].Cells[2].Value,
+                        Dgv_Accumulated_rigth_left.Rows[i].Cells[3].Value,
+                        Dgv_Accumulated_rigth_left.Rows[i].Cells[4].Value,
+                        Dgv_Accumulated_rigth_left.Rows[i].Cells[5].Value,
                         "",
                         "",
 
@@ -949,14 +636,14 @@ namespace LecturaExcel
             {
                 //dgv5 = 4 columnas
                 //Lectura de todos los datos para generar el reporte
-                for (int i = 0; i < (dataGridView5.Rows.Count); i++)
+                for (int i = 0; i < (Dgv_Accumulated_rigth_left.Rows.Count); i++)
                 {
 
                     dt.Rows.Add(
-                        dataGridView5.Rows[i].Cells[0].Value,
-                        dataGridView5.Rows[i].Cells[1].Value,
-                        dataGridView5.Rows[i].Cells[2].Value,
-                        dataGridView5.Rows[i].Cells[3].Value,
+                        Dgv_Accumulated_rigth_left.Rows[i].Cells[0].Value,
+                        Dgv_Accumulated_rigth_left.Rows[i].Cells[1].Value,
+                        Dgv_Accumulated_rigth_left.Rows[i].Cells[2].Value,
+                        Dgv_Accumulated_rigth_left.Rows[i].Cells[3].Value,
                         "",
                         "",
                         "",
@@ -1019,548 +706,65 @@ namespace LecturaExcel
             }
         }
 
-        public void Busqueda4(string num)
-        {
-            //Busqueda Pruebas para que me traiga la fila
-            foreach (DataGridViewRow Row in Dgv_Particle_Data.Rows)
-            {
-                row = Row.Index.ToString();
-                Valor = Convert.ToString(Row.Cells[0].Value);
-                if ((Valor == "Particle Size (µm)") || (Valor == ""))
-                {
-
-                }
-                else
-                {
-                    double i = Convert.ToDouble(Valor);
-                    double j = Math.Ceiling(i);
-                    if (j.ToString() == num)
-                    {
-                        //Agregar esa fila a el datagrid "FilaSeleccionada"
-                        Dgv_Selected_Row.Rows.Add(Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[0].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[2].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[3].Value.ToString(), Dgv_Particle_Data.Rows[Convert.ToInt32(row)].Cells[4].Value.ToString());
-                        detectorNumber = row;
-                        check = 1;
-                    }
-                }
-            }
-        }
-
         private void Go_To_Report_View_Click(object sender, EventArgs e)
         {
             if (Dgv_Particle_Data.Rows[0].Cells[4].Value.ToString() == "Run_3 (Vol%)")
             {
                 //3 Corridas
                 num_corr = "3";
-                //Añadir los campos de "Acumulativos <"
-                DataGridViewTextBoxColumn acu1 = new DataGridViewTextBoxColumn();
-                acu1.HeaderText = "Run_1 Cumulative <";
-                acu1.Width = 80;
-
-                DataGridViewTextBoxColumn acu2 = new DataGridViewTextBoxColumn();
-                acu2.HeaderText = "Run_2 Cumulative <";
-                acu2.Width = 80;
-
-                DataGridViewTextBoxColumn acu3 = new DataGridViewTextBoxColumn();
-                acu3.HeaderText = "Run_3 Cumulative <";
-                acu3.Width = 80;
-
-                Dgv_ASTM_D95.Columns.Add(acu1);
-                Dgv_ASTM_D95.Columns.Add(acu2);
-                Dgv_ASTM_D95.Columns.Add(acu3);
-
-                //para dgv 14
-                DataGridViewTextBoxColumn acu1z = new DataGridViewTextBoxColumn();
-                acu1z.HeaderText = "Run_1 Cumulative <";
-                acu1z.Width = 80;
-
-                DataGridViewTextBoxColumn acu2z = new DataGridViewTextBoxColumn();
-                acu2z.HeaderText = "Run_2 Cumulative <";
-                acu2z.Width = 80;
-
-                DataGridViewTextBoxColumn acu3z = new DataGridViewTextBoxColumn();
-                acu3z.HeaderText = "Run_3 Cumulative <";
-                acu3z.Width = 80;
-
-                Dgv_ASTM_Single_Aperture.Columns.Add(acu1z);
-                Dgv_ASTM_Single_Aperture.Columns.Add(acu2z);
-                Dgv_ASTM_Single_Aperture.Columns.Add(acu3z);
-
-                DataGridViewTextBoxColumn acu11 = new DataGridViewTextBoxColumn();
-                acu11.HeaderText = "Run_1 Cumulative <";
-                acu11.Width = 80;
-
-                DataGridViewTextBoxColumn acu21 = new DataGridViewTextBoxColumn();
-                acu21.HeaderText = "Run_2 Cumulative <";
-                acu21.Width = 80;
-
-                DataGridViewTextBoxColumn acu31 = new DataGridViewTextBoxColumn();
-                acu31.HeaderText = "Run_3 Cumulative <";
-                acu31.Width = 80;
-
-                dataGridView5.Columns.Add(acu11);
-                dataGridView5.Columns.Add(acu21);
-                dataGridView5.Columns.Add(acu31);
-
-                //MaxSA columnas acumulativas <
-                DataGridViewTextBoxColumn acu111 = new DataGridViewTextBoxColumn();
-                acu111.HeaderText = "Run_1 Cumulative <";
-                acu111.Width = 80;
-
-                DataGridViewTextBoxColumn acu211 = new DataGridViewTextBoxColumn();
-                acu211.HeaderText = "Run_2 Cumulative <";
-                acu211.Width = 80;
-
-                DataGridViewTextBoxColumn acu311 = new DataGridViewTextBoxColumn();
-                acu311.HeaderText = "Run_3 Cumulative <";
-                acu311.Width = 80;
-
-                dataGridView11.Columns.Add(acu111);
-                dataGridView11.Columns.Add(acu211);
-                dataGridView11.Columns.Add(acu311);
+                this.addCumulativeColumnsToDataGridView(Dgv_ASTM_D95);
+                this.addCumulativeColumnsToDataGridView(Dgv_ASTM_Single_Aperture);
+                this.addCumulativeColumnsToDataGridView(Dgv_Accumulated_rigth_left);
+                this.addCumulativeColumnsToDataGridView(dataGridView11);
 
                 //Aqui ira el calculo de la interpolacion de valores para 95%
-                //primera corrida 
-                foreach (DataGridViewRow row1 in Dgv_ASTM95_Detector_Number.Rows)
-                {
-
-                    double acumarr = 0;
-                    int n = 1;
-                    //aumentar a la fila los valores acumulativos a la derecha (los que van arriba)
-                    try
-                    {
-                        while (n <= Convert.ToInt32(row1.Cells[3].Value))
-                        {
-                            acumarr = acumarr + Convert.ToDouble(Dgv_Particle_Data.Rows[n].Cells[2].Value);
-                            n++;
-                            if (acumarr > 100)
-                            {
-                                acumarr = 100;
-                            }
-                            Dgv_ASTM_D95.Rows[row1.Index].Cells[2].Value = Math.Round(acumarr, 2);
-                            dataGridView5.Rows[row1.Index].Cells[2].Value = Math.Round(acumarr, 2);
-                        }
-                        //Asignacion de valores para interpolación
-                        string x0 = Convert.ToDouble(Dgv_Particle_Data.Rows[n - 1].Cells[0].Value).ToString();
-                        string x1 = Convert.ToDouble(Dgv_Particle_Data.Rows[n].Cells[0].Value).ToString();
-                        string y0 = dataGridView5.Rows[row1.Index].Cells[2].Value.ToString();
-                        acumarr = acumarr + Convert.ToDouble(Dgv_Particle_Data.Rows[n].Cells[2].Value);
-                        string y1 = Math.Round(acumarr, 2).ToString();
-
-                        string texto = Convert.ToString(row1.Cells[2].Value);
-                        Match m = Regex.Match(texto, "(\\d+)");
-                        string num = string.Empty;
-                        if (m.Success)
-                        {
-                            num = m.Value;
-                        }
-                        double h = Convert.ToDouble(num);
-
-                        ////formula de interpolacion=
-                        double arriba = Convert.ToDouble(h) - Convert.ToDouble(x0);
-                        double abajo = Convert.ToDouble(x1) - Convert.ToDouble(x0);
-                        double division = arriba / abajo;
-                        double resultado = Convert.ToDouble(y0) + (division * (Convert.ToDouble(y1) - Convert.ToDouble(y0)));
-                        dataGridView5.Rows[row1.Index].Cells[2].Value = Math.Round(resultado, 2);
-                        Dgv_ASTM_D95.Rows[row1.Index].Cells[2].Value = Math.Round(resultado, 2);
-                    }
-                    catch (Exception r)
-                    {
-
-                    }
-                }
-                //Aqui ira el calculo de la interpolacion de valores para max%
-                //primera corrida 
-                foreach (DataGridViewRow row1 in dataGridView13.Rows)
-                {
-
-                    double acumarr = 0;
-                    int n = 1;
-                    //aumentar a la fila los valores acumulativos a la derecha (los que van arriba)
-                    try
-                    {
-                        while (n <= Convert.ToInt32(row1.Cells[3].Value))
-                        {
-                            acumarr = acumarr + Convert.ToDouble(Dgv_Particle_Data.Rows[n].Cells[2].Value);
-                            n++;
-                            if (acumarr > 100)
-                            {
-                                acumarr = 100;
-                            }
-                            Dgv_ASTM_Single_Aperture.Rows[row1.Index].Cells[2].Value = Math.Round(acumarr, 2);
-                            dataGridView11.Rows[row1.Index].Cells[2].Value = Math.Round(acumarr, 2);
-                        }
-                        //Asignacion de valores para interpolación
-                        string x0 = Convert.ToDouble(Dgv_Particle_Data.Rows[n - 1].Cells[0].Value).ToString();
-                        string x1 = Convert.ToDouble(Dgv_Particle_Data.Rows[n].Cells[0].Value).ToString();
-                        string y0 = dataGridView11.Rows[row1.Index].Cells[2].Value.ToString();
-                        acumarr = acumarr + Convert.ToDouble(Dgv_Particle_Data.Rows[n].Cells[2].Value);
-                        string y1 = Math.Round(acumarr, 2).ToString();
-
-                        string texto = Convert.ToString(row1.Cells[2].Value);
-                        Match m = Regex.Match(texto, "(\\d+)");
-                        string num = string.Empty;
-                        if (m.Success)
-                        {
-                            num = m.Value;
-                        }
-                        double h = Convert.ToDouble(num);
-
-                        ////formula de interpolacion=
-                        double arriba = Convert.ToDouble(h) - Convert.ToDouble(x0);
-                        double abajo = Convert.ToDouble(x1) - Convert.ToDouble(x0);
-                        double division = arriba / abajo;
-                        double resultado = Convert.ToDouble(y0) + (division * (Convert.ToDouble(y1) - Convert.ToDouble(y0)));
-                        Dgv_ASTM_Single_Aperture.Rows[row1.Index].Cells[2].Value = Math.Round(resultado, 2);
-                        dataGridView11.Rows[row1.Index].Cells[2].Value = Math.Round(resultado, 2);
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Erro " + ex.Message);
-                    }
-                }
-
-                //segunda Corrida para 95%
-                foreach (DataGridViewRow row2 in Dgv_ASTM95_Detector_Number.Rows)
-                {
-                    double acumarr2 = 0;
-                    int n2 = 1;
-                    //aumentar a la fila los valores acumulativos a la derecha (los que van arriba)
-                    try
-                    {
-                        while (n2 <= Convert.ToInt32(row2.Cells[3].Value))
-                        {
-                            acumarr2 = acumarr2 + Convert.ToDouble(Dgv_Particle_Data.Rows[n2].Cells[3].Value);
-                            n2++;
-                            if (acumarr2 > 100)
-                            {
-                                acumarr2 = 100;
-                            }
-                            Dgv_ASTM_D95.Rows[row2.Index].Cells[3].Value = Math.Round(acumarr2, 2);
-                            dataGridView5.Rows[row2.Index].Cells[3].Value = Math.Round(acumarr2, 2);
-                        }
-                        //Asignacion de valores para interpolación
-                        string x0 = Convert.ToDouble(Dgv_Particle_Data.Rows[n2 - 1].Cells[0].Value).ToString();
-                        string x1 = Convert.ToDouble(Dgv_Particle_Data.Rows[n2].Cells[0].Value).ToString();
-                        string y0 = dataGridView5.Rows[row2.Index].Cells[3].Value.ToString();
-                        acumarr2 = acumarr2 + Convert.ToDouble(Dgv_Particle_Data.Rows[n2].Cells[3].Value);
-                        string y1 = Math.Round(acumarr2, 2).ToString();
-
-                        string texto = Convert.ToString(row2.Cells[2].Value);
-                        Match m = Regex.Match(texto, "(\\d+)");
-                        string num = string.Empty;
-                        if (m.Success)
-                        {
-                            num = m.Value;
-                        }
-                        double h = Convert.ToDouble(num);
-
-                        ////formula de interpolacion=
-                        double arriba = Convert.ToDouble(h) - Convert.ToDouble(x0);
-                        double abajo = Convert.ToDouble(x1) - Convert.ToDouble(x0);
-                        double division = arriba / abajo;
-                        double resultado = Convert.ToDouble(y0) + (division * (Convert.ToDouble(y1) - Convert.ToDouble(y0)));
-                        dataGridView5.Rows[row2.Index].Cells[3].Value = Math.Round(resultado, 2);
-                        Dgv_ASTM_D95.Rows[row2.Index].Cells[3].Value = Math.Round(resultado, 2);
-                    }
-                    catch (Exception r)
-                    {
-
-                    }
-                }
-                //segunda Corrida para max%
-                foreach (DataGridViewRow row2 in dataGridView13.Rows)
-                {
-                    double acumarr2 = 0;
-                    int n2 = 1;
-                    //aumentar a la fila los valores acumulativos a la derecha (los que van arriba)
-                    try
-                    {
-                        while (n2 <= Convert.ToInt32(row2.Cells[3].Value))
-                        {
-                            acumarr2 = acumarr2 + Convert.ToDouble(Dgv_Particle_Data.Rows[n2].Cells[3].Value);
-                            n2++;
-                            if (acumarr2 > 100)
-                            {
-                                acumarr2 = 100;
-                            }
-                            Dgv_ASTM_Single_Aperture.Rows[row2.Index].Cells[3].Value = Math.Round(acumarr2, 2);
-                            dataGridView11.Rows[row2.Index].Cells[3].Value = Math.Round(acumarr2, 2);
-                        }
-                        //Asignacion de valores para interpolación
-                        string x0 = Convert.ToDouble(Dgv_Particle_Data.Rows[n2 - 1].Cells[0].Value).ToString();
-                        string x1 = Convert.ToDouble(Dgv_Particle_Data.Rows[n2].Cells[0].Value).ToString();
-                        string y0 = dataGridView11.Rows[row2.Index].Cells[3].Value.ToString();
-                        acumarr2 = acumarr2 + Convert.ToDouble(Dgv_Particle_Data.Rows[n2].Cells[3].Value);
-                        string y1 = Math.Round(acumarr2, 2).ToString();
-
-                        string texto = Convert.ToString(row2.Cells[2].Value);
-                        Match m = Regex.Match(texto, "(\\d+)");
-                        string num = string.Empty;
-                        if (m.Success)
-                        {
-                            num = m.Value;
-                        }
-                        double h = Convert.ToDouble(num);
-
-                        ////formula de interpolacion=
-                        double arriba = Convert.ToDouble(h) - Convert.ToDouble(x0);
-                        double abajo = Convert.ToDouble(x1) - Convert.ToDouble(x0);
-                        double division = arriba / abajo;
-                        double resultado = Convert.ToDouble(y0) + (division * (Convert.ToDouble(y1) - Convert.ToDouble(y0)));
-                        Dgv_ASTM_Single_Aperture.Rows[row2.Index].Cells[3].Value = Math.Round(resultado, 2);
-                        dataGridView11.Rows[row2.Index].Cells[3].Value = Math.Round(resultado, 2);
-                    }
-                    catch (Exception r)
-                    {
-
-                    }
-                }
-
-                //tercera Corrida para 95%
-                foreach (DataGridViewRow row in Dgv_ASTM95_Detector_Number.Rows)
-                {
-                    double accumulated = 0;
-                    int n3 = 1;
-                    //aumentar a la fila los valores acumulativos a la derecha (los que van arriba)
-                    try
-                    {
-                        while (n3 <= Convert.ToInt32(row.Cells[3].Value))
-                        {
-                            accumulated = accumulated + Convert.ToDouble(Dgv_Particle_Data.Rows[n3].Cells[4].Value);
-                            n3++;
-                            if (accumulated > 100)
-                            {
-                                accumulated = 100;
-                            }
-                            Dgv_ASTM_D95.Rows[row.Index].Cells[4].Value = Math.Round(accumulated, 2);
-                            dataGridView5.Rows[row.Index].Cells[4].Value = Math.Round(accumulated, 2);
-                        }
-                        //Asignacion de valores para interpolación
-                        string x0 = Convert.ToDouble(Dgv_Particle_Data.Rows[n3 - 1].Cells[0].Value).ToString();
-                        string x1 = Convert.ToDouble(Dgv_Particle_Data.Rows[n3].Cells[0].Value).ToString();
-                        string y0 = dataGridView5.Rows[row.Index].Cells[4].Value.ToString();
-                        accumulated = accumulated + Convert.ToDouble(Dgv_Particle_Data.Rows[n3].Cells[4].Value);
-                        string y1 = Math.Round(accumulated, 2).ToString();
-
-                        string texto = Convert.ToString(row.Cells[2].Value);
-                        Match m = Regex.Match(texto, "(\\d+)");
-                        string num = string.Empty;
-                        if (m.Success)
-                        {
-                            num = m.Value;
-                        }
-                        double h = Convert.ToDouble(num);
-
-                        ////formula de interpolacion=
-                        double arriba = Convert.ToDouble(h) - Convert.ToDouble(x0);
-                        double abajo = Convert.ToDouble(x1) - Convert.ToDouble(x0);
-                        double division = arriba / abajo;
-                        double resultado = Convert.ToDouble(y0) + (division * (Convert.ToDouble(y1) - Convert.ToDouble(y0)));
-                        dataGridView5.Rows[row.Index].Cells[4].Value = Math.Round(resultado, 2);
-                        Dgv_ASTM_D95.Rows[row.Index].Cells[4].Value = Math.Round(resultado, 2);
-                    }
-                    catch (Exception r)
-                    {
-
-                    }
-                }
-                //tercera Corrida para max%
-                foreach (DataGridViewRow row3 in dataGridView13.Rows)
-                {
-                    double acumarr3 = 0;
-                    int n3 = 1;
-                    //aumentar a la fila los valores acumulativos a la derecha (los que van arriba)
-                    try
-                    {
-                        while (n3 <= Convert.ToInt32(row3.Cells[3].Value))
-                        {
-                            acumarr3 = acumarr3 + Convert.ToDouble(Dgv_Particle_Data.Rows[n3].Cells[4].Value);
-                            n3++;
-                            if (acumarr3 > 100)
-                            {
-                                acumarr3 = 100;
-                            }
-                            Dgv_ASTM_Single_Aperture.Rows[row3.Index].Cells[4].Value = Math.Round(acumarr3, 2);
-                            dataGridView11.Rows[row3.Index].Cells[4].Value = Math.Round(acumarr3, 2);
-                        }
-                        //Asignacion de valores para interpolación
-                        string x0 = Convert.ToDouble(Dgv_Particle_Data.Rows[n3 - 1].Cells[0].Value).ToString();
-                        string x1 = Convert.ToDouble(Dgv_Particle_Data.Rows[n3].Cells[0].Value).ToString();
-                        string y0 = dataGridView11.Rows[row3.Index].Cells[4].Value.ToString();
-                        acumarr3 = acumarr3 + Convert.ToDouble(Dgv_Particle_Data.Rows[n3].Cells[4].Value);
-                        string y1 = Math.Round(acumarr3, 2).ToString();
-
-                        string texto = Convert.ToString(row3.Cells[2].Value);
-                        Match m = Regex.Match(texto, "(\\d+)");
-                        string num = string.Empty;
-                        if (m.Success)
-                        {
-                            num = m.Value;
-                        }
-                        double h = Convert.ToDouble(num);
-
-                        ////formula de interpolacion=
-                        double arriba = Convert.ToDouble(h) - Convert.ToDouble(x0);
-                        double abajo = Convert.ToDouble(x1) - Convert.ToDouble(x0);
-                        double division = arriba / abajo;
-                        double resultado = Convert.ToDouble(y0) + (division * (Convert.ToDouble(y1) - Convert.ToDouble(y0)));
-                        Dgv_ASTM_Single_Aperture.Rows[row3.Index].Cells[4].Value = Math.Round(resultado, 2);
-                        dataGridView11.Rows[row3.Index].Cells[4].Value = Math.Round(resultado, 2);
-                    }
-                    catch (Exception r)
-                    {
-
-                    }
-                }
+                this.addCumulativeValuesForEachRunToDataGridView();
+             
                 ch1 = false;
-                Dgv_ASTM_D95.AllowUserToAddRows = false;
-                Dgv_ASTM_Single_Aperture.AllowUserToAddRows = false;
 
                 //Otros acumulativos
                 Dgv_ASTM_D95.Visible = true;
                 Dgv_ASTM_Single_Aperture.Visible = true;
+
                 //Añadir los campos de "Acumulativos >"
-                DataGridViewTextBoxColumn acu1z1 = new DataGridViewTextBoxColumn();
-                acu1z1.HeaderText = "Run_1 Cumulative >";
-                acu1z1.Width = 80;
-
-                DataGridViewTextBoxColumn acu2z1 = new DataGridViewTextBoxColumn();
-                acu2z1.HeaderText = "Run_2 Cumulative >";
-                acu2z1.Width = 80;
-
-                DataGridViewTextBoxColumn acu3z1 = new DataGridViewTextBoxColumn();
-                acu3z1.HeaderText = "Run_3 Cumulative >";
-                acu3z1.Width = 80;
-
-                Dgv_ASTM_D95.Columns.Add(acu1z1);
-                Dgv_ASTM_D95.Columns.Add(acu2z1);
-                Dgv_ASTM_D95.Columns.Add(acu3z1);
-                //Añadir los campos de "Acumulativos >" para dgv14 y dgv5 y dgv11
-                DataGridViewTextBoxColumn acu1z1x = new DataGridViewTextBoxColumn();
-                acu1z1x.HeaderText = "Run_1 Cumulative >";
-                acu1z1x.Width = 80;
-
-                DataGridViewTextBoxColumn acu2z1x = new DataGridViewTextBoxColumn();
-                acu2z1x.HeaderText = "Run_2 Cumulative >";
-                acu2z1x.Width = 80;
-
-                DataGridViewTextBoxColumn acu3z1x = new DataGridViewTextBoxColumn();
-                acu3z1x.HeaderText = "Run_3 Cumulative >";
-                acu3z1x.Width = 80;
-
-                Dgv_ASTM_Single_Aperture.Columns.Add(acu1z1x);
-                Dgv_ASTM_Single_Aperture.Columns.Add(acu2z1x);
-                Dgv_ASTM_Single_Aperture.Columns.Add(acu3z1x);
-
-                DataGridViewTextBoxColumn acu11z = new DataGridViewTextBoxColumn();
-                acu11z.HeaderText = "Run_1 Cumulative >";
-                acu11z.Width = 80;
-
-                DataGridViewTextBoxColumn acu21z = new DataGridViewTextBoxColumn();
-                acu21z.HeaderText = "Run_2 Cumulative >";
-                acu21z.Width = 80;
-
-                DataGridViewTextBoxColumn acu31z = new DataGridViewTextBoxColumn();
-                acu31z.HeaderText = "Run_3 Cumulative >";
-                acu31z.Width = 100;
-
-                dataGridView5.Columns.Add(acu11z);
-                dataGridView5.Columns.Add(acu21z);
-                dataGridView5.Columns.Add(acu31z);
-
-                DataGridViewTextBoxColumn acu11z1 = new DataGridViewTextBoxColumn();
-                acu11z1.HeaderText = "Run_1 Cumulative >";
-                acu11z1.Width = 80;
-
-                DataGridViewTextBoxColumn acu21z1 = new DataGridViewTextBoxColumn();
-                acu21z1.HeaderText = "Run_2 Cumulative >";
-                acu21z1.Width = 80;
-
-                DataGridViewTextBoxColumn acu31z1 = new DataGridViewTextBoxColumn();
-                acu31z1.HeaderText = "Run_3 Cumulative >";
-                acu31z1.Width = 100;
-
-                dataGridView11.Columns.Add(acu11z1);
-                dataGridView11.Columns.Add(acu21z1);
-                dataGridView11.Columns.Add(acu31z1);
+                this.addCumulativeColumnsToDataGridView(Dgv_ASTM_D95);
+                this.addCumulativeColumnsToDataGridView(Dgv_ASTM_Single_Aperture);
+                this.addCumulativeColumnsToDataGridView(Dgv_Accumulated_rigth_left);
+                this.addCumulativeColumnsToDataGridView(dataGridView11);
 
                 //primera corrida 95%
-                foreach (DataGridViewRow row2 in Dgv_ASTM95_Detector_Number.Rows)
+                foreach (DataGridViewRow row in Dgv_ASTM95_Detector_Number.Rows)
                 {
-                    double acumarr2 = 0;
-                    int q = Convert.ToInt32(row2.Cells[3].Value) + 1;
+                    double accumulated = 0;
+                    var cellvalue = row.Cells[3].Value;
+                    int cellValuePlusOne = Convert.ToInt32(cellvalue) + 1;
                     //aumentar a la fila los valores acumulativos a la derecha (los que van arriba)
                     try
                     {
-                        while (q > Convert.ToInt32(row2.Cells[3].Value))
+                        while (cellValuePlusOne > Convert.ToInt32(cellvalue))
                         {
-                            acumarr2 = acumarr2 + Convert.ToDouble(Dgv_Particle_Data.Rows[q].Cells[2].Value);
-                            q++;
-                            if (acumarr2 > 100)
+                            accumulated = accumulated + Convert.ToDouble(Dgv_Particle_Data.Rows[cellValuePlusOne].Cells[2].Value);
+                            cellValuePlusOne++;
+                            if (accumulated > 100)
                             {
-                                acumarr2 = 100;
+                                accumulated = 100;
                             }
-                            Dgv_ASTM_D95.Rows[row2.Index].Cells[5].Value = Math.Round(acumarr2, 2);
-                            dataGridView5.Rows[row2.Index].Cells[5].Value = Math.Round(acumarr2, 2);
+                            Dgv_ASTM_D95.Rows[row.Index].Cells[5].Value = Math.Round(accumulated, 2);
+                            Dgv_Accumulated_rigth_left.Rows[row.Index].Cells[5].Value = Math.Round(accumulated, 2);
                         }
-                        double valor = 100 - Convert.ToDouble(dataGridView5.Rows[row2.Index].Cells[2].Value);
-                        dataGridView5.Rows[row2.Index].Cells[5].Value = Math.Round(valor, 2);
-                        Dgv_ASTM_D95.Rows[row2.Index].Cells[5].Value = Math.Round(valor, 2);
+                        double valor = 100 - Convert.ToDouble(Dgv_Accumulated_rigth_left.Rows[row.Index].Cells[2].Value);
+                        Dgv_Accumulated_rigth_left.Rows[row.Index].Cells[5].Value = Math.Round(valor, 2);
+                        Dgv_ASTM_D95.Rows[row.Index].Cells[5].Value = Math.Round(valor, 2);
                     }
-                    catch (Exception r)
+                    catch (Exception ex)
                     {
-
+                        Trace.WriteLine(ex.Message);
                     }
                 }
 
                 //primera corrida max%
-                foreach (DataGridViewRow row1 in dataGridView13.Rows)
-                {
-                    double acumarr = 0;
-                    int q = Convert.ToInt32(row1.Cells[3].Value) + 1;
-                    //aumentar a la fila los valores acumulativos a la derecha (los que van arriba)
-                    try
-                    {
-                        while (q > Convert.ToInt32(row1.Cells[3].Value))
-                        {
-                            acumarr = acumarr + Convert.ToDouble(Dgv_Particle_Data.Rows[q].Cells[2].Value);
-                            q++;
-                            if (acumarr > 100)
-                            {
-                                acumarr = 100;
-                            }
-                            Dgv_ASTM_Single_Aperture.Rows[row1.Index].Cells[5].Value = Math.Round(acumarr, 2);
-                            dataGridView11.Rows[row1.Index].Cells[5].Value = Math.Round(acumarr, 2);
-                        }
-                        //Asignacion de valores para interpolación
-                        string x0 = Convert.ToDouble(Dgv_Particle_Data.Rows[q - 1].Cells[0].Value).ToString();
-                        string x1 = Convert.ToDouble(Dgv_Particle_Data.Rows[q].Cells[0].Value).ToString();
-                        string y0 = dataGridView11.Rows[row1.Index].Cells[5].Value.ToString();
-                        acumarr = acumarr + Convert.ToDouble(Dgv_Particle_Data.Rows[q].Cells[2].Value);
-                        string y1 = Math.Round(acumarr, 2).ToString();
-
-                        string texto = Convert.ToString(row1.Cells[2].Value);
-                        Match m = Regex.Match(texto, "(\\d+)");
-                        string num = string.Empty;
-                        if (m.Success)
-                        {
-                            num = m.Value;
-                        }
-                        double h = Convert.ToDouble(num);
-
-                        ////formula de interpolacion=
-                        double arriba = Convert.ToDouble(h) - Convert.ToDouble(x0);
-                        double abajo = Convert.ToDouble(x1) - Convert.ToDouble(x0);
-                        double division = arriba / abajo;
-                        double resultado = Convert.ToDouble(y0) + (division * (Convert.ToDouble(y1) - Convert.ToDouble(y0)));
-                        Dgv_ASTM_Single_Aperture.Rows[row1.Index].Cells[5].Value = Math.Round(resultado, 2);
-                        dataGridView11.Rows[row1.Index].Cells[5].Value = Math.Round(resultado, 2);
-                    }
-                    catch (Exception r)
-                    {
-
-                    }
-                }
+                this.addCumulativeValuesToRightOfDataGridView(dataGridView13, Dgv_ASTM_Single_Aperture, 5);
+                this.addCumulativeValuesToRightOfDataGridView(dataGridView13, dataGridView11, 5);
 
                 //segunda Corrida 95%
                 foreach (DataGridViewRow row2 in Dgv_ASTM95_Detector_Number.Rows)
@@ -1579,7 +783,7 @@ namespace LecturaExcel
                                 acumarr2 = 100;
                             }
                             Dgv_ASTM_D95.Rows[row2.Index].Cells[6].Value = Math.Round(acumarr2, 2);
-                            dataGridView5.Rows[row2.Index].Cells[6].Value = Math.Round(acumarr2, 2);
+                            Dgv_Accumulated_rigth_left.Rows[row2.Index].Cells[6].Value = Math.Round(acumarr2, 2);
                         }
                     }
                     catch (Exception r)
@@ -1587,166 +791,43 @@ namespace LecturaExcel
 
                     }
                 }
+
                 //segunda Corrida max%
-                foreach (DataGridViewRow row2 in dataGridView13.Rows)
-                {
-                    double acumarr2 = 0;
-                    int q1 = Convert.ToInt32(row2.Cells[3].Value) + 1;
-                    //aumentar a la fila los valores acumulativos a la derecha (los que van arriba)
-                    try
-                    {
-                        while (q1 > Convert.ToInt32(row2.Cells[3].Value))
-                        {
-                            acumarr2 = acumarr2 + Convert.ToDouble(Dgv_Particle_Data.Rows[q1].Cells[3].Value);
-                            q1++;
-                            if (acumarr2 > 100)
-                            {
-                                acumarr2 = 100;
-                            }
-                            Dgv_ASTM_Single_Aperture.Rows[row2.Index].Cells[6].Value = Math.Round(acumarr2, 2);
-                            dataGridView11.Rows[row2.Index].Cells[6].Value = Math.Round(acumarr2, 2);
-                        }
-                        //Asignacion de valores para interpolación
-                        string x0 = Convert.ToDouble(Dgv_Particle_Data.Rows[q1 - 1].Cells[0].Value).ToString();
-                        string x1 = Convert.ToDouble(Dgv_Particle_Data.Rows[q1].Cells[0].Value).ToString();
-                        string y0 = dataGridView11.Rows[row2.Index].Cells[6].Value.ToString();
-                        acumarr2 = acumarr2 + Convert.ToDouble(Dgv_Particle_Data.Rows[q1].Cells[3].Value);
-                        string y1 = Math.Round(acumarr2, 2).ToString();
-
-                        string texto = Convert.ToString(row2.Cells[2].Value);
-                        Match m = Regex.Match(texto, "(\\d+)");
-                        string num = string.Empty;
-                        if (m.Success)
-                        {
-                            num = m.Value;
-                        }
-                        double h = Convert.ToDouble(num);
-
-                        ////formula de interpolacion=
-                        double arriba = Convert.ToDouble(h) - Convert.ToDouble(x0);
-                        double abajo = Convert.ToDouble(x1) - Convert.ToDouble(x0);
-                        double division = arriba / abajo;
-                        double resultado = Convert.ToDouble(y0) + (division * (Convert.ToDouble(y1) - Convert.ToDouble(y0)));
-                        Dgv_ASTM_Single_Aperture.Rows[row2.Index].Cells[6].Value = Math.Round(resultado, 2);
-                        dataGridView11.Rows[row2.Index].Cells[6].Value = Math.Round(resultado, 2);
-                    }
-                    catch (Exception r)
-                    {
-
-                    }
-                }
+                this.addCumulativeValuesToRightOfDataGridView(dataGridView13, Dgv_ASTM_Single_Aperture, 6);
+                this.addCumulativeValuesToRightOfDataGridView(dataGridView13, dataGridView11, 6);
 
                 //tercera Corrida 95%
-                foreach (DataGridViewRow row3 in Dgv_ASTM95_Detector_Number.Rows)
-                {
-                    double acumarr3 = 0;
-                    int q3 = Convert.ToInt32(row3.Cells[3].Value) + 1;
-                    //aumentar a la fila los valores acumulativos a la derecha (los que van arriba)
-                    try
-                    {
-                        while (q3 > Convert.ToInt32(row3.Cells[3].Value))
-                        {
-                            acumarr3 = acumarr3 + Convert.ToDouble(Dgv_Particle_Data.Rows[q3].Cells[4].Value);
-                            q3++;
-                            if (acumarr3 > 100)
-                            {
-                                acumarr3 = 100;
-                            }
-                            Dgv_ASTM_D95.Rows[row3.Index].Cells[7].Value = Math.Round(acumarr3, 2);
-                            dataGridView5.Rows[row3.Index].Cells[7].Value = Math.Round(acumarr3, 2);
-                        }
-                        //Asignacion de valores para interpolación
-                        string x0 = Convert.ToDouble(Dgv_Particle_Data.Rows[q3 - 1].Cells[0].Value).ToString();
-                        string x1 = Convert.ToDouble(Dgv_Particle_Data.Rows[q3].Cells[0].Value).ToString();
-                        string y0 = dataGridView5.Rows[row3.Index].Cells[7].Value.ToString();
-                        acumarr3 = acumarr3 + Convert.ToDouble(Dgv_Particle_Data.Rows[q3].Cells[4].Value);
-                        string y1 = Math.Round(acumarr3, 2).ToString();
+                this.addCumulativeValuesToRightOfDataGridView(Dgv_ASTM95_Detector_Number, Dgv_Accumulated_rigth_left, 7);
+                this.addCumulativeValuesToRightOfDataGridView(Dgv_ASTM95_Detector_Number, Dgv_ASTM_D95, 7);
 
-                        string texto = Convert.ToString(row3.Cells[2].Value);
-                        Match m = Regex.Match(texto, "(\\d+)");
-                        string num = string.Empty;
-                        if (m.Success)
-                        {
-                            num = m.Value;
-                        }
-                        double h = Convert.ToDouble(num);
-
-                        ////formula de interpolacion=
-                        double arriba = Convert.ToDouble(h) - Convert.ToDouble(x0);
-                        double abajo = Convert.ToDouble(x1) - Convert.ToDouble(x0);
-                        double division = arriba / abajo;
-                        double resultado = Convert.ToDouble(y0) + (division * (Convert.ToDouble(y1) - Convert.ToDouble(y0)));
-                        dataGridView5.Rows[row3.Index].Cells[7].Value = Math.Round(resultado, 2);
-                        Dgv_ASTM_D95.Rows[row3.Index].Cells[7].Value = Math.Round(resultado, 2);
-                    }
-                    catch (Exception r)
-                    {
-
-                    }
-                }
                 //tercera Corrida max%
-                foreach (DataGridViewRow row3 in dataGridView13.Rows)
-                {
-                    double acumarr3 = 0;
-                    int q3 = Convert.ToInt32(row3.Cells[3].Value) + 1;
-                    //aumentar a la fila los valores acumulativos a la derecha (los que van arriba)
-                    try
-                    {
-                        while (q3 > Convert.ToInt32(row3.Cells[3].Value))
-                        {
-                            acumarr3 = acumarr3 + Convert.ToDouble(Dgv_Particle_Data.Rows[q3].Cells[4].Value);
-                            q3++;
-                            if (acumarr3 > 100)
-                            {
-                                acumarr3 = 100;
-                            }
-                            Dgv_ASTM_Single_Aperture.Rows[row3.Index].Cells[7].Value = Math.Round(acumarr3, 2);
-                            dataGridView11.Rows[row3.Index].Cells[7].Value = Math.Round(acumarr3, 2);
-                        }
-                        //Asignacion de valores para interpolación
-                        string x0 = Convert.ToDouble(Dgv_Particle_Data.Rows[q3 - 1].Cells[0].Value).ToString();
-                        string x1 = Convert.ToDouble(Dgv_Particle_Data.Rows[q3].Cells[0].Value).ToString();
-                        string y0 = dataGridView11.Rows[row3.Index].Cells[7].Value.ToString();
-                        acumarr3 = acumarr3 + Convert.ToDouble(Dgv_Particle_Data.Rows[q3].Cells[4].Value);
-                        string y1 = Math.Round(acumarr3, 2).ToString();
+                this.addCumulativeValuesToRightOfDataGridView(dataGridView13, Dgv_Accumulated_rigth_left, 7);
+                this.addCumulativeValuesToRightOfDataGridView(dataGridView13, Dgv_ASTM_D95, 7);
 
-                        string texto = Convert.ToString(row3.Cells[2].Value);
-                        Match m = Regex.Match(texto, "(\\d+)");
-                        string num = string.Empty;
-                        if (m.Success)
-                        {
-                            num = m.Value;
-                        }
-                        double h = Convert.ToDouble(num);
+                this.addCumulativeValuesToRightOfDataGridView(dataGridView13, Dgv_ASTM_Single_Aperture, 7);
+                this.addCumulativeValuesToRightOfDataGridView(dataGridView13, dataGridView11, 7);
 
-                        ////formula de interpolacion=
-                        double arriba = Convert.ToDouble(h) - Convert.ToDouble(x0);
-                        double abajo = Convert.ToDouble(x1) - Convert.ToDouble(x0);
-                        double division = arriba / abajo;
-                        double resultado = Convert.ToDouble(y0) + (division * (Convert.ToDouble(y1) - Convert.ToDouble(y0)));
-                        Dgv_ASTM_Single_Aperture.Rows[row3.Index].Cells[7].Value = Math.Round(resultado, 2);
-                        dataGridView11.Rows[row3.Index].Cells[7].Value = Math.Round(resultado, 2);
-                    }
-                    catch (Exception r)
-                    {
 
-                    }
-                }
                 foreach (DataGridViewRow row in Dgv_ASTM_D95.Rows)
                     //Llenado de los acumulativos a la izquierda por medio de total a 100 
                 {
-                    double resultado = 100 - Convert.ToDouble(dataGridView5.Rows[row.Index].Cells[2].Value);
-                    dataGridView5.Rows[row.Index].Cells[5].Value = Math.Round(resultado, 2);
+                    double resultado = 100 - Convert.ToDouble(Dgv_Accumulated_rigth_left.Rows[row.Index].Cells[2].Value);
+
+                    Dgv_Accumulated_rigth_left.Rows[row.Index].Cells[5].Value = Math.Round(resultado, 2);
                     Dgv_ASTM_D95.Rows[row.Index].Cells[5].Value = Math.Round(resultado, 2);
 
-                    double resultado2 = 100 - Convert.ToDouble(dataGridView5.Rows[row.Index].Cells[3].Value);
-                    dataGridView5.Rows[row.Index].Cells[6].Value = Math.Round(resultado2, 2);
+                    double resultado2 = 100 - Convert.ToDouble(Dgv_Accumulated_rigth_left.Rows[row.Index].Cells[3].Value);
+
+                    Dgv_Accumulated_rigth_left.Rows[row.Index].Cells[6].Value = Math.Round(resultado2, 2);
                     Dgv_ASTM_D95.Rows[row.Index].Cells[6].Value = Math.Round(resultado2, 2);
 
-                    double resultado3 = 100 - Convert.ToDouble(dataGridView5.Rows[row.Index].Cells[4].Value);
-                    dataGridView5.Rows[row.Index].Cells[7].Value = Math.Round(resultado3, 2);
+                    double resultado3 = 100 - Convert.ToDouble(Dgv_Accumulated_rigth_left.Rows[row.Index].Cells[4].Value);
+
+                    Dgv_Accumulated_rigth_left.Rows[row.Index].Cells[7].Value = Math.Round(resultado3, 2);
                     Dgv_ASTM_D95.Rows[row.Index].Cells[7].Value = Math.Round(resultado3, 2);
                 }
+
+
                 foreach (DataGridViewRow row in Dgv_ASTM_Single_Aperture.Rows)
                 {
                     double resultado = 100 - Convert.ToDouble(dataGridView11.Rows[row.Index].Cells[2].Value);
@@ -1786,8 +867,8 @@ namespace LecturaExcel
                 acu21.HeaderText = "Run_2 Cumulative <";
                 acu21.Width = 80;
 
-                dataGridView5.Columns.Add(acu11);
-                dataGridView5.Columns.Add(acu21);
+                Dgv_Accumulated_rigth_left.Columns.Add(acu11);
+                Dgv_Accumulated_rigth_left.Columns.Add(acu21);
                 //Añadir los campos de "Acumulativos <" max%
                 DataGridViewTextBoxColumn acu1z = new DataGridViewTextBoxColumn();
                 acu1z.HeaderText = "Run_1 Cumulative <";
@@ -1829,7 +910,7 @@ namespace LecturaExcel
                                 acumarr = 100;
                             }
                             Dgv_ASTM_D95.Rows[row1.Index].Cells[2].Value = Math.Round(acumarr, 2);
-                            dataGridView5.Rows[row1.Index].Cells[2].Value = Math.Round(acumarr, 2);
+                            Dgv_Accumulated_rigth_left.Rows[row1.Index].Cells[2].Value = Math.Round(acumarr, 2);
                         }
                     }
                     catch (Exception r)
@@ -1881,7 +962,7 @@ namespace LecturaExcel
                                 acumarr2 = 100;
                             }
                             Dgv_ASTM_D95.Rows[row2.Index].Cells[3].Value = Math.Round(acumarr2, 2);
-                            dataGridView5.Rows[row2.Index].Cells[3].Value = Math.Round(acumarr2, 2);
+                            Dgv_Accumulated_rigth_left.Rows[row2.Index].Cells[3].Value = Math.Round(acumarr2, 2);
                         }
                     }
                     catch (Exception r)
@@ -1942,8 +1023,8 @@ namespace LecturaExcel
                 acu21z1.HeaderText = "Run_2 Cumulative >";
                 acu21z1.Width = 80;
 
-                dataGridView5.Columns.Add(acu11z1);
-                dataGridView5.Columns.Add(acu21z1);
+                Dgv_Accumulated_rigth_left.Columns.Add(acu11z1);
+                Dgv_Accumulated_rigth_left.Columns.Add(acu21z1);
                 //Añadir los campos de "Acumulativos >" max%
                 DataGridViewTextBoxColumn acu1z1x = new DataGridViewTextBoxColumn();
                 acu1z1x.HeaderText = "Run_1 Cumulative >";
@@ -1984,7 +1065,7 @@ namespace LecturaExcel
                                 acumarr = 100;
                             }
                             Dgv_ASTM_D95.Rows[row1.Index].Cells[4].Value = Math.Round(acumarr, 2);
-                            dataGridView5.Rows[row1.Index].Cells[4].Value = Math.Round(acumarr, 2);
+                            Dgv_Accumulated_rigth_left.Rows[row1.Index].Cells[4].Value = Math.Round(acumarr, 2);
                         }
                     }
                     catch (Exception r)
@@ -2035,7 +1116,7 @@ namespace LecturaExcel
                                 acumarr2 = 100;
                             }
                             Dgv_ASTM_D95.Rows[row2.Index].Cells[5].Value = Math.Round(acumarr2, 2);
-                            dataGridView5.Rows[row2.Index].Cells[5].Value = Math.Round(acumarr2, 2);
+                            Dgv_Accumulated_rigth_left.Rows[row2.Index].Cells[5].Value = Math.Round(acumarr2, 2);
                         }
                     }
                     catch (Exception r)
@@ -2071,11 +1152,11 @@ namespace LecturaExcel
                 foreach (DataGridViewRow row in Dgv_ASTM_D95.Rows)
                 //Llenado de los acumulativos a la izquierda por medio de total a 100 
                 {
-                    double resultado = 100 - Convert.ToDouble(dataGridView5.Rows[row.Index].Cells[2].Value);
-                    dataGridView5.Rows[row.Index].Cells[4].Value = Math.Round(resultado, 2);
+                    double resultado = 100 - Convert.ToDouble(Dgv_Accumulated_rigth_left.Rows[row.Index].Cells[2].Value);
+                    Dgv_Accumulated_rigth_left.Rows[row.Index].Cells[4].Value = Math.Round(resultado, 2);
 
-                    double resultado2 = 100 - Convert.ToDouble(dataGridView5.Rows[row.Index].Cells[3].Value);
-                    dataGridView5.Rows[row.Index].Cells[5].Value = Math.Round(resultado2, 2);
+                    double resultado2 = 100 - Convert.ToDouble(Dgv_Accumulated_rigth_left.Rows[row.Index].Cells[3].Value);
+                    Dgv_Accumulated_rigth_left.Rows[row.Index].Cells[5].Value = Math.Round(resultado2, 2);
                 }
                 foreach (DataGridViewRow row in Dgv_ASTM_Single_Aperture.Rows)
                 {
@@ -2101,7 +1182,7 @@ namespace LecturaExcel
                 acu11.HeaderText = "Run_1 Cumulative <";
                 acu11.Width = 80;
 
-                dataGridView5.Columns.Add(acu11);
+                Dgv_Accumulated_rigth_left.Columns.Add(acu11);
                 //Añadir los campos de "Acumulativos <" max%
                 DataGridViewTextBoxColumn acu1z = new DataGridViewTextBoxColumn();
                 acu1z.HeaderText = "Run_1 Cumulative <";
@@ -2134,7 +1215,7 @@ namespace LecturaExcel
                                 acumarr = 100;
                             }
                             Dgv_ASTM_D95.Rows[row1.Index].Cells[2].Value = Math.Round(acumarr, 2);
-                            dataGridView5.Rows[row1.Index].Cells[2].Value = Math.Round(acumarr, 2);
+                            Dgv_Accumulated_rigth_left.Rows[row1.Index].Cells[2].Value = Math.Round(acumarr, 2);
                         }
                     }
                     catch (Exception r)
@@ -2187,7 +1268,7 @@ namespace LecturaExcel
                 acu11z1.HeaderText = "Run_1 Cumulative >";
                 acu11z1.Width = 80;
 
-                dataGridView5.Columns.Add(acu11z1);
+                Dgv_Accumulated_rigth_left.Columns.Add(acu11z1);
                 //Añadir los campos de "Acumulativos >" max%
                 DataGridViewTextBoxColumn acu1z1x = new DataGridViewTextBoxColumn();
                 acu1z1x.HeaderText = "Run_1 Cumulative >";
@@ -2218,7 +1299,7 @@ namespace LecturaExcel
                                 acumarr = 100;
                             }
                             Dgv_ASTM_D95.Rows[row1.Index].Cells[3].Value = Math.Round(acumarr, 2);
-                            dataGridView5.Rows[row1.Index].Cells[3].Value = Math.Round(acumarr, 2);
+                            Dgv_Accumulated_rigth_left.Rows[row1.Index].Cells[3].Value = Math.Round(acumarr, 2);
                         }
                     }
                     catch (Exception r)
@@ -2254,8 +1335,8 @@ namespace LecturaExcel
                 corridas = 1;
                 foreach (DataGridViewRow row in Dgv_ASTM_D95.Rows)
                 {
-                    double resultado = 100 - Convert.ToDouble(dataGridView5.Rows[row.Index].Cells[2].Value);
-                    dataGridView5.Rows[row.Index].Cells[3].Value = Math.Round(resultado, 2);
+                    double resultado = 100 - Convert.ToDouble(Dgv_Accumulated_rigth_left.Rows[row.Index].Cells[2].Value);
+                    Dgv_Accumulated_rigth_left.Rows[row.Index].Cells[3].Value = Math.Round(resultado, 2);
                 }
                 foreach (DataGridViewRow row in Dgv_ASTM_Single_Aperture.Rows)
                 {
@@ -3594,13 +2675,13 @@ namespace LecturaExcel
                 MessageBox.Show("It's necessary to mark the cumulative");
             }
 
-            dataGridView5.Visible = true;
+            Dgv_Accumulated_rigth_left.Visible = true;
             dataGridView6.Visible = true;
-            button7.Visible = true;
+            Btn_Hide_Cumulatives.Visible = true;
             allowSelect = true;
             TabControl_Main_Menu.SelectedTab = Page_Report_View;
             allowSelect = false;
-            dataGridView5.AllowUserToAddRows = false;
+            Dgv_Accumulated_rigth_left.AllowUserToAddRows = false;
 
             dataGridView11.Visible = true;
             dataGridView12.Visible = true;
@@ -4305,8 +3386,8 @@ namespace LecturaExcel
 
 
             //Asignacion de Datos de la empresa 95%
-            dataGridView5.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            dataGridView5.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            Dgv_Accumulated_rigth_left.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            Dgv_Accumulated_rigth_left.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
 
             dataGridView6.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dataGridView6.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
@@ -4319,12 +3400,12 @@ namespace LecturaExcel
             dataGridView12.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
 
             //Insertar 999 en dgv 5
-            dataGridView5.Rows.Insert(0, "", "999", "0", "0", "0", "0", "0", "0");
+            Dgv_Accumulated_rigth_left.Rows.Insert(0, "", "999", "0", "0", "0", "0", "0", "0");
             dataGridView11.Rows.Insert(0, "", "999", "0", "0", "0", "0", "0", "0");
 
-            dataGridView5.ReadOnly = true;
+            Dgv_Accumulated_rigth_left.ReadOnly = true;
             dataGridView6.ReadOnly = true;
-            dataGridView5.ClearSelection();
+            Dgv_Accumulated_rigth_left.ClearSelection();
             dataGridView6.ClearSelection();
 
             dataGridView11.ReadOnly = true;
@@ -4333,7 +3414,295 @@ namespace LecturaExcel
             dataGridView12.ClearSelection();
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void addCumulativeValuesForEachRunToDataGridView()
+        {
+            for (int numberOfRun = 2; numberOfRun<= 4; numberOfRun++)
+            {
+                this.addCumulativeValuesToRightOfDataGridView(Dgv_ASTM95_Detector_Number, Dgv_ASTM_D95, numberOfRun);
+                this.addCumulativeValuesToRightOfDataGridView(Dgv_ASTM95_Detector_Number, Dgv_Accumulated_rigth_left, numberOfRun);
+
+                this.addCumulativeValuesToRightOfDataGridView(dataGridView13, Dgv_ASTM_Single_Aperture, numberOfRun);
+                this.addCumulativeValuesToRightOfDataGridView(dataGridView13, dataGridView11, numberOfRun);
+            }       
+        }
+
+        private void addCumulativeValuesToRightOfDataGridView(DataGridView dgvToReview, DataGridView dgvToAddValues, int numberOfRun)
+        {
+            foreach (DataGridViewRow row in dgvToReview.Rows)
+            {
+                double accumulated = 0;
+                int n = 1;
+                //aumentar a la fila los valores acumulativos a la derecha (los que van arriba)
+                try
+                {
+                    int detectorNumberColumnValue = Convert.ToInt32(row.Cells[3].Value);
+                    while (n <= detectorNumberColumnValue)
+                    {
+                        double valueInColumnRunOne = Convert.ToDouble(Dgv_Particle_Data.Rows[n].Cells[numberOfRun].Value);
+                        accumulated = accumulated + valueInColumnRunOne;
+                        n++;
+                        if (accumulated > 100)
+                        {
+                            accumulated = 100;
+                        }
+                        dgvToAddValues.Rows[row.Index].Cells[numberOfRun].Value = Math.Round(accumulated, 2);
+                    }
+
+                    //Asignacion de valores para interpolación
+                    this.assignmentOfValuesForInterpolation(n, row, accumulated, dgvToAddValues, numberOfRun);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void assignmentOfValuesForInterpolation(int numberOfRow, DataGridViewRow row, double accumulated, DataGridView dgvToAddValues, int numberofRun)
+        {
+            //Asignacion de valores para interpolación
+            Micron _micron = new Micron();
+
+            double micronInferiorLimitValue = Convert.ToDouble(Dgv_Particle_Data.Rows[numberOfRow - 1].Cells[0].Value.ToString());
+            double micronValue = Convert.ToDouble(Dgv_Particle_Data.Rows[numberOfRow].Cells[0].Value.ToString());
+
+            double runOneValue = Convert.ToDouble(Dgv_Particle_Data.Rows[numberOfRow].Cells[numberofRun].Value);
+            double totalAccumulated = accumulated + runOneValue;
+            totalAccumulated = Convert.ToDouble(Math.Round(totalAccumulated, 2).ToString());
+
+            string micronValueInString = Convert.ToString(row.Cells[2].Value);
+            double micron = _micron.getRoundedMicron(micronValueInString);
+            double result = this.interpolationFormula(micron, micronValue, micronInferiorLimitValue, accumulated, totalAccumulated); //74.7019 -- 29- 31.50, 28.70 74.41  77.15
+
+            dgvToAddValues.Rows[row.Index].Cells[numberofRun].Value = Math.Round(result, 2);
+        }
+
+        private double interpolationFormula(double micron, double micronValue, double micronInferiorLimitValue, double accumulated, double roundedValue)
+        {
+            double arriba = micron - micronInferiorLimitValue;
+            double abajo = micronValue - micronInferiorLimitValue;
+            double division = arriba / abajo;
+            return  accumulated + (division * (roundedValue - accumulated));
+        }
+
+        private void addCumulativaValuesToLeft()
+        {
+            foreach (DataGridViewRow row in Dgv_ASTM_D95.Rows)
+            //Llenado de los acumulativos a la izquierda por medio de total a 100 
+            {
+                double resultado = 100 - Convert.ToDouble(Dgv_Accumulated_rigth_left.Rows[row.Index].Cells[2].Value);
+
+                Dgv_Accumulated_rigth_left.Rows[row.Index].Cells[5].Value = Math.Round(resultado, 2);
+                Dgv_ASTM_D95.Rows[row.Index].Cells[5].Value = Math.Round(resultado, 2);
+
+                double resultado2 = 100 - Convert.ToDouble(Dgv_Accumulated_rigth_left.Rows[row.Index].Cells[3].Value);
+
+                Dgv_Accumulated_rigth_left.Rows[row.Index].Cells[6].Value = Math.Round(resultado2, 2);
+                Dgv_ASTM_D95.Rows[row.Index].Cells[6].Value = Math.Round(resultado2, 2);
+
+                double resultado3 = 100 - Convert.ToDouble(Dgv_Accumulated_rigth_left.Rows[row.Index].Cells[4].Value);
+
+                Dgv_Accumulated_rigth_left.Rows[row.Index].Cells[7].Value = Math.Round(resultado3, 2);
+                Dgv_ASTM_D95.Rows[row.Index].Cells[7].Value = Math.Round(resultado3, 2);
+            }
+        }
+        private void addCumulativeColumnsToDataGridView(DataGridView dgvToAddColumns)
+        {
+            Manage_Data data = new Manage_Data();
+            try
+            {
+                string[] headers = new string[3];
+                headers[0] = "Run_1 Cumulative <";
+                headers[1] = "Run_2 Cumulative <";
+                headers[2] = "Run_3 Cumulative <";
+
+                foreach (string header in headers)
+                {
+                    data.addColumnToDatagridView(header, dgvToAddColumns);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("error: addCumulativeColumnsToDataGridView"+ex.Message);
+            }
+            
+        }
+
+        public void renombrar()
+        {
+            //Renombrar 95%
+            //Se renombran las celdas 0 de los grids 4, 6
+            foreach (DataGridViewRow row in dataGridView4.Rows)
+            {
+                try
+                {
+                    row.Cells[0].Value = Dgv_ASTM_D95.Rows[row.Index].Cells[1].Value;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            foreach (DataGridViewRow renombre1 in dataGridView6.Rows)
+            {
+                try
+                {
+                    renombre1.Cells[0].Value = Dgv_ASTM_D95.Rows[renombre1.Index].Cells[1].Value;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            //Renombrar max%
+            //Se renombran las celdas 0 de los grids 12, 15
+            foreach (DataGridViewRow renombre in dataGridView15.Rows)
+            {
+                try
+                {
+                    renombre.Cells[0].Value = Dgv_ASTM_Single_Aperture.Rows[renombre.Index].Cells[1].Value;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            foreach (DataGridViewRow renombre1 in dataGridView12.Rows)
+            {
+                try
+                {
+                    renombre1.Cells[0].Value = Dgv_ASTM_Single_Aperture.Rows[renombre1.Index].Cells[1].Value;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            try
+            {
+                //Para 95%
+                dataGridView4.Rows[(dataGridView4.Rows.Count - 4)].Cells[0].Value = ("999");
+                dataGridView4.Rows[(dataGridView4.Rows.Count - 3)].Cells[0].Value = (Dgv_ASTM_D95.Rows[(Dgv_ASTM_D95.Rows.Count - 2)].Cells[1].Value);
+                dataGridView4.Rows[(dataGridView4.Rows.Count - 2)].Cells[0].Value = (Dgv_ASTM_D95.Rows[(Dgv_ASTM_D95.Rows.Count - 1)].Cells[1].Value);
+
+                dataGridView6.Rows[(dataGridView4.Rows.Count - 4)].Cells[0].Value = ("999");
+                dataGridView6.Rows[(dataGridView4.Rows.Count - 3)].Cells[0].Value = (Dgv_ASTM_D95.Rows[(Dgv_ASTM_D95.Rows.Count - 2)].Cells[1].Value);
+                dataGridView6.Rows[(dataGridView4.Rows.Count - 2)].Cells[0].Value = (Dgv_ASTM_D95.Rows[(Dgv_ASTM_D95.Rows.Count - 1)].Cells[1].Value);
+
+                //Para max%
+                dataGridView15.Rows[(dataGridView15.Rows.Count - 4)].Cells[0].Value = ("999");
+                dataGridView15.Rows[(dataGridView15.Rows.Count - 3)].Cells[0].Value = (Dgv_ASTM_Single_Aperture.Rows[(Dgv_ASTM_Single_Aperture.Rows.Count - 2)].Cells[1].Value);
+                dataGridView15.Rows[(dataGridView15.Rows.Count - 2)].Cells[0].Value = (Dgv_ASTM_Single_Aperture.Rows[(Dgv_ASTM_Single_Aperture.Rows.Count - 1)].Cells[1].Value);
+
+                dataGridView12.Rows[(dataGridView15.Rows.Count - 4)].Cells[0].Value = ("999");
+                dataGridView12.Rows[(dataGridView15.Rows.Count - 3)].Cells[0].Value = (Dgv_ASTM_Single_Aperture.Rows[(Dgv_ASTM_Single_Aperture.Rows.Count - 2)].Cells[1].Value);
+                dataGridView12.Rows[(dataGridView15.Rows.Count - 2)].Cells[0].Value = (Dgv_ASTM_Single_Aperture.Rows[(Dgv_ASTM_Single_Aperture.Rows.Count - 1)].Cells[1].Value);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Mensaje " + ex.Message);
+            }
+        }
+
+        public void renombrar1()
+        {
+            //Para 95%
+            //Se renombran las celdas 0 de los grids 4, 6
+            foreach (DataGridViewRow renombre in dataGridView4.Rows)
+            {
+                try
+                {
+                    renombre.Cells[0].Value = Dgv_ASTM_D95.Rows[renombre.Index].Cells[1].Value;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            foreach (DataGridViewRow renombre1 in dataGridView6.Rows)
+            {
+                try
+                {
+                    renombre1.Cells[0].Value = Dgv_ASTM_D95.Rows[renombre1.Index].Cells[1].Value;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            //Para max%
+            //Se renombran las celdas 0 de los grids 12, 5
+            foreach (DataGridViewRow renombre in dataGridView15.Rows)
+            {
+                try
+                {
+                    renombre.Cells[0].Value = Dgv_ASTM_Single_Aperture.Rows[renombre.Index].Cells[1].Value;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            foreach (DataGridViewRow renombre1 in dataGridView12.Rows)
+            {
+                try
+                {
+                    renombre1.Cells[0].Value = Dgv_ASTM_Single_Aperture.Rows[renombre1.Index].Cells[1].Value;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            //Recorrido de los nombres hacia abajo dependiendo del numero de filas que haya 
+            //Para 95%
+            try
+            {
+                int rep = Convert.ToInt32(dataGridView4.RowCount) + 2;
+                int cont = 2;
+                int cont2 = 1;
+                while (cont < rep)
+                {
+                    dataGridView4.Rows[dataGridView4.RowCount - cont2].Cells[0].Value = dataGridView4.Rows[dataGridView4.RowCount - cont].Cells[0].Value;
+                    dataGridView6.Rows[dataGridView4.RowCount - cont2].Cells[0].Value = dataGridView4.Rows[dataGridView4.RowCount - cont].Cells[0].Value;
+
+                    cont++;
+                    cont2++;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            //Para max%
+            try
+            {
+                int rep1 = Convert.ToInt32(dataGridView15.RowCount) + 2;
+                int cont1 = 2;
+                int cont21 = 1;
+                while (cont1 < rep1)
+                {
+                    dataGridView15.Rows[dataGridView15.RowCount - cont21].Cells[0].Value = dataGridView15.Rows[dataGridView15.RowCount - cont1].Cells[0].Value;
+                    dataGridView12.Rows[dataGridView15.RowCount - cont21].Cells[0].Value = dataGridView15.Rows[dataGridView15.RowCount - cont1].Cells[0].Value;
+
+                    cont1++;
+                    cont21++;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            //Valores por Default en las celdas 0 row 0
+            dataGridView4.Rows[0].Cells[0].Value = "999";
+            dataGridView6.Rows[0].Cells[0].Value = "999";
+            dataGridView15.Rows[0].Cells[0].Value = "999";
+            dataGridView12.Rows[0].Cells[0].Value = "999";
+        }
+
+        private void Hide_Differential_Click(object sender, EventArgs e)
         {
             //Oculta el diferencial del reporte
             con_dif = "si";
@@ -4355,10 +3724,12 @@ namespace LecturaExcel
                     }
                 }
             }
-            catch (Exception df)
+            catch (Exception ex)
             {
+                MessageBox.Show(ex.Message);
             }
-            button8.Visible = false;
+
+            Btn_Hide_Differential.Visible = false;
             dataGridView6.Visible = false;
             dataGridView12.Visible = false;
         }
@@ -4394,7 +3765,7 @@ namespace LecturaExcel
             Dgv_ASTM95_Detector_Number.Rows.Clear();
             Dgv_ASTM_D95.Rows.Clear();
             dataGridView4.Rows.Clear();
-            dataGridView5.Rows.Clear();
+            Dgv_Accumulated_rigth_left.Rows.Clear();
             dataGridView6.Rows.Clear();
 
             ch1 = true;
@@ -4403,7 +3774,7 @@ namespace LecturaExcel
             {
                 while (true)
                 {
-                    dataGridView5.Columns.RemoveAt(2);
+                    Dgv_Accumulated_rigth_left.Columns.RemoveAt(2);
                 }
             }
             catch (Exception l)
