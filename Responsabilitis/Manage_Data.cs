@@ -95,5 +95,41 @@ namespace LecturaExcel.Responsabilitis
             }
         }
 
+        public void hideCummulativeValues(string numberOfRuns, DataGridView dgvToHide)
+        {
+            try
+            {
+                if (numberOfRuns == "3")
+                {
+                    this.hideColumnsOfDataGridView(dgvToHide, 5);
+                }
+                else if (numberOfRuns == "2")
+                {
+                    this.hideColumnsOfDataGridView(dgvToHide, 4);
+                }
+                else if (numberOfRuns == "1")
+                {
+                    this.hideColumnsOfDataGridView(dgvToHide, 3);
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Columns have been removed " + ex.Message);
+            }       
+        }
+
+        private void hideColumnsOfDataGridView(DataGridView dgvToHide, int columnIndex )
+        {
+            foreach (DataGridViewRow row in dgvToHide.Rows)
+            {
+                foreach (DataGridViewColumn col in dgvToHide.Columns)
+                {
+                    if (col.Index >= columnIndex)
+                    {
+                        dgvToHide.Rows[row.Index].Cells[col.Index].Value = "";
+                    }
+                }
+            }
+        }
     }
 }

@@ -31,53 +31,31 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Menu));
-            this.Btn_Load_File = new System.Windows.Forms.Button();
-            this.Dgv_Particle_Data = new System.Windows.Forms.DataGridView();
-            this.TabControl_Main_Menu = new System.Windows.Forms.TabControl();
-            this.Page_Upload_Excell = new System.Windows.Forms.TabPage();
-            this.datos = new System.Windows.Forms.DataGridView();
-            this.Btn_Go_To_Manual_Mesh_Selection = new System.Windows.Forms.Button();
-            this.Page_Mesh_Selection = new System.Windows.Forms.TabPage();
-            this.Lbl_ASTM_Max_Single_Aperture = new MaterialSkin.Controls.MaterialLabel();
-            this.Lbl_ASTM_Max95 = new MaterialSkin.Controls.MaterialLabel();
-            this.Dgv_Single_Aperture_Selected_Row = new System.Windows.Forms.DataGridView();
-            this.dataGridView15 = new System.Windows.Forms.DataGridView();
-            this.Column28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Dgv_ASTM_Single_Aperture = new System.Windows.Forms.DataGridView();
-            this.Column26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView13 = new System.Windows.Forms.DataGridView();
-            this.Go_To_Report_View = new System.Windows.Forms.Button();
-            this.Btn_Return_To_Excell_File = new System.Windows.Forms.Button();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Dgv_MAX_D95_Selected_Row = new System.Windows.Forms.DataGridView();
-            this.Dgv_ASTM_D95 = new System.Windows.Forms.DataGridView();
-            this.Columna1R = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tabla2R = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Btn_Clean_Data = new System.Windows.Forms.Button();
-            this.Dgv_Tolerance_Table_Reference = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lbl_Selected_Mesh = new System.Windows.Forms.Label();
-            this.Dgv_ASTM95_Detector_Number = new System.Windows.Forms.DataGridView();
-            this.Combo_Box_Mesh = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Page_Save_Settings = new System.Windows.Forms.TabPage();
+            this.Page_Calculation = new System.Windows.Forms.TabPage();
             this.Page_Report_View = new System.Windows.Forms.TabPage();
-            this.dataGridView12 = new System.Windows.Forms.DataGridView();
+            this.Pnl_Run_One = new System.Windows.Forms.Panel();
+            this.Lbl_Run_One = new System.Windows.Forms.Label();
+            this.Lbl_Name_Run_One = new System.Windows.Forms.Label();
+            this.Lbl_Name_Value_Run_One = new System.Windows.Forms.Label();
+            this.Lbl_Sample_Data_Run_One = new System.Windows.Forms.Label();
+            this.Lbl_Sample_Data_Value_Run_One = new System.Windows.Forms.Label();
+            this.Lbl_User_RunOne = new System.Windows.Forms.Label();
+            this.Lbl_User_Value_Run_One = new System.Windows.Forms.Label();
+            this.Lbl_Device_Run_One = new System.Windows.Forms.Label();
+            this.Lbl_Device_Value_Run_One = new System.Windows.Forms.Label();
+            this.Lbl_Sample_Id_Run_One = new System.Windows.Forms.Label();
+            this.Lbl_Sample_Id_Value_Run_One = new System.Windows.Forms.Label();
+            this.Lbl_Group_Id = new System.Windows.Forms.Label();
+            this.Lbl_Group_Id_Value = new System.Windows.Forms.Label();
+            this.Lbl_Single_Aperture = new System.Windows.Forms.Label();
+            this.Lbl_ASTM_95 = new System.Windows.Forms.Label();
+            this.Dgv_Single_Aperture_Differential = new System.Windows.Forms.DataGridView();
             this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView11 = new System.Windows.Forms.DataGridView();
+            this.Dgv_Single_Aperture_Accumulated_right_left = new System.Windows.Forms.DataGridView();
             this.Column24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Btn_Hide_Differential = new System.Windows.Forms.Button();
@@ -137,509 +115,112 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.Dgv_Sample_Information = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.Dgv_ASTM_95_Differential = new System.Windows.Forms.DataGridView();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button6 = new System.Windows.Forms.Button();
-            this.Dgv_Accumulated_rigth_left = new System.Windows.Forms.DataGridView();
+            this.Btn_Return = new System.Windows.Forms.Button();
+            this.Dgv_ASTM_D95_Accumulated_rigth_left = new System.Windows.Forms.DataGridView();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Page_Calculation = new System.Windows.Forms.TabPage();
-            this.Page_Save_Settings = new System.Windows.Forms.TabPage();
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Particle_Data)).BeginInit();
-            this.TabControl_Main_Menu.SuspendLayout();
-            this.Page_Upload_Excell.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.datos)).BeginInit();
+            this.Page_Mesh_Selection = new System.Windows.Forms.TabPage();
+            this.Lbl_ASTM_Max_Single_Aperture = new MaterialSkin.Controls.MaterialLabel();
+            this.Lbl_ASTM_Max95 = new MaterialSkin.Controls.MaterialLabel();
+            this.Dgv_Single_Aperture_Selected_Row = new System.Windows.Forms.DataGridView();
+            this.dataGridView15 = new System.Windows.Forms.DataGridView();
+            this.Column28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dgv_ASTM_Single_Aperture = new System.Windows.Forms.DataGridView();
+            this.Column26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dgv_Single_Aperture_Detector = new System.Windows.Forms.DataGridView();
+            this.Go_To_Report_View = new System.Windows.Forms.Button();
+            this.Btn_Return_To_Excell_File = new System.Windows.Forms.Button();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dgv_MAX_D95_Selected_Row = new System.Windows.Forms.DataGridView();
+            this.Dgv_ASTM_D95 = new System.Windows.Forms.DataGridView();
+            this.Columna1R = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tabla2R = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Btn_Clean_Data = new System.Windows.Forms.Button();
+            this.Dgv_Tolerance_Table_Reference = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lbl_Selected_Mesh = new System.Windows.Forms.Label();
+            this.Dgv_ASTM95_Detector_Number = new System.Windows.Forms.DataGridView();
+            this.Combo_Box_Mesh = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Page_Upload_Excell = new System.Windows.Forms.TabPage();
+            this.datos = new System.Windows.Forms.DataGridView();
+            this.Btn_Go_To_Manual_Mesh_Selection = new System.Windows.Forms.Button();
+            this.Dgv_Particle_Data = new System.Windows.Forms.DataGridView();
+            this.Btn_Load_File = new System.Windows.Forms.Button();
+            this.TabControl_Main_Menu = new System.Windows.Forms.TabControl();
+            this.Page_Report_View.SuspendLayout();
+            this.Pnl_Run_One.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Single_Aperture_Differential)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Single_Aperture_Accumulated_right_left)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Sample_Information)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM_95_Differential)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM_D95_Accumulated_rigth_left)).BeginInit();
             this.Page_Mesh_Selection.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Single_Aperture_Selected_Row)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM_Single_Aperture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Single_Aperture_Detector)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_MAX_D95_Selected_Row)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM_D95)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Tolerance_Table_Reference)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM95_Detector_Number)).BeginInit();
-            this.Page_Report_View.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Sample_Information)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Accumulated_rigth_left)).BeginInit();
+            this.Page_Upload_Excell.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.datos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Particle_Data)).BeginInit();
+            this.TabControl_Main_Menu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Btn_Load_File
-            // 
-            this.Btn_Load_File.BackColor = System.Drawing.SystemColors.Control;
-            this.Btn_Load_File.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Load_File.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Load_File.ForeColor = System.Drawing.Color.Black;
-            this.Btn_Load_File.Location = new System.Drawing.Point(444, 21);
-            this.Btn_Load_File.Name = "Btn_Load_File";
-            this.Btn_Load_File.Size = new System.Drawing.Size(111, 33);
-            this.Btn_Load_File.TabIndex = 0;
-            this.Btn_Load_File.Text = "Upload File";
-            this.Btn_Load_File.UseVisualStyleBackColor = false;
-            this.Btn_Load_File.Click += new System.EventHandler(this.Btn_Load_File_Click);
-            // 
-            // Dgv_Particle_Data
-            // 
-            this.Dgv_Particle_Data.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Dgv_Particle_Data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv_Particle_Data.Location = new System.Drawing.Point(6, 69);
-            this.Dgv_Particle_Data.Name = "Dgv_Particle_Data";
-            this.Dgv_Particle_Data.Size = new System.Drawing.Size(1312, 648);
-            this.Dgv_Particle_Data.TabIndex = 2;
-            // 
-            // TabControl_Main_Menu
-            // 
-            this.TabControl_Main_Menu.Controls.Add(this.Page_Upload_Excell);
-            this.TabControl_Main_Menu.Controls.Add(this.Page_Mesh_Selection);
-            this.TabControl_Main_Menu.Controls.Add(this.Page_Report_View);
-            this.TabControl_Main_Menu.Controls.Add(this.Page_Calculation);
-            this.TabControl_Main_Menu.Controls.Add(this.Page_Save_Settings);
-            this.TabControl_Main_Menu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TabControl_Main_Menu.Location = new System.Drawing.Point(0, 0);
-            this.TabControl_Main_Menu.Name = "TabControl_Main_Menu";
-            this.TabControl_Main_Menu.SelectedIndex = 0;
-            this.TabControl_Main_Menu.Size = new System.Drawing.Size(1332, 749);
-            this.TabControl_Main_Menu.TabIndex = 3;
-            this.TabControl_Main_Menu.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabControl1_Selecting);
-            // 
-            // Page_Upload_Excell
-            // 
-            this.Page_Upload_Excell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(192)))));
-            this.Page_Upload_Excell.Controls.Add(this.datos);
-            this.Page_Upload_Excell.Controls.Add(this.Btn_Go_To_Manual_Mesh_Selection);
-            this.Page_Upload_Excell.Controls.Add(this.Dgv_Particle_Data);
-            this.Page_Upload_Excell.Controls.Add(this.Btn_Load_File);
-            this.Page_Upload_Excell.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Page_Upload_Excell.Location = new System.Drawing.Point(4, 22);
-            this.Page_Upload_Excell.Name = "Page_Upload_Excell";
-            this.Page_Upload_Excell.Padding = new System.Windows.Forms.Padding(3);
-            this.Page_Upload_Excell.Size = new System.Drawing.Size(1324, 723);
-            this.Page_Upload_Excell.TabIndex = 0;
-            this.Page_Upload_Excell.Text = "Excel Upload";
-            // 
-            // datos
-            // 
-            this.datos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.datos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.datos.Location = new System.Drawing.Point(100, 330);
-            this.datos.Name = "datos";
-            this.datos.Size = new System.Drawing.Size(44, 39);
-            this.datos.TabIndex = 5;
-            this.datos.Visible = false;
-            this.datos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datos_CellContentClick);
-            // 
-            // Btn_Go_To_Manual_Mesh_Selection
-            // 
-            this.Btn_Go_To_Manual_Mesh_Selection.BackColor = System.Drawing.SystemColors.Control;
-            this.Btn_Go_To_Manual_Mesh_Selection.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Go_To_Manual_Mesh_Selection.Location = new System.Drawing.Point(663, 16);
-            this.Btn_Go_To_Manual_Mesh_Selection.Name = "Btn_Go_To_Manual_Mesh_Selection";
-            this.Btn_Go_To_Manual_Mesh_Selection.Size = new System.Drawing.Size(158, 42);
-            this.Btn_Go_To_Manual_Mesh_Selection.TabIndex = 3;
-            this.Btn_Go_To_Manual_Mesh_Selection.Text = "Go To Manual Mesh Selection";
-            this.Btn_Go_To_Manual_Mesh_Selection.UseVisualStyleBackColor = false;
-            this.Btn_Go_To_Manual_Mesh_Selection.Click += new System.EventHandler(this.Btn_Go_To_Manual_Mesh_Selection_Click);
-            // 
-            // Page_Mesh_Selection
-            // 
-            this.Page_Mesh_Selection.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(192)))));
-            this.Page_Mesh_Selection.Controls.Add(this.Lbl_ASTM_Max_Single_Aperture);
-            this.Page_Mesh_Selection.Controls.Add(this.Lbl_ASTM_Max95);
-            this.Page_Mesh_Selection.Controls.Add(this.Dgv_Single_Aperture_Selected_Row);
-            this.Page_Mesh_Selection.Controls.Add(this.dataGridView15);
-            this.Page_Mesh_Selection.Controls.Add(this.Dgv_ASTM_Single_Aperture);
-            this.Page_Mesh_Selection.Controls.Add(this.dataGridView13);
-            this.Page_Mesh_Selection.Controls.Add(this.Go_To_Report_View);
-            this.Page_Mesh_Selection.Controls.Add(this.Btn_Return_To_Excell_File);
-            this.Page_Mesh_Selection.Controls.Add(this.dataGridView4);
-            this.Page_Mesh_Selection.Controls.Add(this.Dgv_MAX_D95_Selected_Row);
-            this.Page_Mesh_Selection.Controls.Add(this.Dgv_ASTM_D95);
-            this.Page_Mesh_Selection.Controls.Add(this.Btn_Clean_Data);
-            this.Page_Mesh_Selection.Controls.Add(this.Dgv_Tolerance_Table_Reference);
-            this.Page_Mesh_Selection.Controls.Add(this.Lbl_Selected_Mesh);
-            this.Page_Mesh_Selection.Controls.Add(this.Dgv_ASTM95_Detector_Number);
-            this.Page_Mesh_Selection.Controls.Add(this.Combo_Box_Mesh);
-            this.Page_Mesh_Selection.Controls.Add(this.label1);
-            this.Page_Mesh_Selection.Location = new System.Drawing.Point(4, 22);
-            this.Page_Mesh_Selection.Name = "Page_Mesh_Selection";
-            this.Page_Mesh_Selection.Padding = new System.Windows.Forms.Padding(3);
-            this.Page_Mesh_Selection.Size = new System.Drawing.Size(1324, 723);
-            this.Page_Mesh_Selection.TabIndex = 1;
-            this.Page_Mesh_Selection.Text = "Mesh Selection";
-            // 
-            // Lbl_ASTM_Max_Single_Aperture
-            // 
-            this.Lbl_ASTM_Max_Single_Aperture.AutoSize = true;
-            this.Lbl_ASTM_Max_Single_Aperture.Depth = 0;
-            this.Lbl_ASTM_Max_Single_Aperture.Font = new System.Drawing.Font("Roboto", 11F);
-            this.Lbl_ASTM_Max_Single_Aperture.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Lbl_ASTM_Max_Single_Aperture.Location = new System.Drawing.Point(488, 268);
-            this.Lbl_ASTM_Max_Single_Aperture.MouseState = MaterialSkin.MouseState.HOVER;
-            this.Lbl_ASTM_Max_Single_Aperture.Name = "Lbl_ASTM_Max_Single_Aperture";
-            this.Lbl_ASTM_Max_Single_Aperture.Size = new System.Drawing.Size(188, 19);
-            this.Lbl_ASTM_Max_Single_Aperture.TabIndex = 24;
-            this.Lbl_ASTM_Max_Single_Aperture.Text = "ASTM Max Single Aperture";
-            // 
-            // Lbl_ASTM_Max95
-            // 
-            this.Lbl_ASTM_Max95.AutoSize = true;
-            this.Lbl_ASTM_Max95.Depth = 0;
-            this.Lbl_ASTM_Max95.Font = new System.Drawing.Font("Roboto", 11F);
-            this.Lbl_ASTM_Max95.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Lbl_ASTM_Max95.Location = new System.Drawing.Point(489, 13);
-            this.Lbl_ASTM_Max95.MouseState = MaterialSkin.MouseState.HOVER;
-            this.Lbl_ASTM_Max95.Name = "Lbl_ASTM_Max95";
-            this.Lbl_ASTM_Max95.Size = new System.Drawing.Size(123, 19);
-            this.Lbl_ASTM_Max95.TabIndex = 23;
-            this.Lbl_ASTM_Max95.Text = "ASTM Max D95%";
-            // 
-            // Dgv_Single_Aperture_Selected_Row
-            // 
-            this.Dgv_Single_Aperture_Selected_Row.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
-            this.Dgv_Single_Aperture_Selected_Row.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv_Single_Aperture_Selected_Row.Location = new System.Drawing.Point(492, 596);
-            this.Dgv_Single_Aperture_Selected_Row.Name = "Dgv_Single_Aperture_Selected_Row";
-            this.Dgv_Single_Aperture_Selected_Row.Size = new System.Drawing.Size(427, 119);
-            this.Dgv_Single_Aperture_Selected_Row.TabIndex = 22;
-            this.Dgv_Single_Aperture_Selected_Row.Visible = false;
-            // 
-            // dataGridView15
-            // 
-            this.dataGridView15.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
-            this.dataGridView15.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView15.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column28,
-            this.Column29,
-            this.Column30,
-            this.Column31});
-            this.dataGridView15.Location = new System.Drawing.Point(518, 530);
-            this.dataGridView15.Name = "dataGridView15";
-            this.dataGridView15.ReadOnly = true;
-            this.dataGridView15.Size = new System.Drawing.Size(427, 150);
-            this.dataGridView15.TabIndex = 21;
-            this.dataGridView15.Visible = false;
-            // 
-            // Column28
-            // 
-            this.Column28.HeaderText = "Mesh #";
-            this.Column28.Name = "Column28";
-            this.Column28.ReadOnly = true;
-            // 
-            // Column29
-            // 
-            this.Column29.HeaderText = "Diferencial Run 1";
-            this.Column29.Name = "Column29";
-            this.Column29.ReadOnly = true;
-            // 
-            // Column30
-            // 
-            this.Column30.HeaderText = "Diferencial Run 2";
-            this.Column30.Name = "Column30";
-            this.Column30.ReadOnly = true;
-            // 
-            // Column31
-            // 
-            this.Column31.HeaderText = "Diferencial Run 3";
-            this.Column31.Name = "Column31";
-            this.Column31.ReadOnly = true;
-            // 
-            // Dgv_ASTM_Single_Aperture
-            // 
-            this.Dgv_ASTM_Single_Aperture.AllowUserToAddRows = false;
-            this.Dgv_ASTM_Single_Aperture.AllowUserToDeleteRows = false;
-            this.Dgv_ASTM_Single_Aperture.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
-            this.Dgv_ASTM_Single_Aperture.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv_ASTM_Single_Aperture.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column26,
-            this.Column27});
-            this.Dgv_ASTM_Single_Aperture.Location = new System.Drawing.Point(492, 299);
-            this.Dgv_ASTM_Single_Aperture.Name = "Dgv_ASTM_Single_Aperture";
-            this.Dgv_ASTM_Single_Aperture.ReadOnly = true;
-            this.Dgv_ASTM_Single_Aperture.Size = new System.Drawing.Size(824, 199);
-            this.Dgv_ASTM_Single_Aperture.TabIndex = 20;
-            // 
-            // Column26
-            // 
-            this.Column26.HeaderText = "Nominal Sieve Size";
-            this.Column26.Name = "Column26";
-            this.Column26.ReadOnly = true;
-            // 
-            // Column27
-            // 
-            this.Column27.HeaderText = "Mesh #";
-            this.Column27.Name = "Column27";
-            this.Column27.ReadOnly = true;
-            // 
-            // dataGridView13
-            // 
-            this.dataGridView13.AllowUserToAddRows = false;
-            this.dataGridView13.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
-            this.dataGridView13.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView13.Location = new System.Drawing.Point(21, 259);
-            this.dataGridView13.Name = "dataGridView13";
-            this.dataGridView13.ReadOnly = true;
-            this.dataGridView13.Size = new System.Drawing.Size(210, 87);
-            this.dataGridView13.TabIndex = 19;
-            // 
-            // Go_To_Report_View
-            // 
-            this.Go_To_Report_View.BackColor = System.Drawing.SystemColors.Control;
-            this.Go_To_Report_View.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Go_To_Report_View.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Go_To_Report_View.Location = new System.Drawing.Point(379, 137);
-            this.Go_To_Report_View.Name = "Go_To_Report_View";
-            this.Go_To_Report_View.Size = new System.Drawing.Size(107, 57);
-            this.Go_To_Report_View.TabIndex = 18;
-            this.Go_To_Report_View.Text = "Go to Report View";
-            this.Go_To_Report_View.UseVisualStyleBackColor = false;
-            this.Go_To_Report_View.Click += new System.EventHandler(this.Go_To_Report_View_Click);
-            // 
-            // Btn_Return_To_Excell_File
-            // 
-            this.Btn_Return_To_Excell_File.BackColor = System.Drawing.SystemColors.Control;
-            this.Btn_Return_To_Excell_File.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Return_To_Excell_File.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Return_To_Excell_File.Location = new System.Drawing.Point(24, 13);
-            this.Btn_Return_To_Excell_File.Name = "Btn_Return_To_Excell_File";
-            this.Btn_Return_To_Excell_File.Size = new System.Drawing.Size(97, 43);
-            this.Btn_Return_To_Excell_File.TabIndex = 17;
-            this.Btn_Return_To_Excell_File.Text = "Return To Excel Data";
-            this.Btn_Return_To_Excell_File.UseVisualStyleBackColor = false;
-            this.Btn_Return_To_Excell_File.Click += new System.EventHandler(this.Btn_Return_To_Excell_File_Click);
-            // 
-            // dataGridView4
-            // 
-            this.dataGridView4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column7,
-            this.Column4,
-            this.Column5,
-            this.Column6});
-            this.dataGridView4.Location = new System.Drawing.Point(38, 352);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.ReadOnly = true;
-            this.dataGridView4.Size = new System.Drawing.Size(427, 133);
-            this.dataGridView4.TabIndex = 15;
-            this.dataGridView4.Visible = false;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Mesh #";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            this.Column7.Width = 70;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Diferencial Run 1";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Diferencial Run 2";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Diferencial Run 3";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            // 
-            // Dgv_MAX_D95_Selected_Row
-            // 
-            this.Dgv_MAX_D95_Selected_Row.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
-            this.Dgv_MAX_D95_Selected_Row.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv_MAX_D95_Selected_Row.Location = new System.Drawing.Point(21, 563);
-            this.Dgv_MAX_D95_Selected_Row.Name = "Dgv_MAX_D95_Selected_Row";
-            this.Dgv_MAX_D95_Selected_Row.Size = new System.Drawing.Size(421, 152);
-            this.Dgv_MAX_D95_Selected_Row.TabIndex = 13;
-            this.Dgv_MAX_D95_Selected_Row.Visible = false;
-            // 
-            // Dgv_ASTM_D95
-            // 
-            this.Dgv_ASTM_D95.AllowUserToAddRows = false;
-            this.Dgv_ASTM_D95.AllowUserToDeleteRows = false;
-            this.Dgv_ASTM_D95.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
-            this.Dgv_ASTM_D95.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv_ASTM_D95.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Columna1R,
-            this.Tabla2R});
-            this.Dgv_ASTM_D95.Location = new System.Drawing.Point(492, 52);
-            this.Dgv_ASTM_D95.Name = "Dgv_ASTM_D95";
-            this.Dgv_ASTM_D95.Size = new System.Drawing.Size(824, 201);
-            this.Dgv_ASTM_D95.TabIndex = 10;
-            // 
-            // Columna1R
-            // 
-            this.Columna1R.HeaderText = "Nominal Sieve Size";
-            this.Columna1R.Name = "Columna1R";
-            this.Columna1R.Width = 80;
-            // 
-            // Tabla2R
-            // 
-            this.Tabla2R.HeaderText = "Mesh #";
-            this.Tabla2R.Name = "Tabla2R";
-            this.Tabla2R.Width = 70;
-            // 
-            // Btn_Clean_Data
-            // 
-            this.Btn_Clean_Data.BackColor = System.Drawing.SystemColors.Control;
-            this.Btn_Clean_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Clean_Data.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Clean_Data.Location = new System.Drawing.Point(389, 52);
-            this.Btn_Clean_Data.Name = "Btn_Clean_Data";
-            this.Btn_Clean_Data.Size = new System.Drawing.Size(97, 34);
-            this.Btn_Clean_Data.TabIndex = 5;
-            this.Btn_Clean_Data.Text = "Clean Data";
-            this.Btn_Clean_Data.UseVisualStyleBackColor = false;
-            this.Btn_Clean_Data.Click += new System.EventHandler(this.Btn_Clean_Data_Click);
-            // 
-            // Dgv_Tolerance_Table_Reference
-            // 
-            this.Dgv_Tolerance_Table_Reference.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
-            this.Dgv_Tolerance_Table_Reference.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv_Tolerance_Table_Reference.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column19});
-            this.Dgv_Tolerance_Table_Reference.Location = new System.Drawing.Point(44, 475);
-            this.Dgv_Tolerance_Table_Reference.Name = "Dgv_Tolerance_Table_Reference";
-            this.Dgv_Tolerance_Table_Reference.Size = new System.Drawing.Size(421, 161);
-            this.Dgv_Tolerance_Table_Reference.TabIndex = 4;
-            this.Dgv_Tolerance_Table_Reference.Visible = false;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Normal Sieve size";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Mesh #";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Valores de la hoja";
-            this.Column3.Name = "Column3";
-            // 
-            // Column19
-            // 
-            this.Column19.HeaderText = "Maxima Apertura ASTM";
-            this.Column19.Name = "Column19";
-            // 
-            // Lbl_Selected_Mesh
-            // 
-            this.Lbl_Selected_Mesh.AutoSize = true;
-            this.Lbl_Selected_Mesh.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Selected_Mesh.ForeColor = System.Drawing.SystemColors.Control;
-            this.Lbl_Selected_Mesh.Location = new System.Drawing.Point(18, 226);
-            this.Lbl_Selected_Mesh.Name = "Lbl_Selected_Mesh";
-            this.Lbl_Selected_Mesh.Size = new System.Drawing.Size(103, 15);
-            this.Lbl_Selected_Mesh.TabIndex = 3;
-            this.Lbl_Selected_Mesh.Text = "Selected meshes:";
-            this.Lbl_Selected_Mesh.Visible = false;
-            // 
-            // Dgv_ASTM95_Detector_Number
-            // 
-            this.Dgv_ASTM95_Detector_Number.AllowUserToAddRows = false;
-            this.Dgv_ASTM95_Detector_Number.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
-            this.Dgv_ASTM95_Detector_Number.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv_ASTM95_Detector_Number.Location = new System.Drawing.Point(150, 205);
-            this.Dgv_ASTM95_Detector_Number.Name = "Dgv_ASTM95_Detector_Number";
-            this.Dgv_ASTM95_Detector_Number.ReadOnly = true;
-            this.Dgv_ASTM95_Detector_Number.Size = new System.Drawing.Size(210, 150);
-            this.Dgv_ASTM95_Detector_Number.TabIndex = 2;
-            // 
-            // Combo_Box_Mesh
-            // 
-            this.Combo_Box_Mesh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Combo_Box_Mesh.FormattingEnabled = true;
-            this.Combo_Box_Mesh.Items.AddRange(new object[] {
-            "635",
-            "500",
-            "450",
-            "400",
-            "325",
-            "270",
-            "230",
-            "200",
-            "170",
-            "140",
-            "120",
-            "100",
-            "80",
-            "70",
-            "60",
-            "50",
-            "45",
-            "40",
-            "35",
-            "30",
-            "25",
-            "20",
-            "18",
-            "16",
-            "14",
-            "12",
-            "10",
-            "8",
-            "7",
-            "6"});
-            this.Combo_Box_Mesh.Location = new System.Drawing.Point(21, 87);
-            this.Combo_Box_Mesh.Name = "Combo_Box_Mesh";
-            this.Combo_Box_Mesh.Size = new System.Drawing.Size(193, 21);
-            this.Combo_Box_Mesh.TabIndex = 1;
-            this.Combo_Box_Mesh.SelectedIndexChanged += new System.EventHandler(this.ComboBox_Mesh_SelectedIndexChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label1.Location = new System.Drawing.Point(18, 71);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(270, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Mesh selection: (Enter from highest to lowest)";
+            // Page_Save_Settings
+            // 
+            this.Page_Save_Settings.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Page_Save_Settings.Location = new System.Drawing.Point(4, 22);
+            this.Page_Save_Settings.Name = "Page_Save_Settings";
+            this.Page_Save_Settings.Padding = new System.Windows.Forms.Padding(3);
+            this.Page_Save_Settings.Size = new System.Drawing.Size(1324, 723);
+            this.Page_Save_Settings.TabIndex = 4;
+            this.Page_Save_Settings.Text = "Saved Settings";
+            // 
+            // Page_Calculation
+            // 
+            this.Page_Calculation.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Page_Calculation.Location = new System.Drawing.Point(4, 22);
+            this.Page_Calculation.Name = "Page_Calculation";
+            this.Page_Calculation.Padding = new System.Windows.Forms.Padding(3);
+            this.Page_Calculation.Size = new System.Drawing.Size(1324, 723);
+            this.Page_Calculation.TabIndex = 3;
+            this.Page_Calculation.Text = "Calculation";
             // 
             // Page_Report_View
             // 
             this.Page_Report_View.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Page_Report_View.Controls.Add(this.dataGridView12);
-            this.Page_Report_View.Controls.Add(this.dataGridView11);
+            this.Page_Report_View.Controls.Add(this.Pnl_Run_One);
+            this.Page_Report_View.Controls.Add(this.Lbl_Single_Aperture);
+            this.Page_Report_View.Controls.Add(this.Lbl_ASTM_95);
+            this.Page_Report_View.Controls.Add(this.Dgv_Single_Aperture_Differential);
+            this.Page_Report_View.Controls.Add(this.Dgv_Single_Aperture_Accumulated_right_left);
             this.Page_Report_View.Controls.Add(this.Btn_Hide_Differential);
             this.Page_Report_View.Controls.Add(this.dataGridView10);
             this.Page_Report_View.Controls.Add(this.dataGridView9);
@@ -692,26 +273,13 @@
             this.Page_Report_View.Controls.Add(this.label22);
             this.Page_Report_View.Controls.Add(this.label21);
             this.Page_Report_View.Controls.Add(this.label20);
-            this.Page_Report_View.Controls.Add(this.label19);
-            this.Page_Report_View.Controls.Add(this.label18);
-            this.Page_Report_View.Controls.Add(this.label17);
-            this.Page_Report_View.Controls.Add(this.label16);
-            this.Page_Report_View.Controls.Add(this.label15);
-            this.Page_Report_View.Controls.Add(this.label14);
-            this.Page_Report_View.Controls.Add(this.label13);
             this.Page_Report_View.Controls.Add(this.label12);
             this.Page_Report_View.Controls.Add(this.label11);
             this.Page_Report_View.Controls.Add(this.label10);
-            this.Page_Report_View.Controls.Add(this.label9);
-            this.Page_Report_View.Controls.Add(this.label8);
-            this.Page_Report_View.Controls.Add(this.label7);
-            this.Page_Report_View.Controls.Add(this.label6);
-            this.Page_Report_View.Controls.Add(this.label5);
             this.Page_Report_View.Controls.Add(this.Dgv_Sample_Information);
-            this.Page_Report_View.Controls.Add(this.label4);
-            this.Page_Report_View.Controls.Add(this.dataGridView6);
-            this.Page_Report_View.Controls.Add(this.button6);
-            this.Page_Report_View.Controls.Add(this.Dgv_Accumulated_rigth_left);
+            this.Page_Report_View.Controls.Add(this.Dgv_ASTM_95_Differential);
+            this.Page_Report_View.Controls.Add(this.Btn_Return);
+            this.Page_Report_View.Controls.Add(this.Dgv_ASTM_D95_Accumulated_rigth_left);
             this.Page_Report_View.Location = new System.Drawing.Point(4, 22);
             this.Page_Report_View.Name = "Page_Report_View";
             this.Page_Report_View.Padding = new System.Windows.Forms.Padding(3);
@@ -719,18 +287,188 @@
             this.Page_Report_View.TabIndex = 2;
             this.Page_Report_View.Text = "Report View";
             // 
-            // dataGridView12
+            // Pnl_Run_One
             // 
-            this.dataGridView12.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView12.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Pnl_Run_One.Controls.Add(this.Lbl_Run_One);
+            this.Pnl_Run_One.Controls.Add(this.Lbl_Name_Run_One);
+            this.Pnl_Run_One.Controls.Add(this.Lbl_Name_Value_Run_One);
+            this.Pnl_Run_One.Controls.Add(this.Lbl_Sample_Data_Run_One);
+            this.Pnl_Run_One.Controls.Add(this.Lbl_Sample_Data_Value_Run_One);
+            this.Pnl_Run_One.Controls.Add(this.Lbl_User_RunOne);
+            this.Pnl_Run_One.Controls.Add(this.Lbl_User_Value_Run_One);
+            this.Pnl_Run_One.Controls.Add(this.Lbl_Device_Run_One);
+            this.Pnl_Run_One.Controls.Add(this.Lbl_Device_Value_Run_One);
+            this.Pnl_Run_One.Controls.Add(this.Lbl_Sample_Id_Run_One);
+            this.Pnl_Run_One.Controls.Add(this.Lbl_Sample_Id_Value_Run_One);
+            this.Pnl_Run_One.Controls.Add(this.Lbl_Group_Id);
+            this.Pnl_Run_One.Controls.Add(this.Lbl_Group_Id_Value);
+            this.Pnl_Run_One.Location = new System.Drawing.Point(19, 14);
+            this.Pnl_Run_One.Name = "Pnl_Run_One";
+            this.Pnl_Run_One.Size = new System.Drawing.Size(165, 121);
+            this.Pnl_Run_One.TabIndex = 86;
+            // 
+            // Lbl_Run_One
+            // 
+            this.Lbl_Run_One.AutoSize = true;
+            this.Lbl_Run_One.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Run_One.Location = new System.Drawing.Point(3, 0);
+            this.Lbl_Run_One.Name = "Lbl_Run_One";
+            this.Lbl_Run_One.Size = new System.Drawing.Size(44, 17);
+            this.Lbl_Run_One.TabIndex = 13;
+            this.Lbl_Run_One.Text = "Run 1";
+            // 
+            // Lbl_Name_Run_One
+            // 
+            this.Lbl_Name_Run_One.AutoSize = true;
+            this.Lbl_Name_Run_One.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Name_Run_One.Location = new System.Drawing.Point(3, 19);
+            this.Lbl_Name_Run_One.Name = "Lbl_Name_Run_One";
+            this.Lbl_Name_Run_One.Size = new System.Drawing.Size(49, 15);
+            this.Lbl_Name_Run_One.TabIndex = 3;
+            this.Lbl_Name_Run_One.Text = "Name: ";
+            // 
+            // Lbl_Name_Value_Run_One
+            // 
+            this.Lbl_Name_Value_Run_One.AutoSize = true;
+            this.Lbl_Name_Value_Run_One.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Name_Value_Run_One.Location = new System.Drawing.Point(53, 19);
+            this.Lbl_Name_Value_Run_One.Name = "Lbl_Name_Value_Run_One";
+            this.Lbl_Name_Value_Run_One.Size = new System.Drawing.Size(52, 15);
+            this.Lbl_Name_Value_Run_One.TabIndex = 14;
+            this.Lbl_Name_Value_Run_One.Text = "nombre";
+            // 
+            // Lbl_Sample_Data_Run_One
+            // 
+            this.Lbl_Sample_Data_Run_One.AutoSize = true;
+            this.Lbl_Sample_Data_Run_One.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Sample_Data_Run_One.Location = new System.Drawing.Point(3, 34);
+            this.Lbl_Sample_Data_Run_One.Name = "Lbl_Sample_Data_Run_One";
+            this.Lbl_Sample_Data_Run_One.Size = new System.Drawing.Size(84, 15);
+            this.Lbl_Sample_Data_Run_One.TabIndex = 5;
+            this.Lbl_Sample_Data_Run_One.Text = "Sample Date:";
+            // 
+            // Lbl_Sample_Data_Value_Run_One
+            // 
+            this.Lbl_Sample_Data_Value_Run_One.AutoSize = true;
+            this.Lbl_Sample_Data_Value_Run_One.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Sample_Data_Value_Run_One.Location = new System.Drawing.Point(93, 34);
+            this.Lbl_Sample_Data_Value_Run_One.Name = "Lbl_Sample_Data_Value_Run_One";
+            this.Lbl_Sample_Data_Value_Run_One.Size = new System.Drawing.Size(38, 15);
+            this.Lbl_Sample_Data_Value_Run_One.TabIndex = 15;
+            this.Lbl_Sample_Data_Value_Run_One.Text = "fecha";
+            // 
+            // Lbl_User_RunOne
+            // 
+            this.Lbl_User_RunOne.AutoSize = true;
+            this.Lbl_User_RunOne.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_User_RunOne.Location = new System.Drawing.Point(3, 49);
+            this.Lbl_User_RunOne.Name = "Lbl_User_RunOne";
+            this.Lbl_User_RunOne.Size = new System.Drawing.Size(37, 15);
+            this.Lbl_User_RunOne.TabIndex = 6;
+            this.Lbl_User_RunOne.Text = "User:";
+            // 
+            // Lbl_User_Value_Run_One
+            // 
+            this.Lbl_User_Value_Run_One.AutoSize = true;
+            this.Lbl_User_Value_Run_One.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_User_Value_Run_One.Location = new System.Drawing.Point(49, 50);
+            this.Lbl_User_Value_Run_One.Name = "Lbl_User_Value_Run_One";
+            this.Lbl_User_Value_Run_One.Size = new System.Drawing.Size(51, 15);
+            this.Lbl_User_Value_Run_One.TabIndex = 16;
+            this.Lbl_User_Value_Run_One.Text = "usuario";
+            // 
+            // Lbl_Device_Run_One
+            // 
+            this.Lbl_Device_Run_One.AutoSize = true;
+            this.Lbl_Device_Run_One.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Device_Run_One.Location = new System.Drawing.Point(2, 65);
+            this.Lbl_Device_Run_One.Name = "Lbl_Device_Run_One";
+            this.Lbl_Device_Run_One.Size = new System.Drawing.Size(50, 15);
+            this.Lbl_Device_Run_One.TabIndex = 7;
+            this.Lbl_Device_Run_One.Text = "Device:";
+            // 
+            // Lbl_Device_Value_Run_One
+            // 
+            this.Lbl_Device_Value_Run_One.AutoSize = true;
+            this.Lbl_Device_Value_Run_One.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Device_Value_Run_One.Location = new System.Drawing.Point(53, 65);
+            this.Lbl_Device_Value_Run_One.Name = "Lbl_Device_Value_Run_One";
+            this.Lbl_Device_Value_Run_One.Size = new System.Drawing.Size(53, 15);
+            this.Lbl_Device_Value_Run_One.TabIndex = 17;
+            this.Lbl_Device_Value_Run_One.Text = "articulo";
+            // 
+            // Lbl_Sample_Id_Run_One
+            // 
+            this.Lbl_Sample_Id_Run_One.AutoSize = true;
+            this.Lbl_Sample_Id_Run_One.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Sample_Id_Run_One.Location = new System.Drawing.Point(3, 80);
+            this.Lbl_Sample_Id_Run_One.Name = "Lbl_Sample_Id_Run_One";
+            this.Lbl_Sample_Id_Run_One.Size = new System.Drawing.Size(70, 15);
+            this.Lbl_Sample_Id_Run_One.TabIndex = 8;
+            this.Lbl_Sample_Id_Run_One.Text = "Sample ID:";
+            // 
+            // Lbl_Sample_Id_Value_Run_One
+            // 
+            this.Lbl_Sample_Id_Value_Run_One.AutoSize = true;
+            this.Lbl_Sample_Id_Value_Run_One.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Sample_Id_Value_Run_One.Location = new System.Drawing.Point(78, 80);
+            this.Lbl_Sample_Id_Value_Run_One.Name = "Lbl_Sample_Id_Value_Run_One";
+            this.Lbl_Sample_Id_Value_Run_One.Size = new System.Drawing.Size(28, 15);
+            this.Lbl_Sample_Id_Value_Run_One.TabIndex = 18;
+            this.Lbl_Sample_Id_Value_Run_One.Text = "S id";
+            // 
+            // Lbl_Group_Id
+            // 
+            this.Lbl_Group_Id.AutoSize = true;
+            this.Lbl_Group_Id.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Group_Id.Location = new System.Drawing.Point(3, 95);
+            this.Lbl_Group_Id.Name = "Lbl_Group_Id";
+            this.Lbl_Group_Id.Size = new System.Drawing.Size(63, 15);
+            this.Lbl_Group_Id.TabIndex = 9;
+            this.Lbl_Group_Id.Text = "Group ID:";
+            // 
+            // Lbl_Group_Id_Value
+            // 
+            this.Lbl_Group_Id_Value.AutoSize = true;
+            this.Lbl_Group_Id_Value.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Group_Id_Value.Location = new System.Drawing.Point(72, 95);
+            this.Lbl_Group_Id_Value.Name = "Lbl_Group_Id_Value";
+            this.Lbl_Group_Id_Value.Size = new System.Drawing.Size(28, 15);
+            this.Lbl_Group_Id_Value.TabIndex = 19;
+            this.Lbl_Group_Id_Value.Text = "g id";
+            // 
+            // Lbl_Single_Aperture
+            // 
+            this.Lbl_Single_Aperture.AutoSize = true;
+            this.Lbl_Single_Aperture.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Single_Aperture.Location = new System.Drawing.Point(905, 321);
+            this.Lbl_Single_Aperture.Name = "Lbl_Single_Aperture";
+            this.Lbl_Single_Aperture.Size = new System.Drawing.Size(141, 24);
+            this.Lbl_Single_Aperture.TabIndex = 85;
+            this.Lbl_Single_Aperture.Text = "Single Aperture";
+            // 
+            // Lbl_ASTM_95
+            // 
+            this.Lbl_ASTM_95.AutoSize = true;
+            this.Lbl_ASTM_95.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_ASTM_95.Location = new System.Drawing.Point(157, 321);
+            this.Lbl_ASTM_95.Name = "Lbl_ASTM_95";
+            this.Lbl_ASTM_95.Size = new System.Drawing.Size(93, 24);
+            this.Lbl_ASTM_95.TabIndex = 84;
+            this.Lbl_ASTM_95.Text = "ASTM_95";
+            // 
+            // Dgv_Single_Aperture_Differential
+            // 
+            this.Dgv_Single_Aperture_Differential.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_Single_Aperture_Differential.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column20,
             this.Column21,
             this.Column22,
             this.Column23});
-            this.dataGridView12.Location = new System.Drawing.Point(722, 468);
-            this.dataGridView12.Name = "dataGridView12";
-            this.dataGridView12.Size = new System.Drawing.Size(446, 150);
-            this.dataGridView12.TabIndex = 83;
+            this.Dgv_Single_Aperture_Differential.Location = new System.Drawing.Point(718, 538);
+            this.Dgv_Single_Aperture_Differential.Name = "Dgv_Single_Aperture_Differential";
+            this.Dgv_Single_Aperture_Differential.Size = new System.Drawing.Size(588, 150);
+            this.Dgv_Single_Aperture_Differential.TabIndex = 83;
             // 
             // Column20
             // 
@@ -752,16 +490,16 @@
             this.Column23.HeaderText = "Differential Run 3";
             this.Column23.Name = "Column23";
             // 
-            // dataGridView11
+            // Dgv_Single_Aperture_Accumulated_right_left
             // 
-            this.dataGridView11.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView11.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Dgv_Single_Aperture_Accumulated_right_left.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_Single_Aperture_Accumulated_right_left.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column24,
             this.Column25});
-            this.dataGridView11.Location = new System.Drawing.Point(8, 468);
-            this.dataGridView11.Name = "dataGridView11";
-            this.dataGridView11.Size = new System.Drawing.Size(707, 150);
-            this.dataGridView11.TabIndex = 82;
+            this.Dgv_Single_Aperture_Accumulated_right_left.Location = new System.Drawing.Point(718, 360);
+            this.Dgv_Single_Aperture_Accumulated_right_left.Name = "Dgv_Single_Aperture_Accumulated_right_left";
+            this.Dgv_Single_Aperture_Accumulated_right_left.Size = new System.Drawing.Size(588, 150);
+            this.Dgv_Single_Aperture_Accumulated_right_left.TabIndex = 82;
             // 
             // Column24
             // 
@@ -912,7 +650,7 @@
             this.button12.TabIndex = 68;
             this.button12.Text = "Generate Report";
             this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            this.button12.Click += new System.EventHandler(this.Btn_Generate_Report_Click);
             // 
             // Btn_Hide_Cumulatives
             // 
@@ -1336,76 +1074,6 @@
             this.label20.TabIndex = 20;
             this.label20.Text = "batch";
             // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(80, 120);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(28, 15);
-            this.label19.TabIndex = 19;
-            this.label19.Text = "g id";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(83, 101);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(28, 15);
-            this.label18.TabIndex = 18;
-            this.label18.Text = "S id";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(64, 83);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(53, 15);
-            this.label17.TabIndex = 17;
-            this.label17.Text = "articulo";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(55, 64);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(51, 15);
-            this.label16.TabIndex = 16;
-            this.label16.Text = "usuario";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(105, 45);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(38, 15);
-            this.label15.TabIndex = 15;
-            this.label15.Text = "fecha";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(57, 26);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(52, 15);
-            this.label14.TabIndex = 14;
-            this.label14.Text = "nombre";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(15, 3);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(44, 17);
-            this.label13.TabIndex = 13;
-            this.label13.Text = "Run 1";
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -1436,56 +1104,6 @@
             this.label10.TabIndex = 10;
             this.label10.Text = "Batch:";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(21, 119);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(63, 15);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "Group ID:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(18, 101);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(70, 15);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Sample ID:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(17, 82);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 15);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Device:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(17, 64);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(37, 15);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "User:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(15, 45);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 15);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Sample Date:";
-            // 
             // Dgv_Sample_Information
             // 
             this.Dgv_Sample_Information.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1495,22 +1113,12 @@
             this.Dgv_Sample_Information.TabIndex = 4;
             this.Dgv_Sample_Information.Visible = false;
             // 
-            // label4
+            // Dgv_ASTM_95_Differential
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(15, 26);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 15);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Name: ";
-            // 
-            // dataGridView6
-            // 
-            this.dataGridView6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.Dgv_ASTM_95_Differential.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Dgv_ASTM_95_Differential.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_ASTM_95_Differential.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column10,
             this.Column11,
             this.Column12,
@@ -1522,11 +1130,11 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView6.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView6.Location = new System.Drawing.Point(721, 283);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.Size = new System.Drawing.Size(447, 157);
-            this.dataGridView6.TabIndex = 2;
+            this.Dgv_ASTM_95_Differential.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Dgv_ASTM_95_Differential.Location = new System.Drawing.Point(3, 538);
+            this.Dgv_ASTM_95_Differential.Name = "Dgv_ASTM_95_Differential";
+            this.Dgv_ASTM_95_Differential.Size = new System.Drawing.Size(602, 150);
+            this.Dgv_ASTM_95_Differential.TabIndex = 2;
             // 
             // Column10
             // 
@@ -1548,24 +1156,24 @@
             this.Column13.HeaderText = "Differential Run 3";
             this.Column13.Name = "Column13";
             // 
-            // button6
+            // Btn_Return
             // 
-            this.button6.BackColor = System.Drawing.Color.Tan;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(1212, 6);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(104, 42);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "Return";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.Return_To_Mesh_Selection_Click);
+            this.Btn_Return.BackColor = System.Drawing.Color.Tan;
+            this.Btn_Return.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Return.Location = new System.Drawing.Point(1212, 6);
+            this.Btn_Return.Name = "Btn_Return";
+            this.Btn_Return.Size = new System.Drawing.Size(104, 42);
+            this.Btn_Return.TabIndex = 1;
+            this.Btn_Return.Text = "Return";
+            this.Btn_Return.UseVisualStyleBackColor = false;
+            this.Btn_Return.Click += new System.EventHandler(this.Return_To_Mesh_Selection_Click);
             // 
-            // dataGridView5
+            // Dgv_ASTM_D95_Accumulated_rigth_left
             // 
-            this.Dgv_Accumulated_rigth_left.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.Dgv_ASTM_D95_Accumulated_rigth_left.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Dgv_Accumulated_rigth_left.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv_Accumulated_rigth_left.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Dgv_ASTM_D95_Accumulated_rigth_left.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_ASTM_D95_Accumulated_rigth_left.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column8,
             this.Column9});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -1575,11 +1183,11 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Dgv_Accumulated_rigth_left.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Dgv_Accumulated_rigth_left.Location = new System.Drawing.Point(8, 283);
-            this.Dgv_Accumulated_rigth_left.Name = "Dgv_Accumulated_rigth_left";
-            this.Dgv_Accumulated_rigth_left.Size = new System.Drawing.Size(707, 157);
-            this.Dgv_Accumulated_rigth_left.TabIndex = 0;
+            this.Dgv_ASTM_D95_Accumulated_rigth_left.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Dgv_ASTM_D95_Accumulated_rigth_left.Location = new System.Drawing.Point(6, 360);
+            this.Dgv_ASTM_D95_Accumulated_rigth_left.Name = "Dgv_ASTM_D95_Accumulated_rigth_left";
+            this.Dgv_ASTM_D95_Accumulated_rigth_left.Size = new System.Drawing.Size(602, 150);
+            this.Dgv_ASTM_D95_Accumulated_rigth_left.TabIndex = 0;
             // 
             // Column8
             // 
@@ -1593,25 +1201,454 @@
             this.Column9.Name = "Column9";
             this.Column9.Width = 68;
             // 
-            // Page_Calculation
+            // Page_Mesh_Selection
             // 
-            this.Page_Calculation.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Page_Calculation.Location = new System.Drawing.Point(4, 22);
-            this.Page_Calculation.Name = "Page_Calculation";
-            this.Page_Calculation.Padding = new System.Windows.Forms.Padding(3);
-            this.Page_Calculation.Size = new System.Drawing.Size(1324, 723);
-            this.Page_Calculation.TabIndex = 3;
-            this.Page_Calculation.Text = "Calculation";
+            this.Page_Mesh_Selection.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(192)))));
+            this.Page_Mesh_Selection.Controls.Add(this.Lbl_ASTM_Max_Single_Aperture);
+            this.Page_Mesh_Selection.Controls.Add(this.Lbl_ASTM_Max95);
+            this.Page_Mesh_Selection.Controls.Add(this.Dgv_Single_Aperture_Selected_Row);
+            this.Page_Mesh_Selection.Controls.Add(this.dataGridView15);
+            this.Page_Mesh_Selection.Controls.Add(this.Dgv_ASTM_Single_Aperture);
+            this.Page_Mesh_Selection.Controls.Add(this.Dgv_Single_Aperture_Detector);
+            this.Page_Mesh_Selection.Controls.Add(this.Go_To_Report_View);
+            this.Page_Mesh_Selection.Controls.Add(this.Btn_Return_To_Excell_File);
+            this.Page_Mesh_Selection.Controls.Add(this.dataGridView4);
+            this.Page_Mesh_Selection.Controls.Add(this.Dgv_MAX_D95_Selected_Row);
+            this.Page_Mesh_Selection.Controls.Add(this.Dgv_ASTM_D95);
+            this.Page_Mesh_Selection.Controls.Add(this.Btn_Clean_Data);
+            this.Page_Mesh_Selection.Controls.Add(this.Dgv_Tolerance_Table_Reference);
+            this.Page_Mesh_Selection.Controls.Add(this.Lbl_Selected_Mesh);
+            this.Page_Mesh_Selection.Controls.Add(this.Dgv_ASTM95_Detector_Number);
+            this.Page_Mesh_Selection.Controls.Add(this.Combo_Box_Mesh);
+            this.Page_Mesh_Selection.Controls.Add(this.label1);
+            this.Page_Mesh_Selection.Location = new System.Drawing.Point(4, 22);
+            this.Page_Mesh_Selection.Name = "Page_Mesh_Selection";
+            this.Page_Mesh_Selection.Padding = new System.Windows.Forms.Padding(3);
+            this.Page_Mesh_Selection.Size = new System.Drawing.Size(1324, 723);
+            this.Page_Mesh_Selection.TabIndex = 1;
+            this.Page_Mesh_Selection.Text = "Mesh Selection";
             // 
-            // Page_Save_Settings
+            // Lbl_ASTM_Max_Single_Aperture
             // 
-            this.Page_Save_Settings.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Page_Save_Settings.Location = new System.Drawing.Point(4, 22);
-            this.Page_Save_Settings.Name = "Page_Save_Settings";
-            this.Page_Save_Settings.Padding = new System.Windows.Forms.Padding(3);
-            this.Page_Save_Settings.Size = new System.Drawing.Size(1324, 723);
-            this.Page_Save_Settings.TabIndex = 4;
-            this.Page_Save_Settings.Text = "Saved Settings";
+            this.Lbl_ASTM_Max_Single_Aperture.AutoSize = true;
+            this.Lbl_ASTM_Max_Single_Aperture.Depth = 0;
+            this.Lbl_ASTM_Max_Single_Aperture.Font = new System.Drawing.Font("Roboto", 11F);
+            this.Lbl_ASTM_Max_Single_Aperture.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Lbl_ASTM_Max_Single_Aperture.Location = new System.Drawing.Point(488, 268);
+            this.Lbl_ASTM_Max_Single_Aperture.MouseState = MaterialSkin.MouseState.HOVER;
+            this.Lbl_ASTM_Max_Single_Aperture.Name = "Lbl_ASTM_Max_Single_Aperture";
+            this.Lbl_ASTM_Max_Single_Aperture.Size = new System.Drawing.Size(188, 19);
+            this.Lbl_ASTM_Max_Single_Aperture.TabIndex = 24;
+            this.Lbl_ASTM_Max_Single_Aperture.Text = "ASTM Max Single Aperture";
+            // 
+            // Lbl_ASTM_Max95
+            // 
+            this.Lbl_ASTM_Max95.AutoSize = true;
+            this.Lbl_ASTM_Max95.Depth = 0;
+            this.Lbl_ASTM_Max95.Font = new System.Drawing.Font("Roboto", 11F);
+            this.Lbl_ASTM_Max95.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Lbl_ASTM_Max95.Location = new System.Drawing.Point(489, 13);
+            this.Lbl_ASTM_Max95.MouseState = MaterialSkin.MouseState.HOVER;
+            this.Lbl_ASTM_Max95.Name = "Lbl_ASTM_Max95";
+            this.Lbl_ASTM_Max95.Size = new System.Drawing.Size(123, 19);
+            this.Lbl_ASTM_Max95.TabIndex = 23;
+            this.Lbl_ASTM_Max95.Text = "ASTM Max D95%";
+            // 
+            // Dgv_Single_Aperture_Selected_Row
+            // 
+            this.Dgv_Single_Aperture_Selected_Row.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
+            this.Dgv_Single_Aperture_Selected_Row.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_Single_Aperture_Selected_Row.Location = new System.Drawing.Point(492, 596);
+            this.Dgv_Single_Aperture_Selected_Row.Name = "Dgv_Single_Aperture_Selected_Row";
+            this.Dgv_Single_Aperture_Selected_Row.Size = new System.Drawing.Size(427, 119);
+            this.Dgv_Single_Aperture_Selected_Row.TabIndex = 22;
+            this.Dgv_Single_Aperture_Selected_Row.Visible = false;
+            // 
+            // dataGridView15
+            // 
+            this.dataGridView15.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
+            this.dataGridView15.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView15.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column28,
+            this.Column29,
+            this.Column30,
+            this.Column31});
+            this.dataGridView15.Location = new System.Drawing.Point(518, 530);
+            this.dataGridView15.Name = "dataGridView15";
+            this.dataGridView15.ReadOnly = true;
+            this.dataGridView15.Size = new System.Drawing.Size(427, 150);
+            this.dataGridView15.TabIndex = 21;
+            this.dataGridView15.Visible = false;
+            // 
+            // Column28
+            // 
+            this.Column28.HeaderText = "Mesh #";
+            this.Column28.Name = "Column28";
+            this.Column28.ReadOnly = true;
+            // 
+            // Column29
+            // 
+            this.Column29.HeaderText = "Diferencial Run 1";
+            this.Column29.Name = "Column29";
+            this.Column29.ReadOnly = true;
+            // 
+            // Column30
+            // 
+            this.Column30.HeaderText = "Diferencial Run 2";
+            this.Column30.Name = "Column30";
+            this.Column30.ReadOnly = true;
+            // 
+            // Column31
+            // 
+            this.Column31.HeaderText = "Diferencial Run 3";
+            this.Column31.Name = "Column31";
+            this.Column31.ReadOnly = true;
+            // 
+            // Dgv_ASTM_Single_Aperture
+            // 
+            this.Dgv_ASTM_Single_Aperture.AllowUserToAddRows = false;
+            this.Dgv_ASTM_Single_Aperture.AllowUserToDeleteRows = false;
+            this.Dgv_ASTM_Single_Aperture.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
+            this.Dgv_ASTM_Single_Aperture.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_ASTM_Single_Aperture.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column26,
+            this.Column27});
+            this.Dgv_ASTM_Single_Aperture.Location = new System.Drawing.Point(492, 299);
+            this.Dgv_ASTM_Single_Aperture.Name = "Dgv_ASTM_Single_Aperture";
+            this.Dgv_ASTM_Single_Aperture.ReadOnly = true;
+            this.Dgv_ASTM_Single_Aperture.Size = new System.Drawing.Size(824, 199);
+            this.Dgv_ASTM_Single_Aperture.TabIndex = 20;
+            // 
+            // Column26
+            // 
+            this.Column26.HeaderText = "Nominal Sieve Size";
+            this.Column26.Name = "Column26";
+            this.Column26.ReadOnly = true;
+            // 
+            // Column27
+            // 
+            this.Column27.HeaderText = "Mesh #";
+            this.Column27.Name = "Column27";
+            this.Column27.ReadOnly = true;
+            // 
+            // Dgv_Single_Aperture_Detector
+            // 
+            this.Dgv_Single_Aperture_Detector.AllowUserToAddRows = false;
+            this.Dgv_Single_Aperture_Detector.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
+            this.Dgv_Single_Aperture_Detector.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_Single_Aperture_Detector.Location = new System.Drawing.Point(21, 259);
+            this.Dgv_Single_Aperture_Detector.Name = "Dgv_Single_Aperture_Detector";
+            this.Dgv_Single_Aperture_Detector.ReadOnly = true;
+            this.Dgv_Single_Aperture_Detector.Size = new System.Drawing.Size(210, 87);
+            this.Dgv_Single_Aperture_Detector.TabIndex = 19;
+            this.Dgv_Single_Aperture_Detector.Visible = false;
+            // 
+            // Go_To_Report_View
+            // 
+            this.Go_To_Report_View.BackColor = System.Drawing.SystemColors.Control;
+            this.Go_To_Report_View.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Go_To_Report_View.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Go_To_Report_View.Location = new System.Drawing.Point(379, 137);
+            this.Go_To_Report_View.Name = "Go_To_Report_View";
+            this.Go_To_Report_View.Size = new System.Drawing.Size(107, 57);
+            this.Go_To_Report_View.TabIndex = 18;
+            this.Go_To_Report_View.Text = "Go to Report View";
+            this.Go_To_Report_View.UseVisualStyleBackColor = false;
+            this.Go_To_Report_View.Click += new System.EventHandler(this.Go_To_Report_View_Click);
+            // 
+            // Btn_Return_To_Excell_File
+            // 
+            this.Btn_Return_To_Excell_File.BackColor = System.Drawing.SystemColors.Control;
+            this.Btn_Return_To_Excell_File.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Return_To_Excell_File.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Return_To_Excell_File.Location = new System.Drawing.Point(24, 13);
+            this.Btn_Return_To_Excell_File.Name = "Btn_Return_To_Excell_File";
+            this.Btn_Return_To_Excell_File.Size = new System.Drawing.Size(97, 43);
+            this.Btn_Return_To_Excell_File.TabIndex = 17;
+            this.Btn_Return_To_Excell_File.Text = "Return To Excel Data";
+            this.Btn_Return_To_Excell_File.UseVisualStyleBackColor = false;
+            this.Btn_Return_To_Excell_File.Click += new System.EventHandler(this.Btn_Return_To_Excell_File_Click);
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column7,
+            this.Column4,
+            this.Column5,
+            this.Column6});
+            this.dataGridView4.Location = new System.Drawing.Point(38, 352);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.ReadOnly = true;
+            this.dataGridView4.Size = new System.Drawing.Size(427, 133);
+            this.dataGridView4.TabIndex = 15;
+            this.dataGridView4.Visible = false;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Mesh #";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            this.Column7.Width = 70;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Diferencial Run 1";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Diferencial Run 2";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Diferencial Run 3";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Dgv_MAX_D95_Selected_Row
+            // 
+            this.Dgv_MAX_D95_Selected_Row.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
+            this.Dgv_MAX_D95_Selected_Row.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_MAX_D95_Selected_Row.Location = new System.Drawing.Point(21, 563);
+            this.Dgv_MAX_D95_Selected_Row.Name = "Dgv_MAX_D95_Selected_Row";
+            this.Dgv_MAX_D95_Selected_Row.Size = new System.Drawing.Size(421, 152);
+            this.Dgv_MAX_D95_Selected_Row.TabIndex = 13;
+            this.Dgv_MAX_D95_Selected_Row.Visible = false;
+            // 
+            // Dgv_ASTM_D95
+            // 
+            this.Dgv_ASTM_D95.AllowUserToAddRows = false;
+            this.Dgv_ASTM_D95.AllowUserToDeleteRows = false;
+            this.Dgv_ASTM_D95.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
+            this.Dgv_ASTM_D95.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_ASTM_D95.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Columna1R,
+            this.Tabla2R});
+            this.Dgv_ASTM_D95.Location = new System.Drawing.Point(492, 52);
+            this.Dgv_ASTM_D95.Name = "Dgv_ASTM_D95";
+            this.Dgv_ASTM_D95.Size = new System.Drawing.Size(824, 201);
+            this.Dgv_ASTM_D95.TabIndex = 10;
+            // 
+            // Columna1R
+            // 
+            this.Columna1R.HeaderText = "Nominal Sieve Size";
+            this.Columna1R.Name = "Columna1R";
+            this.Columna1R.Width = 80;
+            // 
+            // Tabla2R
+            // 
+            this.Tabla2R.HeaderText = "Mesh #";
+            this.Tabla2R.Name = "Tabla2R";
+            this.Tabla2R.Width = 70;
+            // 
+            // Btn_Clean_Data
+            // 
+            this.Btn_Clean_Data.BackColor = System.Drawing.SystemColors.Control;
+            this.Btn_Clean_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Clean_Data.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Clean_Data.Location = new System.Drawing.Point(389, 52);
+            this.Btn_Clean_Data.Name = "Btn_Clean_Data";
+            this.Btn_Clean_Data.Size = new System.Drawing.Size(97, 34);
+            this.Btn_Clean_Data.TabIndex = 5;
+            this.Btn_Clean_Data.Text = "Clean Data";
+            this.Btn_Clean_Data.UseVisualStyleBackColor = false;
+            this.Btn_Clean_Data.Click += new System.EventHandler(this.Btn_Clean_Data_Click);
+            // 
+            // Dgv_Tolerance_Table_Reference
+            // 
+            this.Dgv_Tolerance_Table_Reference.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
+            this.Dgv_Tolerance_Table_Reference.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_Tolerance_Table_Reference.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column19});
+            this.Dgv_Tolerance_Table_Reference.Location = new System.Drawing.Point(44, 475);
+            this.Dgv_Tolerance_Table_Reference.Name = "Dgv_Tolerance_Table_Reference";
+            this.Dgv_Tolerance_Table_Reference.Size = new System.Drawing.Size(421, 161);
+            this.Dgv_Tolerance_Table_Reference.TabIndex = 4;
+            this.Dgv_Tolerance_Table_Reference.Visible = false;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Normal Sieve size";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Mesh #";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Valores de la hoja";
+            this.Column3.Name = "Column3";
+            // 
+            // Column19
+            // 
+            this.Column19.HeaderText = "Maxima Apertura ASTM";
+            this.Column19.Name = "Column19";
+            // 
+            // Lbl_Selected_Mesh
+            // 
+            this.Lbl_Selected_Mesh.AutoSize = true;
+            this.Lbl_Selected_Mesh.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Selected_Mesh.ForeColor = System.Drawing.SystemColors.Control;
+            this.Lbl_Selected_Mesh.Location = new System.Drawing.Point(18, 226);
+            this.Lbl_Selected_Mesh.Name = "Lbl_Selected_Mesh";
+            this.Lbl_Selected_Mesh.Size = new System.Drawing.Size(103, 15);
+            this.Lbl_Selected_Mesh.TabIndex = 3;
+            this.Lbl_Selected_Mesh.Text = "Selected meshes:";
+            this.Lbl_Selected_Mesh.Visible = false;
+            // 
+            // Dgv_ASTM95_Detector_Number
+            // 
+            this.Dgv_ASTM95_Detector_Number.AllowUserToAddRows = false;
+            this.Dgv_ASTM95_Detector_Number.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
+            this.Dgv_ASTM95_Detector_Number.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_ASTM95_Detector_Number.Location = new System.Drawing.Point(150, 205);
+            this.Dgv_ASTM95_Detector_Number.Name = "Dgv_ASTM95_Detector_Number";
+            this.Dgv_ASTM95_Detector_Number.ReadOnly = true;
+            this.Dgv_ASTM95_Detector_Number.Size = new System.Drawing.Size(210, 150);
+            this.Dgv_ASTM95_Detector_Number.TabIndex = 2;
+            // 
+            // Combo_Box_Mesh
+            // 
+            this.Combo_Box_Mesh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Combo_Box_Mesh.FormattingEnabled = true;
+            this.Combo_Box_Mesh.Items.AddRange(new object[] {
+            "635",
+            "500",
+            "450",
+            "400",
+            "325",
+            "270",
+            "230",
+            "200",
+            "170",
+            "140",
+            "120",
+            "100",
+            "80",
+            "70",
+            "60",
+            "50",
+            "45",
+            "40",
+            "35",
+            "30",
+            "25",
+            "20",
+            "18",
+            "16",
+            "14",
+            "12",
+            "10",
+            "8",
+            "7",
+            "6"});
+            this.Combo_Box_Mesh.Location = new System.Drawing.Point(21, 87);
+            this.Combo_Box_Mesh.Name = "Combo_Box_Mesh";
+            this.Combo_Box_Mesh.Size = new System.Drawing.Size(193, 21);
+            this.Combo_Box_Mesh.TabIndex = 1;
+            this.Combo_Box_Mesh.SelectedIndexChanged += new System.EventHandler(this.ComboBox_Mesh_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label1.Location = new System.Drawing.Point(18, 71);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(270, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Mesh selection: (Enter from highest to lowest)";
+            // 
+            // Page_Upload_Excell
+            // 
+            this.Page_Upload_Excell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(192)))));
+            this.Page_Upload_Excell.Controls.Add(this.datos);
+            this.Page_Upload_Excell.Controls.Add(this.Btn_Go_To_Manual_Mesh_Selection);
+            this.Page_Upload_Excell.Controls.Add(this.Dgv_Particle_Data);
+            this.Page_Upload_Excell.Controls.Add(this.Btn_Load_File);
+            this.Page_Upload_Excell.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Page_Upload_Excell.Location = new System.Drawing.Point(4, 22);
+            this.Page_Upload_Excell.Name = "Page_Upload_Excell";
+            this.Page_Upload_Excell.Padding = new System.Windows.Forms.Padding(3);
+            this.Page_Upload_Excell.Size = new System.Drawing.Size(1324, 723);
+            this.Page_Upload_Excell.TabIndex = 0;
+            this.Page_Upload_Excell.Text = "Excel Upload";
+            // 
+            // datos
+            // 
+            this.datos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.datos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datos.Location = new System.Drawing.Point(100, 330);
+            this.datos.Name = "datos";
+            this.datos.ReadOnly = true;
+            this.datos.Size = new System.Drawing.Size(44, 39);
+            this.datos.TabIndex = 5;
+            this.datos.Visible = false;
+            this.datos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datos_CellContentClick);
+            // 
+            // Btn_Go_To_Manual_Mesh_Selection
+            // 
+            this.Btn_Go_To_Manual_Mesh_Selection.BackColor = System.Drawing.SystemColors.Control;
+            this.Btn_Go_To_Manual_Mesh_Selection.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Go_To_Manual_Mesh_Selection.Location = new System.Drawing.Point(663, 16);
+            this.Btn_Go_To_Manual_Mesh_Selection.Name = "Btn_Go_To_Manual_Mesh_Selection";
+            this.Btn_Go_To_Manual_Mesh_Selection.Size = new System.Drawing.Size(158, 42);
+            this.Btn_Go_To_Manual_Mesh_Selection.TabIndex = 3;
+            this.Btn_Go_To_Manual_Mesh_Selection.Text = "Go To Manual Mesh Selection";
+            this.Btn_Go_To_Manual_Mesh_Selection.UseVisualStyleBackColor = false;
+            this.Btn_Go_To_Manual_Mesh_Selection.Click += new System.EventHandler(this.Btn_Go_To_Manual_Mesh_Selection_Click);
+            // 
+            // Dgv_Particle_Data
+            // 
+            this.Dgv_Particle_Data.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Dgv_Particle_Data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_Particle_Data.Location = new System.Drawing.Point(6, 69);
+            this.Dgv_Particle_Data.Name = "Dgv_Particle_Data";
+            this.Dgv_Particle_Data.ReadOnly = true;
+            this.Dgv_Particle_Data.Size = new System.Drawing.Size(1312, 648);
+            this.Dgv_Particle_Data.TabIndex = 2;
+            // 
+            // Btn_Load_File
+            // 
+            this.Btn_Load_File.BackColor = System.Drawing.SystemColors.Control;
+            this.Btn_Load_File.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Load_File.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Load_File.ForeColor = System.Drawing.Color.Black;
+            this.Btn_Load_File.Location = new System.Drawing.Point(444, 21);
+            this.Btn_Load_File.Name = "Btn_Load_File";
+            this.Btn_Load_File.Size = new System.Drawing.Size(111, 33);
+            this.Btn_Load_File.TabIndex = 0;
+            this.Btn_Load_File.Text = "Upload File";
+            this.Btn_Load_File.UseVisualStyleBackColor = false;
+            this.Btn_Load_File.Click += new System.EventHandler(this.Btn_Load_File_Click);
+            // 
+            // TabControl_Main_Menu
+            // 
+            this.TabControl_Main_Menu.Controls.Add(this.Page_Upload_Excell);
+            this.TabControl_Main_Menu.Controls.Add(this.Page_Mesh_Selection);
+            this.TabControl_Main_Menu.Controls.Add(this.Page_Report_View);
+            this.TabControl_Main_Menu.Controls.Add(this.Page_Calculation);
+            this.TabControl_Main_Menu.Controls.Add(this.Page_Save_Settings);
+            this.TabControl_Main_Menu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TabControl_Main_Menu.Location = new System.Drawing.Point(0, 0);
+            this.TabControl_Main_Menu.Name = "TabControl_Main_Menu";
+            this.TabControl_Main_Menu.SelectedIndex = 0;
+            this.TabControl_Main_Menu.Size = new System.Drawing.Size(1332, 749);
+            this.TabControl_Main_Menu.TabIndex = 3;
+            this.TabControl_Main_Menu.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabControl1_Selecting);
             // 
             // Main_Menu
             // 
@@ -1624,78 +1661,83 @@
             this.Name = "Main_Menu";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Particle_Data)).EndInit();
-            this.TabControl_Main_Menu.ResumeLayout(false);
-            this.Page_Upload_Excell.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.datos)).EndInit();
+            this.Page_Report_View.ResumeLayout(false);
+            this.Page_Report_View.PerformLayout();
+            this.Pnl_Run_One.ResumeLayout(false);
+            this.Pnl_Run_One.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Single_Aperture_Differential)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Single_Aperture_Accumulated_right_left)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Sample_Information)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM_95_Differential)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM_D95_Accumulated_rigth_left)).EndInit();
             this.Page_Mesh_Selection.ResumeLayout(false);
             this.Page_Mesh_Selection.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Single_Aperture_Selected_Row)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM_Single_Aperture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Single_Aperture_Detector)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_MAX_D95_Selected_Row)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM_D95)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Tolerance_Table_Reference)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM95_Detector_Number)).EndInit();
-            this.Page_Report_View.ResumeLayout(false);
-            this.Page_Report_View.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Sample_Information)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Accumulated_rigth_left)).EndInit();
+            this.Page_Upload_Excell.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.datos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Particle_Data)).EndInit();
+            this.TabControl_Main_Menu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button Btn_Load_File;
-        private System.Windows.Forms.DataGridView Dgv_Particle_Data;
-        private System.Windows.Forms.TabControl TabControl_Main_Menu;
-        private System.Windows.Forms.TabPage Page_Upload_Excell;
-        private System.Windows.Forms.TabPage Page_Mesh_Selection;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TabPage Page_Save_Settings;
+        private System.Windows.Forms.TabPage Page_Calculation;
         private System.Windows.Forms.TabPage Page_Report_View;
-        private System.Windows.Forms.ComboBox Combo_Box_Mesh;
-        private System.Windows.Forms.Button Btn_Go_To_Manual_Mesh_Selection;
-        private System.Windows.Forms.Label Lbl_Selected_Mesh;
-        private System.Windows.Forms.DataGridView Dgv_ASTM95_Detector_Number;
-        private System.Windows.Forms.DataGridView Dgv_Tolerance_Table_Reference;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.Button Btn_Clean_Data;
-        private System.Windows.Forms.DataGridView Dgv_ASTM_D95;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridView Dgv_MAX_D95_Selected_Row;
-        private System.Windows.Forms.DataGridView dataGridView4;
-        private System.Windows.Forms.DataGridView Dgv_Accumulated_rigth_left;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.DataGridView dataGridView6;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView Dgv_Sample_Information;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Panel Pnl_Run_One;
+        private System.Windows.Forms.Label Lbl_Run_One;
+        private System.Windows.Forms.Label Lbl_Name_Run_One;
+        private System.Windows.Forms.Label Lbl_Name_Value_Run_One;
+        private System.Windows.Forms.Label Lbl_Sample_Data_Run_One;
+        private System.Windows.Forms.Label Lbl_Sample_Data_Value_Run_One;
+        private System.Windows.Forms.Label Lbl_User_RunOne;
+        private System.Windows.Forms.Label Lbl_User_Value_Run_One;
+        private System.Windows.Forms.Label Lbl_Device_Run_One;
+        private System.Windows.Forms.Label Lbl_Device_Value_Run_One;
+        private System.Windows.Forms.Label Lbl_Sample_Id_Run_One;
+        private System.Windows.Forms.Label Lbl_Sample_Id_Value_Run_One;
+        private System.Windows.Forms.Label Lbl_Group_Id;
+        private System.Windows.Forms.Label Lbl_Group_Id_Value;
+        private System.Windows.Forms.Label Lbl_Single_Aperture;
+        private System.Windows.Forms.Label Lbl_ASTM_95;
+        private System.Windows.Forms.DataGridView Dgv_Single_Aperture_Differential;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column20;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column21;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column22;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column23;
+        private System.Windows.Forms.DataGridView Dgv_Single_Aperture_Accumulated_right_left;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column24;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column25;
+        private System.Windows.Forms.Button Btn_Hide_Differential;
+        private System.Windows.Forms.DataGridView dataGridView10;
+        private System.Windows.Forms.DataGridView dataGridView9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column18;
+        private System.Windows.Forms.Label label90;
+        private System.Windows.Forms.Label label89;
+        private System.Windows.Forms.Label label88;
+        private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.Label label86;
+        private System.Windows.Forms.Label label85;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button Btn_Hide_Cumulatives;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label43;
@@ -1732,62 +1774,62 @@
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Button Btn_Hide_Cumulatives;
-        private System.Windows.Forms.Button Btn_Return_To_Excell_File;
-        private System.Windows.Forms.DataGridView datos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Columna1R;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tabla2R;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.TabPage Page_Calculation;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.Label label90;
-        private System.Windows.Forms.Label label89;
-        private System.Windows.Forms.Label label88;
-        private System.Windows.Forms.Label label87;
-        private System.Windows.Forms.Label label86;
-        private System.Windows.Forms.Label label85;
-        private System.Windows.Forms.DataGridView dataGridView9;
-        private System.Windows.Forms.DataGridView dataGridView10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column16;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column17;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column18;
-        private System.Windows.Forms.TabPage Page_Save_Settings;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column19;
-        private System.Windows.Forms.Button Go_To_Report_View;
-        private System.Windows.Forms.Button Btn_Hide_Differential;
-        private System.Windows.Forms.DataGridView dataGridView12;
-        private System.Windows.Forms.DataGridView dataGridView11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column20;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column21;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column22;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column23;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column24;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column25;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DataGridView Dgv_Sample_Information;
+        private System.Windows.Forms.DataGridView Dgv_ASTM_95_Differential;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
-        private System.Windows.Forms.DataGridView dataGridView13;
+        private System.Windows.Forms.Button Btn_Return;
+        private System.Windows.Forms.DataGridView Dgv_ASTM_D95_Accumulated_rigth_left;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.TabPage Page_Mesh_Selection;
+        private MaterialSkin.Controls.MaterialLabel Lbl_ASTM_Max_Single_Aperture;
+        private MaterialSkin.Controls.MaterialLabel Lbl_ASTM_Max95;
+        private System.Windows.Forms.DataGridView Dgv_Single_Aperture_Selected_Row;
         private System.Windows.Forms.DataGridView dataGridView15;
-        private System.Windows.Forms.DataGridView Dgv_ASTM_Single_Aperture;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column28;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column29;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column30;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column31;
+        private System.Windows.Forms.DataGridView Dgv_ASTM_Single_Aperture;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column26;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column27;
-        private System.Windows.Forms.DataGridView Dgv_Single_Aperture_Selected_Row;
-        private MaterialSkin.Controls.MaterialLabel Lbl_ASTM_Max_Single_Aperture;
-        private MaterialSkin.Controls.MaterialLabel Lbl_ASTM_Max95;
+        private System.Windows.Forms.DataGridView Dgv_Single_Aperture_Detector;
+        private System.Windows.Forms.Button Go_To_Report_View;
+        private System.Windows.Forms.Button Btn_Return_To_Excell_File;
+        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridView Dgv_MAX_D95_Selected_Row;
+        private System.Windows.Forms.DataGridView Dgv_ASTM_D95;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Columna1R;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tabla2R;
+        private System.Windows.Forms.Button Btn_Clean_Data;
+        private System.Windows.Forms.DataGridView Dgv_Tolerance_Table_Reference;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column19;
+        private System.Windows.Forms.Label Lbl_Selected_Mesh;
+        private System.Windows.Forms.DataGridView Dgv_ASTM95_Detector_Number;
+        private System.Windows.Forms.ComboBox Combo_Box_Mesh;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TabPage Page_Upload_Excell;
+        private System.Windows.Forms.DataGridView datos;
+        private System.Windows.Forms.Button Btn_Go_To_Manual_Mesh_Selection;
+        private System.Windows.Forms.DataGridView Dgv_Particle_Data;
+        private System.Windows.Forms.Button Btn_Load_File;
+        private System.Windows.Forms.TabControl TabControl_Main_Menu;
     }
 }
 

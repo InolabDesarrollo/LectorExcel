@@ -21,5 +21,17 @@ namespace LecturaExcel.Responsabilitis
             return roundedMicron;
         }
 
+        public bool checkIfMicronHasIntegers(double micron)
+        {
+            if ((micron == 1) || (micron == 2) || (micron == 3) || (micron == 4))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
     }
 }

@@ -360,3 +360,4 @@ C:\Users\Omar Sotomayor\Desktop\LecturaExcel\bin\Debug\System.Memory.xml
 C:\Users\Omar Sotomayor\Desktop\LecturaExcel\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Omar Sotomayor\Desktop\LecturaExcel\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Omar Sotomayor\Desktop\LecturaExcel\obj\Debug\LecturaExcel.Main_Menu.resources
+C:\Users\Omar Sotomayor\Desktop\LecturaExcel\obj\Debug\LecturaExcel.View.UserControl1.resources
