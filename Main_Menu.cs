@@ -559,8 +559,9 @@ namespace LecturaExcel
                 this.addCumulativeColumnsToDataGridView(Dgv_ASTM_D95_Accumulated_rigth_left);
                 this.addCumulativeColumnsToDataGridView(Dgv_Single_Aperture_Accumulated_right_left);
 
-                //primera corrida 95%
-                foreach (DataGridViewRow row in Dgv_ASTM95_Detector_Number.Rows)
+                //primera corrida 95% //Dgv_ASTM95_Detector_Number
+
+                foreach (DataGridViewRow row in Dgv_ASTM95_Detector_Number.Rows) 
                 {
                     double accumulated = 0;
                     var cellvalue = row.Cells[3].Value;
@@ -588,6 +589,8 @@ namespace LecturaExcel
                         Trace.WriteLine(ex.Message);
                     }
                 }
+
+
 
                 //primera corrida max%
                 this.addCumulativeValuesToRightOfDataGridView(Dgv_Single_Aperture_Detector, Dgv_ASTM_Single_Aperture, 5);
@@ -622,6 +625,8 @@ namespace LecturaExcel
                 }
 
                 //segunda Corrida max%
+
+
                 this.addCumulativeValuesToRightOfDataGridView(Dgv_Single_Aperture_Detector, Dgv_ASTM_Single_Aperture, 6);
                 this.addCumulativeValuesToRightOfDataGridView(Dgv_Single_Aperture_Detector, Dgv_Single_Aperture_Accumulated_right_left, 6);
 
