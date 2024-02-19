@@ -40,7 +40,7 @@ namespace LecturaExcel
         bool ch2 = true;
         bool allowSelect = false;
         bool oc1 = true;
-        string numberOfRuns = "";
+        string numberOfRun = "";
         string accumulated = "no";
         string diffferential = "no";
 
@@ -274,8 +274,8 @@ namespace LecturaExcel
         {
             accumulated = "si";
             Manage_Data data = new Manage_Data();
-            data.hideCummulativeValues(numberOfRuns, Dgv_ASTM_D95_Accumulated_rigth_left);
-            data.hideCummulativeValues(numberOfRuns, Dgv_Single_Aperture_Accumulated_right_left);
+            data.hideCummulativeValues(numberOfRun, Dgv_ASTM_D95_Accumulated_rigth_left);
+            data.hideCummulativeValues(numberOfRun, Dgv_Single_Aperture_Accumulated_right_left);
             Btn_Hide_Cumulatives.Visible = false;
         }
 
@@ -317,7 +317,7 @@ namespace LecturaExcel
                 valor_nominal.Add("");
             }
             //If condicion de cuantas corridas son
-            if (numberOfRuns == "3")
+            if (numberOfRun == "3")
             {
                 //dgv5 = 8 columnas
                 //Lectura de todos los datos para generar el reporte
@@ -381,14 +381,14 @@ namespace LecturaExcel
                         Dgv_Single_Aperture_Differential.Rows[i].Cells[2].Value,
                         Dgv_Single_Aperture_Differential.Rows[i].Cells[3].Value,
                         Dgv_Single_Aperture_Accumulated_right_left.Rows[i].Cells[0].Value,
-                        numberOfRuns,
+                        numberOfRun,
                         valor_nominal[i]
                         );
                 }
                 Vista_i vi = new Vista_i(dt);
                 vi.Show();
             }
-            else if (numberOfRuns == "2")
+            else if (numberOfRun == "2")
             {
                 //dgv5 = 6 columnas
                 //Lectura de todos los datos para generar el reporte
@@ -452,14 +452,14 @@ namespace LecturaExcel
                         Dgv_Single_Aperture_Differential.Rows[i].Cells[2].Value,
                         "",
                         Dgv_Single_Aperture_Accumulated_right_left.Rows[i].Cells[0].Value,
-                        numberOfRuns,
+                        numberOfRun,
                         valor_nominal[i]
                         );
                 }
                 Vista_i vi = new Vista_i(dt);
                 vi.Show();
             }
-            else if (numberOfRuns == "1")
+            else if (numberOfRun == "1")
             {
                 //dgv5 = 4 columnas
                 //Lectura de todos los datos para generar el reporte
@@ -524,7 +524,7 @@ namespace LecturaExcel
                         "",
                         "",
                         Dgv_Single_Aperture_Accumulated_right_left.Rows[i].Cells[0].Value,
-                        numberOfRuns,
+                        numberOfRun,
                         valor_nominal[i]
                         );
                 }
@@ -537,16 +537,17 @@ namespace LecturaExcel
         {
             if (Dgv_Particle_Data.Rows[0].Cells[4].Value.ToString() == "Run_3 (Vol%)")
             {
-                //3 Corridas
-                numberOfRuns = "3";
-                this.addCumulativeColumnsToDataGridView(Dgv_ASTM_D95);
-                this.addCumulativeColumnsToDataGridView(Dgv_ASTM_Single_Aperture);
-                this.addCumulativeColumnsToDataGridView(Dgv_ASTM_D95_Accumulated_rigth_left);
-                this.addCumulativeColumnsToDataGridView(Dgv_Single_Aperture_Accumulated_right_left);
+                Manage_Data manageData = new Manage_Data();
+                numberOfRun = "3";
+
+                this.addColumnsOfCummulativeValues(Dgv_ASTM_D95);
+                this.addColumnsOfCummulativeValues(Dgv_ASTM_Single_Aperture);
+                this.addColumnsOfCummulativeValues(Dgv_ASTM_D95_Accumulated_rigth_left);
+                this.addColumnsOfCummulativeValues(Dgv_Single_Aperture_Accumulated_right_left);
 
                 //Aqui ira el calculo de la interpolacion de valores para 95%
                 this.addCumulativeValuesForEachRunToDataGridView();
-             
+
                 ch1 = false;
 
                 //Otros acumulativos
@@ -554,14 +555,13 @@ namespace LecturaExcel
                 Dgv_ASTM_Single_Aperture.Visible = true;
 
                 //Añadir los campos de "Acumulativos >"
-                this.addCumulativeColumnsToDataGridView(Dgv_ASTM_D95);
-                this.addCumulativeColumnsToDataGridView(Dgv_ASTM_Single_Aperture);
-                this.addCumulativeColumnsToDataGridView(Dgv_ASTM_D95_Accumulated_rigth_left);
-                this.addCumulativeColumnsToDataGridView(Dgv_Single_Aperture_Accumulated_right_left);
+                this.addColumnsOfCummulativeValuesToLeft(Dgv_ASTM_D95);
+                this.addColumnsOfCummulativeValuesToLeft(Dgv_ASTM_Single_Aperture);
+                this.addColumnsOfCummulativeValuesToLeft(Dgv_ASTM_D95_Accumulated_rigth_left);
+                this.addColumnsOfCummulativeValuesToLeft(Dgv_Single_Aperture_Accumulated_right_left);
 
                 //primera corrida 95% //Dgv_ASTM95_Detector_Number
-
-                foreach (DataGridViewRow row in Dgv_ASTM95_Detector_Number.Rows) 
+                foreach (DataGridViewRow row in Dgv_ASTM95_Detector_Number.Rows)
                 {
                     double accumulated = 0;
                     var cellvalue = row.Cells[3].Value;
@@ -590,12 +590,10 @@ namespace LecturaExcel
                     }
                 }
 
-
-
                 //primera corrida max%
                 this.addCumulativeValuesToRightOfDataGridView(Dgv_Single_Aperture_Detector, Dgv_ASTM_Single_Aperture, 5);
                 this.addCumulativeValuesToRightOfDataGridView(Dgv_Single_Aperture_Detector, Dgv_Single_Aperture_Accumulated_right_left, 5);
-               
+
                 Accumulated _accumulated = new Accumulated();
 
                 //segunda Corrida 95%
@@ -625,8 +623,6 @@ namespace LecturaExcel
                 }
 
                 //segunda Corrida max%
-
-
                 this.addCumulativeValuesToRightOfDataGridView(Dgv_Single_Aperture_Detector, Dgv_ASTM_Single_Aperture, 6);
                 this.addCumulativeValuesToRightOfDataGridView(Dgv_Single_Aperture_Detector, Dgv_Single_Aperture_Accumulated_right_left, 6);
 
@@ -641,7 +637,6 @@ namespace LecturaExcel
                 this.addCumulativeValuesToRightOfDataGridView(Dgv_Single_Aperture_Detector, Dgv_ASTM_Single_Aperture, 7);
                 this.addCumulativeValuesToRightOfDataGridView(Dgv_Single_Aperture_Detector, Dgv_Single_Aperture_Accumulated_right_left, 7);
 
-               
                 foreach (DataGridViewRow row in Dgv_ASTM_D95.Rows)
                 {
                     double resultado = 100 - Convert.ToDouble(Dgv_ASTM_D95_Accumulated_rigth_left.Rows[row.Index].Cells[2].Value);
@@ -660,7 +655,6 @@ namespace LecturaExcel
                     Dgv_ASTM_D95.Rows[row.Index].Cells[7].Value = Math.Round(resultado3, 2);
                 }
 
-
                 foreach (DataGridViewRow row in Dgv_ASTM_Single_Aperture.Rows)
                 {
                     double resultado = 100 - Convert.ToDouble(Dgv_Single_Aperture_Accumulated_right_left.Rows[row.Index].Cells[2].Value);
@@ -675,11 +669,12 @@ namespace LecturaExcel
                     Dgv_Single_Aperture_Accumulated_right_left.Rows[row.Index].Cells[7].Value = Math.Round(resultado3, 2);
                     Dgv_ASTM_Single_Aperture.Rows[row.Index].Cells[7].Value = Math.Round(resultado3, 2);
                 }
+
             }
             else if (Dgv_Particle_Data.Rows[0].Cells[3].Value.ToString() == "Run_2 (Vol%)")
             {
                 //2 Corridas
-                numberOfRuns = "2";
+                numberOfRun = "2";
                 //Añadir los campos de "Acumulativos <" 95%
                 DataGridViewTextBoxColumn acu1 = new DataGridViewTextBoxColumn();
                 acu1.HeaderText = "Run_1 Cumulative <";
@@ -1003,7 +998,7 @@ namespace LecturaExcel
             else if (Dgv_Particle_Data.Rows[0].Cells[2].Value.ToString() == "Run_1 (Vol%)")
             {
                 // 1 corrida
-                numberOfRuns = "1";
+                numberOfRun = "1";
                 //Añadir los campos de "Acumulativos <" 95%
                 DataGridViewTextBoxColumn acu1 = new DataGridViewTextBoxColumn();
                 acu1.HeaderText = "Run_1 Cumulative <";
@@ -3245,6 +3240,25 @@ namespace LecturaExcel
             Dgv_Single_Aperture_Differential.ClearSelection();
         }
 
+        private void addColumnsOfCummulativeValues(DataGridView dataGridView)
+        {
+            Manage_Data manageData = new Manage_Data();
+
+            manageData.addColumnToDatagridView("Run_1 Cumulative <", dataGridView);
+            manageData.addColumnToDatagridView("Run_2 Cumulative <", dataGridView);
+            manageData.addColumnToDatagridView("Run_3 Cumulative <", dataGridView);
+        }
+
+        private void addColumnsOfCummulativeValuesToLeft(DataGridView dataGridView)
+        {
+            Manage_Data manageData = new Manage_Data();
+
+            manageData.addColumnToDatagridView("Run_1 Cumulative >", dataGridView);
+            manageData.addColumnToDatagridView("Run_2 Cumulative >", dataGridView);
+            manageData.addColumnToDatagridView("Run_3 Cumulative >", dataGridView);
+        }
+
+
         private void addCumulativeValuesForEachRunToDataGridView()
         {
             for (int numberOfRun = 2; numberOfRun<= 4; numberOfRun++)
@@ -3314,28 +3328,6 @@ namespace LecturaExcel
             double abajo = micronValue - micronInferiorLimitValue;
             double division = arriba / abajo;
             return  accumulated + (division * (roundedValue - accumulated));
-        }
-
-        private void addCumulativeColumnsToDataGridView(DataGridView dgvToAddColumns)
-        {
-            Manage_Data data = new Manage_Data();
-            try
-            {
-                string[] headers = new string[3];
-                headers[0] = "Run_1 Cumulative <";
-                headers[1] = "Run_2 Cumulative <";
-                headers[2] = "Run_3 Cumulative <";
-
-                foreach (string header in headers)
-                {
-                    data.addColumnToDatagridView(header, dgvToAddColumns);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("error: addCumulativeColumnsToDataGridView"+ex.Message);
-            }
-            
         }
 
         public void renombrar()
