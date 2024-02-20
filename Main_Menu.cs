@@ -540,25 +540,21 @@ namespace LecturaExcel
                 Manage_Data manageData = new Manage_Data();
                 numberOfRun = "3";
 
-                this.addColumnsOfCummulativeValues(Dgv_ASTM_D95);
-                this.addColumnsOfCummulativeValues(Dgv_ASTM_Single_Aperture);
-                this.addColumnsOfCummulativeValues(Dgv_ASTM_D95_Accumulated_rigth_left);
-                this.addColumnsOfCummulativeValues(Dgv_Single_Aperture_Accumulated_right_left);
+                this.addColumnsOfCummulativeValues(Dgv_ASTM_D95, numberOfRun);
+                this.addColumnsOfCummulativeValues(Dgv_ASTM_Single_Aperture, numberOfRun);
+                this.addColumnsOfCummulativeValues(Dgv_ASTM_D95_Accumulated_rigth_left, numberOfRun);
+                this.addColumnsOfCummulativeValues(Dgv_Single_Aperture_Accumulated_right_left, numberOfRun);
 
                 //Aqui ira el calculo de la interpolacion de valores para 95%
                 this.addCumulativeValuesForEachRunToDataGridView();
 
                 ch1 = false;
 
-                //Otros acumulativos
-                Dgv_ASTM_D95.Visible = true;
-                Dgv_ASTM_Single_Aperture.Visible = true;
-
                 //Añadir los campos de "Acumulativos >"
-                this.addColumnsOfCummulativeValuesToLeft(Dgv_ASTM_D95);
-                this.addColumnsOfCummulativeValuesToLeft(Dgv_ASTM_Single_Aperture);
-                this.addColumnsOfCummulativeValuesToLeft(Dgv_ASTM_D95_Accumulated_rigth_left);
-                this.addColumnsOfCummulativeValuesToLeft(Dgv_Single_Aperture_Accumulated_right_left);
+                this.addColumnsOfCummulativeValuesToLeft(Dgv_ASTM_D95,numberOfRun);
+                this.addColumnsOfCummulativeValuesToLeft(Dgv_ASTM_Single_Aperture, numberOfRun);
+                this.addColumnsOfCummulativeValuesToLeft(Dgv_ASTM_D95_Accumulated_rigth_left,numberOfRun);
+                this.addColumnsOfCummulativeValuesToLeft(Dgv_Single_Aperture_Accumulated_right_left, numberOfRun);
 
                 //primera corrida 95% //Dgv_ASTM95_Detector_Number
                 foreach (DataGridViewRow row in Dgv_ASTM95_Detector_Number.Rows)
@@ -616,12 +612,11 @@ namespace LecturaExcel
                             Dgv_ASTM_D95_Accumulated_rigth_left.Rows[row2.Index].Cells[6].Value = Math.Round(acumarr2, 2);
                         }
                     }
-                    catch (Exception r)
+                    catch (Exception ex)
                     {
-
+                        MessageBox.Show(ex.Message);
                     }
                 }
-
                 //segunda Corrida max%
                 this.addCumulativeValuesToRightOfDataGridView(Dgv_Single_Aperture_Detector, Dgv_ASTM_Single_Aperture, 6);
                 this.addCumulativeValuesToRightOfDataGridView(Dgv_Single_Aperture_Detector, Dgv_Single_Aperture_Accumulated_right_left, 6);
@@ -637,91 +632,22 @@ namespace LecturaExcel
                 this.addCumulativeValuesToRightOfDataGridView(Dgv_Single_Aperture_Detector, Dgv_ASTM_Single_Aperture, 7);
                 this.addCumulativeValuesToRightOfDataGridView(Dgv_Single_Aperture_Detector, Dgv_Single_Aperture_Accumulated_right_left, 7);
 
-                foreach (DataGridViewRow row in Dgv_ASTM_D95.Rows)
-                {
-                    double resultado = 100 - Convert.ToDouble(Dgv_ASTM_D95_Accumulated_rigth_left.Rows[row.Index].Cells[2].Value);
-
-                    Dgv_ASTM_D95_Accumulated_rigth_left.Rows[row.Index].Cells[5].Value = Math.Round(resultado, 2);
-                    Dgv_ASTM_D95.Rows[row.Index].Cells[5].Value = Math.Round(resultado, 2);
-
-                    double resultado2 = 100 - Convert.ToDouble(Dgv_ASTM_D95_Accumulated_rigth_left.Rows[row.Index].Cells[3].Value);
-
-                    Dgv_ASTM_D95_Accumulated_rigth_left.Rows[row.Index].Cells[6].Value = Math.Round(resultado2, 2);
-                    Dgv_ASTM_D95.Rows[row.Index].Cells[6].Value = Math.Round(resultado2, 2);
-
-                    double resultado3 = 100 - Convert.ToDouble(Dgv_ASTM_D95_Accumulated_rigth_left.Rows[row.Index].Cells[4].Value);
-
-                    Dgv_ASTM_D95_Accumulated_rigth_left.Rows[row.Index].Cells[7].Value = Math.Round(resultado3, 2);
-                    Dgv_ASTM_D95.Rows[row.Index].Cells[7].Value = Math.Round(resultado3, 2);
-                }
-
-                foreach (DataGridViewRow row in Dgv_ASTM_Single_Aperture.Rows)
-                {
-                    double resultado = 100 - Convert.ToDouble(Dgv_Single_Aperture_Accumulated_right_left.Rows[row.Index].Cells[2].Value);
-                    Dgv_Single_Aperture_Accumulated_right_left.Rows[row.Index].Cells[5].Value = Math.Round(resultado, 2);
-                    Dgv_ASTM_Single_Aperture.Rows[row.Index].Cells[5].Value = Math.Round(resultado, 2);
-
-                    double resultado2 = 100 - Convert.ToDouble(Dgv_Single_Aperture_Accumulated_right_left.Rows[row.Index].Cells[3].Value);
-                    Dgv_Single_Aperture_Accumulated_right_left.Rows[row.Index].Cells[6].Value = Math.Round(resultado2, 2);
-                    Dgv_ASTM_Single_Aperture.Rows[row.Index].Cells[6].Value = Math.Round(resultado2, 2);
-
-                    double resultado3 = 100 - Convert.ToDouble(Dgv_Single_Aperture_Accumulated_right_left.Rows[row.Index].Cells[4].Value);
-                    Dgv_Single_Aperture_Accumulated_right_left.Rows[row.Index].Cells[7].Value = Math.Round(resultado3, 2);
-                    Dgv_ASTM_Single_Aperture.Rows[row.Index].Cells[7].Value = Math.Round(resultado3, 2);
-                }
-
+                _accumulated.addCumulativeValuesToRight100(Dgv_ASTM_D95, Dgv_ASTM_D95_Accumulated_rigth_left);
+                _accumulated.addCumulativeValuesToRight100(Dgv_ASTM_Single_Aperture, Dgv_Single_Aperture_Accumulated_right_left);
             }
             else if (Dgv_Particle_Data.Rows[0].Cells[3].Value.ToString() == "Run_2 (Vol%)")
             {
-                //2 Corridas
                 numberOfRun = "2";
                 //Añadir los campos de "Acumulativos <" 95%
-                DataGridViewTextBoxColumn acu1 = new DataGridViewTextBoxColumn();
-                acu1.HeaderText = "Run_1 Cumulative <";
-                acu1.Width = 80;
+                this.addColumnsOfCummulativeValues(Dgv_ASTM_D95, numberOfRun);
+                this.addColumnsOfCummulativeValues(Dgv_ASTM_D95_Accumulated_rigth_left, numberOfRun);
 
-                DataGridViewTextBoxColumn acu2 = new DataGridViewTextBoxColumn();
-                acu2.HeaderText = "Run_2 Cumulative <";
-                acu2.Width = 80;
-
-                Dgv_ASTM_D95.Columns.Add(acu1);
-                Dgv_ASTM_D95.Columns.Add(acu2);
-
-                DataGridViewTextBoxColumn acu11 = new DataGridViewTextBoxColumn();
-                acu11.HeaderText = "Run_1 Cumulative <";
-                acu11.Width = 80;
-
-                DataGridViewTextBoxColumn acu21 = new DataGridViewTextBoxColumn();
-                acu21.HeaderText = "Run_2 Cumulative <";
-                acu21.Width = 80;
-
-                Dgv_ASTM_D95_Accumulated_rigth_left.Columns.Add(acu11);
-                Dgv_ASTM_D95_Accumulated_rigth_left.Columns.Add(acu21);
                 //Añadir los campos de "Acumulativos <" max%
-                DataGridViewTextBoxColumn acu1z = new DataGridViewTextBoxColumn();
-                acu1z.HeaderText = "Run_1 Cumulative <";
-                acu1z.Width = 80;
-
-                DataGridViewTextBoxColumn acu2z = new DataGridViewTextBoxColumn();
-                acu2z.HeaderText = "Run_2 Cumulative <";
-                acu2z.Width = 80;
-
-                Dgv_ASTM_Single_Aperture.Columns.Add(acu1z);
-                Dgv_ASTM_Single_Aperture.Columns.Add(acu2z);
-
-                DataGridViewTextBoxColumn acu11z = new DataGridViewTextBoxColumn();
-                acu11z.HeaderText = "Run_1 Cumulative <";
-                acu11z.Width = 80;
-
-                DataGridViewTextBoxColumn acu21z = new DataGridViewTextBoxColumn();
-                acu21z.HeaderText = "Run_2 Cumulative <";
-                acu21z.Width = 80;
-
-                Dgv_Single_Aperture_Accumulated_right_left.Columns.Add(acu11z);
-                Dgv_Single_Aperture_Accumulated_right_left.Columns.Add(acu21z);
+                this.addColumnsOfCummulativeValues(Dgv_ASTM_Single_Aperture, numberOfRun);
+                this.addColumnsOfCummulativeValues(Dgv_Single_Aperture_Accumulated_right_left, numberOfRun);
 
                 //primera corrida 95%
-                foreach (DataGridViewRow row1 in Dgv_ASTM95_Detector_Number.Rows)
+                foreach (DataGridViewRow row in Dgv_ASTM95_Detector_Number.Rows)
                 {
                     //primera corrida
                     double acumarr = 0;
@@ -729,7 +655,7 @@ namespace LecturaExcel
                     //aumentar a la fila los valores acumulativos a la derecha (los que van arriba)
                     try
                     {
-                        while (n <= Convert.ToInt32(row1.Cells[3].Value))
+                        while (n <= Convert.ToInt32(row.Cells[3].Value))
                         {
                             acumarr = acumarr + Convert.ToDouble(Dgv_Particle_Data.Rows[n].Cells[2].Value);
                             n++;
@@ -737,13 +663,13 @@ namespace LecturaExcel
                             {
                                 acumarr = 100;
                             }
-                            Dgv_ASTM_D95.Rows[row1.Index].Cells[2].Value = Math.Round(acumarr, 2);
-                            Dgv_ASTM_D95_Accumulated_rigth_left.Rows[row1.Index].Cells[2].Value = Math.Round(acumarr, 2);
+                            Dgv_ASTM_D95.Rows[row.Index].Cells[2].Value = Math.Round(acumarr, 2);
+                            Dgv_ASTM_D95_Accumulated_rigth_left.Rows[row.Index].Cells[2].Value = Math.Round(acumarr, 2);
                         }
                     }
-                    catch (Exception r)
+                    catch (Exception ex)
                     {
-
+                        MessageBox.Show(ex.Message);
                     }
                 }
                 //primera corrida max%
@@ -825,56 +751,14 @@ namespace LecturaExcel
                     }
                 }
                 ch1 = false;
-                Dgv_ASTM_D95.AllowUserToAddRows = false;
-                Dgv_ASTM_Single_Aperture.AllowUserToAddRows = false;
 
-                //Otros acumulativos
-                Dgv_ASTM_D95.Visible = true;
-                Dgv_ASTM_Single_Aperture.Visible = true;
                 //Añadir los campos de "Acumulativos >" 95%
-                DataGridViewTextBoxColumn acu1z1 = new DataGridViewTextBoxColumn();
-                acu1z1.HeaderText = "Run_1 Cumulative >";
-                acu1z1.Width = 80;
+                this.addColumnsOfCummulativeValuesToLeft(Dgv_ASTM_D95, numberOfRun);
+                this.addColumnsOfCummulativeValuesToLeft(Dgv_ASTM_D95_Accumulated_rigth_left, numberOfRun);
 
-                DataGridViewTextBoxColumn acu2z1 = new DataGridViewTextBoxColumn();
-                acu2z1.HeaderText = "Run_2 Cumulative >";
-                acu2z1.Width = 80;
-
-                Dgv_ASTM_D95.Columns.Add(acu1z1);
-                Dgv_ASTM_D95.Columns.Add(acu2z1);
-
-                DataGridViewTextBoxColumn acu11z1 = new DataGridViewTextBoxColumn();
-                acu11z1.HeaderText = "Run_1 Cumulative >";
-                acu11z1.Width = 80;
-
-                DataGridViewTextBoxColumn acu21z1 = new DataGridViewTextBoxColumn();
-                acu21z1.HeaderText = "Run_2 Cumulative >";
-                acu21z1.Width = 80;
-
-                Dgv_ASTM_D95_Accumulated_rigth_left.Columns.Add(acu11z1);
-                Dgv_ASTM_D95_Accumulated_rigth_left.Columns.Add(acu21z1);
                 //Añadir los campos de "Acumulativos >" max%
-                DataGridViewTextBoxColumn acu1z1x = new DataGridViewTextBoxColumn();
-                acu1z1x.HeaderText = "Run_1 Cumulative >";
-                acu1z1x.Width = 80;
-
-                DataGridViewTextBoxColumn acu2z1x = new DataGridViewTextBoxColumn();
-                acu2z1x.HeaderText = "Run_2 Cumulative >";
-                acu2z1x.Width = 80;
-
-                Dgv_ASTM_Single_Aperture.Columns.Add(acu1z1x);
-                Dgv_ASTM_Single_Aperture.Columns.Add(acu2z1x);
-
-                DataGridViewTextBoxColumn acu11z1x = new DataGridViewTextBoxColumn();
-                acu11z1x.HeaderText = "Run_1 Cumulative >";
-                acu11z1x.Width = 80;
-
-                DataGridViewTextBoxColumn acu21z1x = new DataGridViewTextBoxColumn();
-                acu21z1x.HeaderText = "Run_2 Cumulative >";
-                acu21z1x.Width = 80;
-
-                Dgv_Single_Aperture_Accumulated_right_left.Columns.Add(acu11z1x);
-                Dgv_Single_Aperture_Accumulated_right_left.Columns.Add(acu21z1x);
+                this.addColumnsOfCummulativeValuesToLeft(Dgv_ASTM_Single_Aperture, numberOfRun);
+                this.addColumnsOfCummulativeValuesToLeft(Dgv_Single_Aperture_Accumulated_right_left, numberOfRun);
 
                 //primera corrida 95%
                 foreach (DataGridViewRow row1 in Dgv_ASTM95_Detector_Number.Rows)
@@ -997,33 +881,14 @@ namespace LecturaExcel
             }
             else if (Dgv_Particle_Data.Rows[0].Cells[2].Value.ToString() == "Run_1 (Vol%)")
             {
-                // 1 corrida
                 numberOfRun = "1";
                 //Añadir los campos de "Acumulativos <" 95%
-                DataGridViewTextBoxColumn acu1 = new DataGridViewTextBoxColumn();
-                acu1.HeaderText = "Run_1 Cumulative <";
-                acu1.Width = 80;
+                this.addColumnsOfCummulativeValues(Dgv_ASTM_D95, numberOfRun);
+                this.addColumnsOfCummulativeValues(Dgv_ASTM_D95_Accumulated_rigth_left, numberOfRun);
 
-                Dgv_ASTM_D95.Columns.Add(acu1);
-
-                DataGridViewTextBoxColumn acu11 = new DataGridViewTextBoxColumn();
-                acu11.HeaderText = "Run_1 Cumulative <";
-                acu11.Width = 80;
-
-                Dgv_ASTM_D95_Accumulated_rigth_left.Columns.Add(acu11);
                 //Añadir los campos de "Acumulativos <" max%
-                DataGridViewTextBoxColumn acu1z = new DataGridViewTextBoxColumn();
-                acu1z.HeaderText = "Run_1 Cumulative <";
-                acu1z.Width = 80;
-
-                Dgv_ASTM_Single_Aperture.Columns.Add(acu1z);
-
-                DataGridViewTextBoxColumn acu11z = new DataGridViewTextBoxColumn();
-                acu11z.HeaderText = "Run_1 Cumulative <";
-                acu11z.Width = 80;
-
-                Dgv_Single_Aperture_Accumulated_right_left.Columns.Add(acu11z);
-
+                this.addColumnsOfCummulativeValues(Dgv_ASTM_Single_Aperture, numberOfRun);
+                this.addColumnsOfCummulativeValues(Dgv_Single_Aperture_Accumulated_right_left, numberOfRun);
 
                 //primera corrida 95%
                 foreach (DataGridViewRow row1 in Dgv_ASTM95_Detector_Number.Rows)
@@ -1079,36 +944,14 @@ namespace LecturaExcel
                 }
 
                 ch1 = false;
-                Dgv_ASTM_D95.AllowUserToAddRows = false;
-                Dgv_ASTM_Single_Aperture.AllowUserToAddRows = false;
 
-                //Otros acumulativos
-                Dgv_ASTM_D95.Visible = true;
-                Dgv_ASTM_Single_Aperture.Visible = true;
                 //Añadir los campos de "Acumulativos >" 95%
-                DataGridViewTextBoxColumn acu1z1 = new DataGridViewTextBoxColumn();
-                acu1z1.HeaderText = "Run_1 Cumulative >";
-                acu1z1.Width = 80;
+                this.addColumnsOfCummulativeValuesToLeft(Dgv_ASTM_D95, numberOfRun);
+                this.addColumnsOfCummulativeValuesToLeft(Dgv_ASTM_D95_Accumulated_rigth_left, numberOfRun);
 
-                Dgv_ASTM_D95.Columns.Add(acu1z1);
-
-                DataGridViewTextBoxColumn acu11z1 = new DataGridViewTextBoxColumn();
-                acu11z1.HeaderText = "Run_1 Cumulative >";
-                acu11z1.Width = 80;
-
-                Dgv_ASTM_D95_Accumulated_rigth_left.Columns.Add(acu11z1);
                 //Añadir los campos de "Acumulativos >" max%
-                DataGridViewTextBoxColumn acu1z1x = new DataGridViewTextBoxColumn();
-                acu1z1x.HeaderText = "Run_1 Cumulative >";
-                acu1z1x.Width = 80;
-
-                Dgv_ASTM_Single_Aperture.Columns.Add(acu1z1x);
-
-                DataGridViewTextBoxColumn acu11z1x = new DataGridViewTextBoxColumn();
-                acu11z1x.HeaderText = "Run_1 Cumulative >";
-                acu11z1x.Width = 80;
-
-                Dgv_Single_Aperture_Accumulated_right_left.Columns.Add(acu11z1x);
+                this.addColumnsOfCummulativeValuesToLeft(Dgv_ASTM_Single_Aperture, numberOfRun);
+                this.addColumnsOfCummulativeValuesToLeft(Dgv_Single_Aperture_Accumulated_right_left, numberOfRun);
 
                 //primera corrida 95%
                 foreach (DataGridViewRow row1 in Dgv_ASTM95_Detector_Number.Rows)
@@ -3240,22 +3083,46 @@ namespace LecturaExcel
             Dgv_Single_Aperture_Differential.ClearSelection();
         }
 
-        private void addColumnsOfCummulativeValues(DataGridView dataGridView)
+        private void addColumnsOfCummulativeValues(DataGridView dataGridView, string numberOfRun)
         {
             Manage_Data manageData = new Manage_Data();
 
-            manageData.addColumnToDatagridView("Run_1 Cumulative <", dataGridView);
-            manageData.addColumnToDatagridView("Run_2 Cumulative <", dataGridView);
-            manageData.addColumnToDatagridView("Run_3 Cumulative <", dataGridView);
+            if (numberOfRun.Equals("3"))
+            {
+                manageData.addColumnToDatagridView("Run_1 Cumulative <", dataGridView);
+                manageData.addColumnToDatagridView("Run_2 Cumulative <", dataGridView);
+                manageData.addColumnToDatagridView("Run_3 Cumulative <", dataGridView);
+            }
+            if (numberOfRun.Equals("2"))
+            {
+                manageData.addColumnToDatagridView("Run_1 Cumulative <", dataGridView);
+                manageData.addColumnToDatagridView("Run_2 Cumulative <", dataGridView);
+            }
+            if (numberOfRun.Equals("1"))
+            {
+                manageData.addColumnToDatagridView("Run_1 Cumulative <", dataGridView);
+            }
+            
         }
 
-        private void addColumnsOfCummulativeValuesToLeft(DataGridView dataGridView)
+        private void addColumnsOfCummulativeValuesToLeft(DataGridView dataGridView, string numberOfRun)
         {
             Manage_Data manageData = new Manage_Data();
-
-            manageData.addColumnToDatagridView("Run_1 Cumulative >", dataGridView);
-            manageData.addColumnToDatagridView("Run_2 Cumulative >", dataGridView);
-            manageData.addColumnToDatagridView("Run_3 Cumulative >", dataGridView);
+            if (numberOfRun.Equals("3"))
+            {
+                manageData.addColumnToDatagridView("Run_1 Cumulative >", dataGridView);
+                manageData.addColumnToDatagridView("Run_2 Cumulative >", dataGridView);
+                manageData.addColumnToDatagridView("Run_3 Cumulative >", dataGridView);
+            }
+            if (numberOfRun.Equals("2"))
+            {
+                manageData.addColumnToDatagridView("Run_1 Cumulative >", dataGridView);
+                manageData.addColumnToDatagridView("Run_2 Cumulative >", dataGridView);
+            }
+            if (numberOfRun.Equals("1"))
+            {
+                manageData.addColumnToDatagridView("Run_1 Cumulative >", dataGridView);
+            }          
         }
 
 

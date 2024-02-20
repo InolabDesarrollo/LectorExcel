@@ -5,34 +5,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static OfficeOpenXml.ExcelErrorValue;
 
 namespace LecturaExcel.Responsabilitis
 {
     public class Accumulated
     {
-        public void addAccumulatedToRightBy100(DataGridView DgvToFill, DataGridView DgvWithAccumulatedValues)
-        {
-            try
-            {
-                foreach (DataGridViewRow row in DgvToFill.Rows)
-                {
-                    int cellWithValue = 2;
-                    for (int i = 5; i == 7; i++)
-                    {
-                        double accumulated = 100 - Convert.ToDouble(DgvWithAccumulatedValues.Rows[row.Index].Cells[cellWithValue].Value);
-
-                        DgvWithAccumulatedValues.Rows[row.Index].Cells[i].Value = Math.Round(accumulated, 2);
-                        DgvToFill.Rows[row.Index].Cells[i].Value = Math.Round(accumulated, 2);
-                        cellWithValue++;
-                    }
-
-                }
-            }
-            catch (Exception ex)
-            {
-                Trace.WriteLine(ex.ToString());
-            }
-        }
       
+        public void addCumulativeValuesToRight100(DataGridView dgvToFill, DataGridView dgvWithAccumulatedValues)
+        {
+            foreach (DataGridViewRow row in dgvToFill.Rows)
+            {
+                double resultado = 100 - Convert.ToDouble(dgvWithAccumulatedValues.Rows[row.Index].Cells[2].Value);
+                dgvWithAccumulatedValues.Rows[row.Index].Cells[5].Value = Math.Round(resultado, 2);
+                dgvToFill.Rows[row.Index].Cells[5].Value = Math.Round(resultado, 2);
+
+                double resultado2 = 100 - Convert.ToDouble(dgvWithAccumulatedValues.Rows[row.Index].Cells[3].Value);
+                dgvWithAccumulatedValues.Rows[row.Index].Cells[6].Value = Math.Round(resultado2, 2);
+                dgvToFill.Rows[row.Index].Cells[6].Value = Math.Round(resultado2, 2);
+
+                double resultado3 = 100 - Convert.ToDouble(dgvWithAccumulatedValues.Rows[row.Index].Cells[4].Value);
+                dgvWithAccumulatedValues.Rows[row.Index].Cells[7].Value = Math.Round(resultado3, 2);
+                dgvToFill.Rows[row.Index].Cells[7].Value = Math.Round(resultado3, 2);
+            }
+
+        }
     }
 }
