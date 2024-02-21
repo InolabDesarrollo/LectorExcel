@@ -97,7 +97,7 @@ namespace LecturaExcel.Responsabilitis
             }
         }
 
-        public void addAccumulatedValuesToRightRunThree(DataGridView dgvToReview, DataGridView dgvToAddAccumulated)
+        public void addAccumulatedValuesToRightRunThree(DataGridView dgvToReview, DataGridView dgvToAddAccumulated, int numberOfCellToAddAccumulated)
         {
             foreach (DataGridViewRow row in dgvToReview.Rows)
             {
@@ -114,7 +114,7 @@ namespace LecturaExcel.Responsabilitis
                         {
                             accumulated = 100;
                         }
-                        dgvToAddAccumulated.Rows[row.Index].Cells[4].Value = Math.Round(accumulated, 2);
+                        dgvToAddAccumulated.Rows[row.Index].Cells[numberOfCellToAddAccumulated].Value = Math.Round(accumulated, 2);
                     }
                 }
                 catch (Exception ex)
@@ -161,6 +161,15 @@ namespace LecturaExcel.Responsabilitis
 
                 double resultado2 = 100 - Convert.ToDouble(dgvWithAccumulativeValues.Rows[row.Index].Cells[3].Value);
                 dgvWithAccumulativeValues.Rows[row.Index].Cells[5].Value = Math.Round(resultado2, 2);
+            }
+        }
+
+        public void addCumulativeValuesToLeftBy100RunOne(DataGridView dgvToReview, DataGridView dgvWithAccumulativeValues)
+        {
+            foreach (DataGridViewRow row in dgvToReview.Rows)
+            {
+                double resultado = 100 - Convert.ToDouble(dgvWithAccumulativeValues.Rows[row.Index].Cells[2].Value);
+                dgvWithAccumulativeValues.Rows[row.Index].Cells[3].Value = Math.Round(resultado, 2);
             }
         }
 

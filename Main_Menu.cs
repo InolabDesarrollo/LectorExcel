@@ -659,7 +659,6 @@ namespace LecturaExcel
 
                 accumulated.addAccumulatedValuesToRightRunTwo(Dgv_Single_Aperture_Detector, Dgv_ASTM_Single_Aperture);
                 accumulated.addAccumulatedValuesToRightRunTwo(Dgv_Single_Aperture_Detector, Dgv_Single_Aperture_Accumulated_right_left);
-
                 ch1 = false;
 
                 this.addColumnsOfCummulativeValuesToLeft(Dgv_ASTM_D95, numberOfRun);
@@ -668,11 +667,11 @@ namespace LecturaExcel
                 this.addColumnsOfCummulativeValuesToLeft(Dgv_ASTM_Single_Aperture, numberOfRun);
                 this.addColumnsOfCummulativeValuesToLeft(Dgv_Single_Aperture_Accumulated_right_left, numberOfRun);
 
-                accumulated.addAccumulatedValuesToRightRunThree(Dgv_ASTM95_Detector_Number, Dgv_ASTM_D95);
-                accumulated.addAccumulatedValuesToRightRunThree(Dgv_ASTM95_Detector_Number, Dgv_ASTM_D95_Accumulated_rigth_left);
+                accumulated.addAccumulatedValuesToRightRunThree(Dgv_ASTM95_Detector_Number, Dgv_ASTM_D95,4);
+                accumulated.addAccumulatedValuesToRightRunThree(Dgv_ASTM95_Detector_Number, Dgv_ASTM_D95_Accumulated_rigth_left,4);
 
-                accumulated.addAccumulatedValuesToRightRunThree(Dgv_Single_Aperture_Detector, Dgv_ASTM_Single_Aperture);
-                accumulated.addAccumulatedValuesToRightRunThree(Dgv_Single_Aperture_Detector, Dgv_Single_Aperture_Accumulated_right_left);
+                accumulated.addAccumulatedValuesToRightRunThree(Dgv_Single_Aperture_Detector, Dgv_ASTM_Single_Aperture,4);
+                accumulated.addAccumulatedValuesToRightRunThree(Dgv_Single_Aperture_Detector, Dgv_Single_Aperture_Accumulated_right_left, 4);
   
                 accumulated.addAccumulatedValuesToRightRunFor(Dgv_ASTM95_Detector_Number, Dgv_ASTM_D95);
                 accumulated.addAccumulatedValuesToRightRunFor(Dgv_ASTM95_Detector_Number, Dgv_ASTM_D95_Accumulated_rigth_left);
@@ -694,133 +693,33 @@ namespace LecturaExcel
                 //Añadir los campos de "Acumulativos <" max%
                 this.addColumnsOfCummulativeValues(Dgv_ASTM_Single_Aperture, numberOfRun);
                 this.addColumnsOfCummulativeValues(Dgv_Single_Aperture_Accumulated_right_left, numberOfRun);
+                Accumulated accumulated = new Accumulated(Dgv_Particle_Data);
 
                 //primera corrida 95%
-                foreach (DataGridViewRow row in Dgv_ASTM95_Detector_Number.Rows)
-                {
-                    //primera corrida
-                    double acummulated = 0;
-                    int cellValue = Convert.ToInt32(row.Cells[3].Value);
-                    int n = 1;
-                    //aumentar a la fila los valores acumulativos a la derecha (los que van arriba)
-                    try
-                    {
-                        while (n <= cellValue)
-                        {
-                            acummulated = acummulated + Convert.ToDouble(Dgv_Particle_Data.Rows[n].Cells[2].Value);
-                            n++;
-                            if (acummulated > 100)
-                            {
-                                acummulated = 100;
-                            }
-                            Dgv_ASTM_D95.Rows[row.Index].Cells[2].Value = Math.Round(acummulated, 2);
-                            Dgv_ASTM_D95_Accumulated_rigth_left.Rows[row.Index].Cells[2].Value = Math.Round(acummulated, 2);
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        Trace.WriteLine(ex.Message);
-                    }
-                }
-
+                accumulated.addAccumulatedValuesToRightRunOne(Dgv_ASTM95_Detector_Number, Dgv_ASTM_D95);
+                accumulated.addAccumulatedValuesToRightRunOne(Dgv_ASTM95_Detector_Number, Dgv_ASTM_D95_Accumulated_rigth_left);
                 //primera corrida max%
-                foreach (DataGridViewRow row1 in Dgv_Single_Aperture_Detector.Rows)
-                {
-                    //primera corrida
-                    double acumarr = 0;
-                    int n = 1;
-                    //aumentar a la fila los valores acumulativos a la derecha (los que van arriba)
-                    try
-                    {
-                        while (n <= Convert.ToInt32(row1.Cells[3].Value))
-                        {
-                            acumarr = acumarr + Convert.ToDouble(Dgv_Particle_Data.Rows[n].Cells[2].Value);
-                            n++;
-                            if (acumarr > 100)
-                            {
-                                acumarr = 100;
-                            }
-                            Dgv_ASTM_Single_Aperture.Rows[row1.Index].Cells[2].Value = Math.Round(acumarr, 2);
-                            Dgv_Single_Aperture_Accumulated_right_left.Rows[row1.Index].Cells[2].Value = Math.Round(acumarr, 2);
-                        }
-                    }
-                    catch (Exception r)
-                    {
-
-                    }
-                }
-
+                accumulated.addAccumulatedValuesToRightRunOne(Dgv_Single_Aperture_Detector, Dgv_ASTM_Single_Aperture);
+                accumulated.addAccumulatedValuesToRightRunOne(Dgv_Single_Aperture_Detector, Dgv_Single_Aperture_Accumulated_right_left);
                 ch1 = false;
 
-                //Añadir los campos de "Acumulativos >" 95%
                 this.addColumnsOfCummulativeValuesToLeft(Dgv_ASTM_D95, numberOfRun);
                 this.addColumnsOfCummulativeValuesToLeft(Dgv_ASTM_D95_Accumulated_rigth_left, numberOfRun);
 
-                //Añadir los campos de "Acumulativos >" max%
                 this.addColumnsOfCummulativeValuesToLeft(Dgv_ASTM_Single_Aperture, numberOfRun);
                 this.addColumnsOfCummulativeValuesToLeft(Dgv_Single_Aperture_Accumulated_right_left, numberOfRun);
 
                 //primera corrida 95%
-                foreach (DataGridViewRow row1 in Dgv_ASTM95_Detector_Number.Rows)
-                {
-                    double acumarr = 0;
-                    int q = Convert.ToInt32(row1.Cells[3].Value) + 1;
-                    //aumentar a la fila los valores acumulativos a la derecha (los que van arriba)
-                    try
-                    {
-                        while (q > Convert.ToInt32(row1.Cells[3].Value))
-                        {
-                            acumarr = acumarr + Convert.ToDouble(Dgv_Particle_Data.Rows[q].Cells[2].Value);
-                            q++;
-                            if (acumarr > 100)
-                            {
-                                acumarr = 100;
-                            }
-                            Dgv_ASTM_D95.Rows[row1.Index].Cells[3].Value = Math.Round(acumarr, 2);
-                            Dgv_ASTM_D95_Accumulated_rigth_left.Rows[row1.Index].Cells[3].Value = Math.Round(acumarr, 2);
-                        }
-                    }
-                    catch (Exception r)
-                    {
+                accumulated.addAccumulatedValuesToRightRunThree(Dgv_ASTM95_Detector_Number, Dgv_ASTM_D95, 3);
+                accumulated.addAccumulatedValuesToRightRunThree(Dgv_ASTM95_Detector_Number, Dgv_ASTM_D95_Accumulated_rigth_left, 3);
 
-                    }
-                }
                 //primera corrida max%
-                foreach (DataGridViewRow row1 in Dgv_Single_Aperture_Detector.Rows)
-                {
-                    double acumarr = 0;
-                    int q = Convert.ToInt32(row1.Cells[3].Value) + 1;
-                    //aumentar a la fila los valores acumulativos a la derecha (los que van arriba)
-                    try
-                    {
-                        while (q > Convert.ToInt32(row1.Cells[3].Value))
-                        {
-                            acumarr = acumarr + Convert.ToDouble(Dgv_Particle_Data.Rows[q].Cells[2].Value);
-                            q++;
-                            if (acumarr > 100)
-                            {
-                                acumarr = 100;
-                            }
-                            Dgv_ASTM_Single_Aperture.Rows[row1.Index].Cells[3].Value = Math.Round(acumarr, 2);
-                            Dgv_Single_Aperture_Accumulated_right_left.Rows[row1.Index].Cells[3].Value = Math.Round(acumarr, 2);
-                        }
-                    }
-                    catch (Exception r)
-                    {
+                accumulated.addAccumulatedValuesToRightRunThree(Dgv_Single_Aperture_Detector, Dgv_ASTM_Single_Aperture, 3);
+                accumulated.addAccumulatedValuesToRightRunThree(Dgv_Single_Aperture_Detector, Dgv_Single_Aperture_Accumulated_right_left, 3);
 
-                    }
-                }
                 corridas = 1;
-                foreach (DataGridViewRow row in Dgv_ASTM_D95.Rows)
-                {
-                    double resultado = 100 - Convert.ToDouble(Dgv_ASTM_D95_Accumulated_rigth_left.Rows[row.Index].Cells[2].Value);
-                    Dgv_ASTM_D95_Accumulated_rigth_left.Rows[row.Index].Cells[3].Value = Math.Round(resultado, 2);
-                }
-                foreach (DataGridViewRow row in Dgv_ASTM_Single_Aperture.Rows)
-                {
-                    double resultado = 100 - Convert.ToDouble(Dgv_Single_Aperture_Accumulated_right_left.Rows[row.Index].Cells[2].Value);
-                    Dgv_Single_Aperture_Accumulated_right_left.Rows[row.Index].Cells[3].Value = Math.Round(resultado, 2);
-                }
+                accumulated.addCumulativeValuesToLeftBy100RunOne(Dgv_ASTM_D95, Dgv_ASTM_D95_Accumulated_rigth_left);
+                accumulated.addCumulativeValuesToLeftBy100RunOne(Dgv_ASTM_Single_Aperture, Dgv_Single_Aperture_Accumulated_right_left);
             }
 
             ch2 = false;
