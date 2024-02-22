@@ -53,7 +53,7 @@ namespace LecturaExcel.Responsabilitis
             }
         }
 
-        public void assignComparisonVariableRunTwo(DataGridView dgvToReview, DataGridView dgvToAddVarible)
+        public void assignComparisonVariableRowTwo(DataGridView dgvToReview, DataGridView dgvToAddVarible)
         {
             double cellValue;
             double referenceValue = 1000000;
@@ -83,6 +83,21 @@ namespace LecturaExcel.Responsabilitis
             dgvWithDifferentialValues.Rows[1].Cells[1].Value =
             Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(dgvWithDifferentialValues.Rows[2].Cells[1].Value) +
             Convert.ToDouble(dgvWithDifferentialValues.Rows[0].Cells[1].Value))), 2);
+        }
+
+        public void assignComparisonVariableRunTwo(DataGridView dgvToReview, DataGridView dgvToAddVarible)
+        {
+            double cellValue;
+            double referenceValue = 100000;
+            foreach (DataGridViewRow row in dgvToReview.Rows)
+            {
+                cellValue = Convert.ToDouble(row.Cells[3].Value.ToString());
+                if (cellValue < referenceValue)
+                {
+                    referenceValue = cellValue;
+                }
+            }
+            dgvToAddVarible.Rows[0].Cells[2].Value = Math.Round(referenceValue, 2);
         }
 
 

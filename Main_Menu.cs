@@ -1341,86 +1341,27 @@ namespace LecturaExcel
                     {
                         Dgv_ASTM95_Run_Differentials.Visible = true;
                         Dgv_Single_Aperture_Run_Differential.Visible = true;
-                        //Funciones del diferencial 95%
-                        Dgv_ASTM95_Run_Differentials.Rows.Add();
-                        Dgv_ASTM95_Run_Differentials.Rows.Add();
-                        Dgv_ASTM95_Run_Differentials.Rows.Add();
+                        Manage_Data data = new Manage_Data();
 
-                        Dgv_ASTM_95_Differential.Rows.Add();
-                        Dgv_ASTM_95_Differential.Rows.Add();
-                        Dgv_ASTM_95_Differential.Rows.Add();
-                        //Funciones del diferencial max%
-                        Dgv_Single_Aperture_Run_Differential.Rows.Add();
-                        Dgv_Single_Aperture_Run_Differential.Rows.Add();
-                        Dgv_Single_Aperture_Run_Differential.Rows.Add();
+                        data.addRowsToDataGridView(Dgv_ASTM95_Run_Differentials);
+                        data.addRowsToDataGridView(Dgv_ASTM_95_Differential);
 
-                        Dgv_Single_Aperture_Differential.Rows.Add();
-                        Dgv_Single_Aperture_Differential.Rows.Add();
-                        Dgv_Single_Aperture_Differential.Rows.Add();
+                        data.addRowsToDataGridView(Dgv_Single_Aperture_Run_Differential);
+                        data.addRowsToDataGridView(Dgv_Single_Aperture_Differential);
 
                         //Asignacion de variables de comparacion 95%
-                        double comp1;
-                        double val1 = 100000;
-                        foreach (DataGridViewRow max1 in Dgv_ASTM_D95.Rows)
-                        {
-                            string max11 = Convert.ToString(max1.Cells[2].Value);
-                            comp1 = Convert.ToDouble(max11);
-                            if (comp1 < val1)
-                            {
-                                val1 = comp1;
-                                name = max1.Cells[0].Value.ToString();
-                                Dgv_ASTM95_Run_Differentials.Rows[0].Cells[0].Value = name;
-                                Dgv_ASTM_95_Differential.Rows[0].Cells[0].Value = name;
-                            }
-                        }
-                        Dgv_ASTM95_Run_Differentials.Rows[0].Cells[1].Value = Math.Round(val1, 2);
-                        Dgv_ASTM_95_Differential.Rows[0].Cells[1].Value = Math.Round(val1, 2);
-                        //Asignacion de variables de comparacion max%
-                        double comp1z;
-                        double val1z = 100000;
-                        foreach (DataGridViewRow max1 in Dgv_ASTM_Single_Aperture.Rows)
-                        {
-                            string max11 = Convert.ToString(max1.Cells[2].Value);
-                            comp1z = Convert.ToDouble(max11);
-                            if (comp1z < val1z)
-                            {
-                                val1z = comp1z;
-                                namez = max1.Cells[0].Value.ToString();
-                                Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[0].Value = namez;
-                                Dgv_Single_Aperture_Differential.Rows[0].Cells[0].Value = namez;
-                            }
-                        }
-                        Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[1].Value = Math.Round(val1z, 2);
-                        Dgv_Single_Aperture_Differential.Rows[0].Cells[1].Value = Math.Round(val1z, 2);
+                        Differential differential = new Differential();
+                        differential.assignComparisonVariable(Dgv_ASTM_D95, Dgv_ASTM95_Run_Differentials);
+                        differential.assignComparisonVariable(Dgv_ASTM_D95, Dgv_ASTM_95_Differential);
 
-                        //2 95%
-                        double comp2;
-                        double val2 = 100000;
-                        foreach (DataGridViewRow max2 in Dgv_ASTM_D95.Rows)
-                        {
-                            string max21 = Convert.ToString(max2.Cells[3].Value);
-                            comp2 = Convert.ToDouble(max21);
-                            if (comp2 < val2)
-                            {
-                                val2 = comp2;
-                            }
-                        }
-                        Dgv_ASTM95_Run_Differentials.Rows[0].Cells[2].Value = Math.Round(val2, 2);
-                        Dgv_ASTM_95_Differential.Rows[0].Cells[2].Value = Math.Round(val2, 2);
-                        //2 95%
-                        double comp2z;
-                        double val2z = 100000;
-                        foreach (DataGridViewRow max2 in Dgv_ASTM_Single_Aperture.Rows)
-                        {
-                            string max21 = Convert.ToString(max2.Cells[3].Value);
-                            comp2z = Convert.ToDouble(max21);
-                            if (comp2z < val2z)
-                            {
-                                val2z = comp2z;
-                            }
-                        }
-                        Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[2].Value = Math.Round(val2z, 2);
-                        Dgv_Single_Aperture_Differential.Rows[0].Cells[2].Value = Math.Round(val2z, 2);
+                        differential.assignComparisonVariable(Dgv_ASTM_Single_Aperture, Dgv_Single_Aperture_Run_Differential);
+                        differential.assignComparisonVariable(Dgv_ASTM_Single_Aperture, Dgv_Single_Aperture_Differential);
+
+                        differential.assignComparisonVariableRunTwo(Dgv_ASTM_D95, Dgv_ASTM95_Run_Differentials);
+                        differential.assignComparisonVariableRunTwo(Dgv_ASTM_D95, Dgv_ASTM_95_Differential);
+
+                        differential.assignComparisonVariableRunTwo(Dgv_ASTM_Single_Aperture, Dgv_Single_Aperture_Run_Differential);
+                        differential.assignComparisonVariableRunTwo(Dgv_ASTM_Single_Aperture, Dgv_Single_Aperture_Differential);
 
                         //4 95%
                         double comp4;
@@ -1798,11 +1739,11 @@ namespace LecturaExcel
                         differential.assignComparisonVariable(Dgv_ASTM_Single_Aperture, Dgv_Single_Aperture_Run_Differential);
                         differential.assignComparisonVariable(Dgv_ASTM_Single_Aperture, Dgv_Single_Aperture_Differential);
 
-                        differential.assignComparisonVariableRunTwo(Dgv_ASTM_D95, Dgv_ASTM95_Run_Differentials);
-                        differential.assignComparisonVariableRunTwo(Dgv_ASTM_D95, Dgv_ASTM_95_Differential);
+                        differential.assignComparisonVariableRowTwo(Dgv_ASTM_D95, Dgv_ASTM95_Run_Differentials);
+                        differential.assignComparisonVariableRowTwo(Dgv_ASTM_D95, Dgv_ASTM_95_Differential);
 
-                        differential.assignComparisonVariableRunTwo(Dgv_ASTM_Single_Aperture, Dgv_Single_Aperture_Run_Differential);
-                        differential.assignComparisonVariableRunTwo(Dgv_ASTM_Single_Aperture, Dgv_Single_Aperture_Differential);
+                        differential.assignComparisonVariableRowTwo(Dgv_ASTM_Single_Aperture, Dgv_Single_Aperture_Run_Differential);
+                        differential.assignComparisonVariableRowTwo(Dgv_ASTM_Single_Aperture, Dgv_Single_Aperture_Differential);
 
                         differential.createDifferential(Dgv_ASTM95_Run_Differentials);
                         differential.createDifferential(Dgv_ASTM_95_Differential);
