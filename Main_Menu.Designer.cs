@@ -132,7 +132,7 @@
             this.Lbl_ASTM_Max_Single_Aperture = new MaterialSkin.Controls.MaterialLabel();
             this.Lbl_ASTM_Max95 = new MaterialSkin.Controls.MaterialLabel();
             this.Dgv_Single_Aperture_Selected_Row = new System.Windows.Forms.DataGridView();
-            this.dataGridView15 = new System.Windows.Forms.DataGridView();
+            this.Dgv_Single_Aperture_Run_Differential = new System.Windows.Forms.DataGridView();
             this.Column28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -143,7 +143,7 @@
             this.Dgv_Single_Aperture_Detector = new System.Windows.Forms.DataGridView();
             this.Go_To_Report_View = new System.Windows.Forms.Button();
             this.Btn_Return_To_Excell_File = new System.Windows.Forms.Button();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.Dgv_ASTM95_Run_Differentials = new System.Windows.Forms.DataGridView();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -179,10 +179,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM_D95_Accumulated_rigth_left)).BeginInit();
             this.Page_Mesh_Selection.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Single_Aperture_Selected_Row)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Single_Aperture_Run_Differential)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM_Single_Aperture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Single_Aperture_Detector)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM95_Run_Differentials)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_MAX_D95_Selected_Row)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM_D95)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Tolerance_Table_Reference)).BeginInit();
@@ -1207,12 +1207,12 @@
             this.Page_Mesh_Selection.Controls.Add(this.Lbl_ASTM_Max_Single_Aperture);
             this.Page_Mesh_Selection.Controls.Add(this.Lbl_ASTM_Max95);
             this.Page_Mesh_Selection.Controls.Add(this.Dgv_Single_Aperture_Selected_Row);
-            this.Page_Mesh_Selection.Controls.Add(this.dataGridView15);
+            this.Page_Mesh_Selection.Controls.Add(this.Dgv_Single_Aperture_Run_Differential);
             this.Page_Mesh_Selection.Controls.Add(this.Dgv_ASTM_Single_Aperture);
             this.Page_Mesh_Selection.Controls.Add(this.Dgv_Single_Aperture_Detector);
             this.Page_Mesh_Selection.Controls.Add(this.Go_To_Report_View);
             this.Page_Mesh_Selection.Controls.Add(this.Btn_Return_To_Excell_File);
-            this.Page_Mesh_Selection.Controls.Add(this.dataGridView4);
+            this.Page_Mesh_Selection.Controls.Add(this.Dgv_ASTM95_Run_Differentials);
             this.Page_Mesh_Selection.Controls.Add(this.Dgv_MAX_D95_Selected_Row);
             this.Page_Mesh_Selection.Controls.Add(this.Dgv_ASTM_D95);
             this.Page_Mesh_Selection.Controls.Add(this.Btn_Clean_Data);
@@ -1264,21 +1264,21 @@
             this.Dgv_Single_Aperture_Selected_Row.TabIndex = 22;
             this.Dgv_Single_Aperture_Selected_Row.Visible = false;
             // 
-            // dataGridView15
+            // Dgv_Run_Differential_Single_Aperture
             // 
-            this.dataGridView15.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
-            this.dataGridView15.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView15.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Dgv_Single_Aperture_Run_Differential.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
+            this.Dgv_Single_Aperture_Run_Differential.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_Single_Aperture_Run_Differential.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column28,
             this.Column29,
             this.Column30,
             this.Column31});
-            this.dataGridView15.Location = new System.Drawing.Point(518, 530);
-            this.dataGridView15.Name = "dataGridView15";
-            this.dataGridView15.ReadOnly = true;
-            this.dataGridView15.Size = new System.Drawing.Size(427, 150);
-            this.dataGridView15.TabIndex = 21;
-            this.dataGridView15.Visible = false;
+            this.Dgv_Single_Aperture_Run_Differential.Location = new System.Drawing.Point(518, 530);
+            this.Dgv_Single_Aperture_Run_Differential.Name = "Dgv_Single_Aperture_Run_Differential";
+            this.Dgv_Single_Aperture_Run_Differential.ReadOnly = true;
+            this.Dgv_Single_Aperture_Run_Differential.Size = new System.Drawing.Size(427, 150);
+            this.Dgv_Single_Aperture_Run_Differential.TabIndex = 21;
+            this.Dgv_Single_Aperture_Run_Differential.Visible = false;
             // 
             // Column28
             // 
@@ -1369,21 +1369,21 @@
             this.Btn_Return_To_Excell_File.UseVisualStyleBackColor = false;
             this.Btn_Return_To_Excell_File.Click += new System.EventHandler(this.Btn_Return_To_Excell_File_Click);
             // 
-            // dataGridView4
+            // Dgv_Run_Differentials_ASTM95
             // 
-            this.dataGridView4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Dgv_ASTM95_Run_Differentials.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
+            this.Dgv_ASTM95_Run_Differentials.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_ASTM95_Run_Differentials.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column7,
             this.Column4,
             this.Column5,
             this.Column6});
-            this.dataGridView4.Location = new System.Drawing.Point(38, 352);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.ReadOnly = true;
-            this.dataGridView4.Size = new System.Drawing.Size(427, 133);
-            this.dataGridView4.TabIndex = 15;
-            this.dataGridView4.Visible = false;
+            this.Dgv_ASTM95_Run_Differentials.Location = new System.Drawing.Point(38, 352);
+            this.Dgv_ASTM95_Run_Differentials.Name = "Dgv_ASTM95_Run_Differentials";
+            this.Dgv_ASTM95_Run_Differentials.ReadOnly = true;
+            this.Dgv_ASTM95_Run_Differentials.Size = new System.Drawing.Size(427, 133);
+            this.Dgv_ASTM95_Run_Differentials.TabIndex = 15;
+            this.Dgv_ASTM95_Run_Differentials.Visible = false;
             // 
             // Column7
             // 
@@ -1675,10 +1675,10 @@
             this.Page_Mesh_Selection.ResumeLayout(false);
             this.Page_Mesh_Selection.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Single_Aperture_Selected_Row)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Single_Aperture_Run_Differential)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM_Single_Aperture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Single_Aperture_Detector)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM95_Run_Differentials)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_MAX_D95_Selected_Row)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_ASTM_D95)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Tolerance_Table_Reference)).EndInit();
@@ -1794,7 +1794,7 @@
         private MaterialSkin.Controls.MaterialLabel Lbl_ASTM_Max_Single_Aperture;
         private MaterialSkin.Controls.MaterialLabel Lbl_ASTM_Max95;
         private System.Windows.Forms.DataGridView Dgv_Single_Aperture_Selected_Row;
-        private System.Windows.Forms.DataGridView dataGridView15;
+        private System.Windows.Forms.DataGridView Dgv_Single_Aperture_Run_Differential;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column28;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column29;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column30;
@@ -1805,7 +1805,7 @@
         private System.Windows.Forms.DataGridView Dgv_Single_Aperture_Detector;
         private System.Windows.Forms.Button Go_To_Report_View;
         private System.Windows.Forms.Button Btn_Return_To_Excell_File;
-        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.DataGridView Dgv_ASTM95_Run_Differentials;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;

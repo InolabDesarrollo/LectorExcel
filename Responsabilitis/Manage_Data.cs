@@ -131,5 +131,13 @@ namespace LecturaExcel.Responsabilitis
                 }
             }
         }
+
+        public void addRowsToDataGridView(DataGridView dgvToAddRows)
+        {
+            for (int i=0; i<3; i++)
+            {
+                dgvToAddRows.Rows.Add();
+            }
+        }
     }
 }

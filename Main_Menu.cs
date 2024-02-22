@@ -121,13 +121,13 @@ namespace LecturaExcel
             Dgv_Single_Aperture_Detector.ReadOnly = true;
             Dgv_ASTM95_Detector_Number.Rows.Clear();
             Dgv_ASTM_D95.Rows.Clear();
-            dataGridView4.Rows.Clear();
+            Dgv_ASTM95_Run_Differentials.Rows.Clear();
             Dgv_ASTM_D95_Accumulated_rigth_left.Rows.Clear();
             Dgv_Single_Aperture_Accumulated_right_left.Rows.Clear();
             Dgv_ASTM_95_Differential.Rows.Clear();
             Dgv_Single_Aperture_Differential.Rows.Clear();
             Dgv_ASTM_Single_Aperture.Rows.Clear();
-            dataGridView15.Rows.Clear();
+            Dgv_Single_Aperture_Run_Differential.Rows.Clear();
         }
         
         private void ComboBox_Mesh_SelectedIndexChanged(object sender, EventArgs e)
@@ -732,20 +732,20 @@ namespace LecturaExcel
                     // 3 corridas 
                     if (Dgv_ASTM_D95.Rows.Count == 2)
                     {
-                        dataGridView4.Visible = true;
-                        dataGridView15.Visible = true;
+                        Dgv_ASTM95_Run_Differentials.Visible = true;
+                        Dgv_Single_Aperture_Run_Differential.Visible = true;
                         //Funciones del diferencial 95%
-                        dataGridView4.Rows.Add();
-                        dataGridView4.Rows.Add();
-                        dataGridView4.Rows.Add();
+                        Dgv_ASTM95_Run_Differentials.Rows.Add();
+                        Dgv_ASTM95_Run_Differentials.Rows.Add();
+                        Dgv_ASTM95_Run_Differentials.Rows.Add();
 
                         Dgv_ASTM_95_Differential.Rows.Add();
                         Dgv_ASTM_95_Differential.Rows.Add();
                         Dgv_ASTM_95_Differential.Rows.Add();
                         //Funciones del diferencial max%
-                        dataGridView15.Rows.Add();
-                        dataGridView15.Rows.Add();
-                        dataGridView15.Rows.Add();
+                        Dgv_Single_Aperture_Run_Differential.Rows.Add();
+                        Dgv_Single_Aperture_Run_Differential.Rows.Add();
+                        Dgv_Single_Aperture_Run_Differential.Rows.Add();
 
                         Dgv_Single_Aperture_Differential.Rows.Add();
                         Dgv_Single_Aperture_Differential.Rows.Add();
@@ -761,11 +761,11 @@ namespace LecturaExcel
                             {
                                 val1 = comp1;
                                 name = max1.Cells[0].Value.ToString();
-                                dataGridView4.Rows[0].Cells[0].Value = name;
+                                Dgv_ASTM95_Run_Differentials.Rows[0].Cells[0].Value = name;
                                 Dgv_ASTM_95_Differential.Rows[0].Cells[0].Value = name;
                             }
                         }
-                        dataGridView4.Rows[0].Cells[1].Value = Math.Round(val1, 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[0].Cells[1].Value = Math.Round(val1, 2);
                         Dgv_ASTM_95_Differential.Rows[0].Cells[1].Value = Math.Round(val1, 2);
 
                         //Asignacion de variables de comparacion max%
@@ -779,11 +779,11 @@ namespace LecturaExcel
                             {
                                 val1z = comp1z;
                                 namez = max1.Cells[0].Value.ToString();
-                                dataGridView15.Rows[0].Cells[0].Value = namez;
+                                Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[0].Value = namez;
                                 Dgv_Single_Aperture_Differential.Rows[0].Cells[0].Value = namez;
                             }
                         }
-                        dataGridView15.Rows[0].Cells[1].Value = Math.Round(val1z, 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[1].Value = Math.Round(val1z, 2);
                         Dgv_Single_Aperture_Differential.Rows[0].Cells[1].Value = Math.Round(val1z, 2);
 
                         //2 95%
@@ -798,7 +798,7 @@ namespace LecturaExcel
                                 val2 = comp2;
                             }
                         }
-                        dataGridView4.Rows[0].Cells[2].Value = Math.Round(val2, 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[0].Cells[2].Value = Math.Round(val2, 2);
                         Dgv_ASTM_95_Differential.Rows[0].Cells[2].Value = Math.Round(val2, 2);
                         //2 max%
                         double comp2z;
@@ -812,7 +812,7 @@ namespace LecturaExcel
                                 val2z = comp2z;
                             }
                         }
-                        dataGridView15.Rows[0].Cells[2].Value = Math.Round(val2z, 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[2].Value = Math.Round(val2z, 2);
                         Dgv_Single_Aperture_Differential.Rows[0].Cells[2].Value = Math.Round(val2z, 2);
 
                         //3 95%
@@ -828,7 +828,7 @@ namespace LecturaExcel
                                 val3 = comp3;
                             }
                         }
-                        dataGridView4.Rows[0].Cells[3].Value = Math.Round(val3, 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[0].Cells[3].Value = Math.Round(val3, 2);
                         Dgv_ASTM_95_Differential.Rows[0].Cells[3].Value = Math.Round(val3, 2);
                         //3 max%
                         double comp3z;
@@ -843,7 +843,7 @@ namespace LecturaExcel
                                 val3z = comp3z;
                             }
                         }
-                        dataGridView15.Rows[0].Cells[3].Value = Math.Round(val3z, 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[3].Value = Math.Round(val3z, 2);
                         Dgv_Single_Aperture_Differential.Rows[0].Cells[3].Value = Math.Round(val3z, 2);
 
                         //4 95%
@@ -858,11 +858,11 @@ namespace LecturaExcel
                             {
                                 val4 = comp4;
                                 name2 = max4.Cells[0].Value.ToString();
-                                dataGridView4.Rows[2].Cells[0].Value = name2;
+                                Dgv_ASTM95_Run_Differentials.Rows[2].Cells[0].Value = name2;
                                 Dgv_ASTM_95_Differential.Rows[2].Cells[0].Value = name2;
                             }
                         }
-                        dataGridView4.Rows[2].Cells[1].Value = Math.Round(val4, 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[2].Cells[1].Value = Math.Round(val4, 2);
                         Dgv_ASTM_95_Differential.Rows[2].Cells[1].Value = Math.Round(val4, 2);
                         //4 max%
                         double comp4z;
@@ -876,11 +876,11 @@ namespace LecturaExcel
                             {
                                 val4z = comp4z;
                                 name2z = max4.Cells[0].Value.ToString();
-                                dataGridView15.Rows[2].Cells[0].Value = name2z;
+                                Dgv_Single_Aperture_Run_Differential.Rows[2].Cells[0].Value = name2z;
                                 Dgv_Single_Aperture_Differential.Rows[2].Cells[0].Value = name2z;
                             }
                         }
-                        dataGridView15.Rows[2].Cells[1].Value = Math.Round(val4z, 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[2].Cells[1].Value = Math.Round(val4z, 2);
                         Dgv_Single_Aperture_Differential.Rows[2].Cells[1].Value = Math.Round(val4z, 2);
 
                         //5 95%
@@ -895,7 +895,7 @@ namespace LecturaExcel
                                 val5 = comp5;
                             }
                         }
-                        dataGridView4.Rows[2].Cells[2].Value = Math.Round(val5, 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[2].Cells[2].Value = Math.Round(val5, 2);
                         Dgv_ASTM_95_Differential.Rows[2].Cells[2].Value = Math.Round(val5, 2);
                         //5 max%
                         double comp5z;
@@ -909,7 +909,7 @@ namespace LecturaExcel
                                 val5z = comp5z;
                             }
                         }
-                        dataGridView15.Rows[2].Cells[2].Value = Math.Round(val5z, 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[2].Cells[2].Value = Math.Round(val5z, 2);
                         Dgv_Single_Aperture_Differential.Rows[2].Cells[2].Value = Math.Round(val5z, 2);
 
                         //6 95%
@@ -924,7 +924,7 @@ namespace LecturaExcel
                                 val6 = comp6;
                             }
                         }
-                        dataGridView4.Rows[2].Cells[3].Value = Math.Round(val6, 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[2].Cells[3].Value = Math.Round(val6, 2);
                         Dgv_ASTM_95_Differential.Rows[2].Cells[3].Value = Math.Round(val6, 2);
                         //6 max%
                         double comp6z;
@@ -938,72 +938,72 @@ namespace LecturaExcel
                                 val6z = comp6z;
                             }
                         }
-                        dataGridView15.Rows[2].Cells[3].Value = Math.Round(val6z, 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[2].Cells[3].Value = Math.Round(val6z, 2);
                         Dgv_Single_Aperture_Differential.Rows[2].Cells[3].Value = Math.Round(val6z, 2);
 
                         //Crear el diferencial 95%
-                        dataGridView4.Rows[1].Cells[1].Value =
-                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(dataGridView4.Rows[2].Cells[1].Value) +
-                        Convert.ToDouble(dataGridView4.Rows[0].Cells[1].Value))), 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[1].Cells[1].Value =
+                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(Dgv_ASTM95_Run_Differentials.Rows[2].Cells[1].Value) +
+                        Convert.ToDouble(Dgv_ASTM95_Run_Differentials.Rows[0].Cells[1].Value))), 2);
 
-                        dataGridView4.Rows[1].Cells[2].Value =
-                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(dataGridView4.Rows[2].Cells[2].Value) +
-                        Convert.ToDouble(dataGridView4.Rows[0].Cells[2].Value))), 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[1].Cells[2].Value =
+                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(Dgv_ASTM95_Run_Differentials.Rows[2].Cells[2].Value) +
+                        Convert.ToDouble(Dgv_ASTM95_Run_Differentials.Rows[0].Cells[2].Value))), 2);
 
-                        dataGridView4.Rows[1].Cells[3].Value =
-                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(dataGridView4.Rows[2].Cells[3].Value) +
-                        Convert.ToDouble(dataGridView4.Rows[0].Cells[3].Value))), 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[1].Cells[3].Value =
+                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(Dgv_ASTM95_Run_Differentials.Rows[2].Cells[3].Value) +
+                        Convert.ToDouble(Dgv_ASTM95_Run_Differentials.Rows[0].Cells[3].Value))), 2);
 
                         Dgv_ASTM_95_Differential.Rows[1].Cells[1].Value =
-                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(dataGridView4.Rows[2].Cells[1].Value) +
-                        Convert.ToDouble(dataGridView4.Rows[0].Cells[1].Value))), 2);
+                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(Dgv_ASTM95_Run_Differentials.Rows[2].Cells[1].Value) +
+                        Convert.ToDouble(Dgv_ASTM95_Run_Differentials.Rows[0].Cells[1].Value))), 2);
 
                         Dgv_ASTM_95_Differential.Rows[1].Cells[2].Value =
-                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(dataGridView4.Rows[2].Cells[2].Value) +
-                        Convert.ToDouble(dataGridView4.Rows[0].Cells[2].Value))), 2);
+                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(Dgv_ASTM95_Run_Differentials.Rows[2].Cells[2].Value) +
+                        Convert.ToDouble(Dgv_ASTM95_Run_Differentials.Rows[0].Cells[2].Value))), 2);
 
                         Dgv_ASTM_95_Differential.Rows[1].Cells[3].Value =
-                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(dataGridView4.Rows[2].Cells[3].Value) +
-                        Convert.ToDouble(dataGridView4.Rows[0].Cells[3].Value))), 2);
+                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(Dgv_ASTM95_Run_Differentials.Rows[2].Cells[3].Value) +
+                        Convert.ToDouble(Dgv_ASTM95_Run_Differentials.Rows[0].Cells[3].Value))), 2);
 
                         //Crear el diferencial max%
-                        dataGridView15.Rows[1].Cells[1].Value =
-                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(dataGridView15.Rows[2].Cells[1].Value) +
-                        Convert.ToDouble(dataGridView15.Rows[0].Cells[1].Value))), 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[1].Cells[1].Value =
+                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(Dgv_Single_Aperture_Run_Differential.Rows[2].Cells[1].Value) +
+                        Convert.ToDouble(Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[1].Value))), 2);
 
-                        dataGridView15.Rows[1].Cells[2].Value =
-                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(dataGridView15.Rows[2].Cells[2].Value) +
-                        Convert.ToDouble(dataGridView15.Rows[0].Cells[2].Value))), 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[1].Cells[2].Value =
+                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(Dgv_Single_Aperture_Run_Differential.Rows[2].Cells[2].Value) +
+                        Convert.ToDouble(Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[2].Value))), 2);
 
-                        dataGridView15.Rows[1].Cells[3].Value =
-                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(dataGridView15.Rows[2].Cells[3].Value) +
-                        Convert.ToDouble(dataGridView15.Rows[0].Cells[3].Value))), 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[1].Cells[3].Value =
+                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(Dgv_Single_Aperture_Run_Differential.Rows[2].Cells[3].Value) +
+                        Convert.ToDouble(Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[3].Value))), 2);
 
                         Dgv_Single_Aperture_Differential.Rows[1].Cells[1].Value =
-                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(dataGridView15.Rows[2].Cells[1].Value) +
-                        Convert.ToDouble(dataGridView15.Rows[0].Cells[1].Value))), 2);
+                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(Dgv_Single_Aperture_Run_Differential.Rows[2].Cells[1].Value) +
+                        Convert.ToDouble(Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[1].Value))), 2);
 
                         Dgv_Single_Aperture_Differential.Rows[1].Cells[2].Value =
-                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(dataGridView15.Rows[2].Cells[2].Value) +
-                        Convert.ToDouble(dataGridView15.Rows[0].Cells[2].Value))), 2);
+                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(Dgv_Single_Aperture_Run_Differential.Rows[2].Cells[2].Value) +
+                        Convert.ToDouble(Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[2].Value))), 2);
 
                         Dgv_Single_Aperture_Differential.Rows[1].Cells[3].Value =
-                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(dataGridView15.Rows[2].Cells[3].Value) +
-                        Convert.ToDouble(dataGridView15.Rows[0].Cells[3].Value))), 2);
+                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(Dgv_Single_Aperture_Run_Differential.Rows[2].Cells[3].Value) +
+                        Convert.ToDouble(Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[3].Value))), 2);
 
                         renombrar();
                     }
                     else if (Dgv_ASTM_D95.Rows.Count > 2)
                     {
-                        dataGridView4.Visible = true;
-                        dataGridView15.Visible = true;
+                        Dgv_ASTM95_Run_Differentials.Visible = true;
+                        Dgv_Single_Aperture_Run_Differential.Visible = true;
 
                         //Para 95%
                         int n_filas = Convert.ToInt32(Dgv_ASTM_D95.Rows.Count.ToString()) + 1;
                         int contador = 1;
                         while (contador < n_filas)
                         {
-                            dataGridView4.Rows.Add();
+                            Dgv_ASTM95_Run_Differentials.Rows.Add();
                             Dgv_ASTM_95_Differential.Rows.Add();
                             contador++;
                         }
@@ -1012,7 +1012,7 @@ namespace LecturaExcel
                         int contador1 = 1;
                         while (contador1 < n_filas1)
                         {
-                            dataGridView15.Rows.Add();
+                            Dgv_Single_Aperture_Run_Differential.Rows.Add();
                             Dgv_Single_Aperture_Differential.Rows.Add();
                             contador1++;
                         }
@@ -1028,11 +1028,11 @@ namespace LecturaExcel
                             {
                                 val = comp;
                                 name = max.Cells[0].Value.ToString();
-                                dataGridView4.Rows[0].Cells[0].Value = name;
+                                Dgv_ASTM95_Run_Differentials.Rows[0].Cells[0].Value = name;
                                 Dgv_ASTM_95_Differential.Rows[0].Cells[0].Value = name;
                             }
                         }
-                        dataGridView4.Rows[0].Cells[1].Value = Math.Round(val, 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[0].Cells[1].Value = Math.Round(val, 2);
                         Dgv_ASTM_95_Differential.Rows[0].Cells[1].Value = Math.Round(val, 2);
 
                         double comp1;
@@ -1046,7 +1046,7 @@ namespace LecturaExcel
                                 val1 = comp1;
                             }
                         }
-                        dataGridView4.Rows[n_filas - 1].Cells[1].Value = Math.Round(val1, 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[n_filas - 1].Cells[1].Value = Math.Round(val1, 2);
                         Dgv_ASTM_95_Differential.Rows[n_filas - 1].Cells[1].Value = Math.Round(val1, 2);
                         //llenar la primera y la ultima columna max%
                         double comp1z;
@@ -1059,11 +1059,11 @@ namespace LecturaExcel
                             {
                                 val1z = comp1z;
                                 namez = max.Cells[0].Value.ToString();
-                                dataGridView15.Rows[0].Cells[0].Value = namez;
+                                Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[0].Value = namez;
                                 Dgv_Single_Aperture_Differential.Rows[0].Cells[0].Value = namez;
                             }
                         }
-                        dataGridView15.Rows[0].Cells[1].Value = Math.Round(val1z, 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[1].Value = Math.Round(val1z, 2);
                         Dgv_Single_Aperture_Differential.Rows[0].Cells[1].Value = Math.Round(val1z, 2);
 
                         double comp1z1;
@@ -1077,7 +1077,7 @@ namespace LecturaExcel
                                 val1z1 = comp1z1;
                             }
                         }
-                        dataGridView15.Rows[n_filas1 - 1].Cells[1].Value = Math.Round(val1z1, 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[n_filas1 - 1].Cells[1].Value = Math.Round(val1z1, 2);
                         Dgv_Single_Aperture_Differential.Rows[n_filas1 - 1].Cells[1].Value = Math.Round(val1z1, 2);
 
                         //segunda carrera 95%
@@ -1092,7 +1092,7 @@ namespace LecturaExcel
                                 val2 = comp2;
                             }
                         }
-                        dataGridView4.Rows[0].Cells[2].Value = Math.Round(val2, 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[0].Cells[2].Value = Math.Round(val2, 2);
                         Dgv_ASTM_95_Differential.Rows[0].Cells[2].Value = Math.Round(val2, 2);
 
                         double comp4;
@@ -1105,11 +1105,11 @@ namespace LecturaExcel
                             {
                                 val4 = comp4;
                                 lname = max4.Cells[0].Value.ToString();
-                                dataGridView4.Rows[n_filas - 1].Cells[0].Value = lname;
+                                Dgv_ASTM95_Run_Differentials.Rows[n_filas - 1].Cells[0].Value = lname;
                                 Dgv_ASTM_95_Differential.Rows[n_filas - 1].Cells[0].Value = lname;
                             }
                         }
-                        dataGridView4.Rows[n_filas - 1].Cells[2].Value = Math.Round(val4, 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[n_filas - 1].Cells[2].Value = Math.Round(val4, 2);
                         Dgv_ASTM_95_Differential.Rows[n_filas - 1].Cells[2].Value = Math.Round(val4, 2);
                         //segunda carrera max%
                         double comp2z;
@@ -1123,7 +1123,7 @@ namespace LecturaExcel
                                 val2z = comp2z;
                             }
                         }
-                        dataGridView15.Rows[0].Cells[2].Value = Math.Round(val2z, 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[2].Value = Math.Round(val2z, 2);
                         Dgv_Single_Aperture_Differential.Rows[0].Cells[2].Value = Math.Round(val2z, 2);
 
                         double comp4z;
@@ -1136,11 +1136,11 @@ namespace LecturaExcel
                             {
                                 val4z = comp4z;
                                 lnamez = max4.Cells[0].Value.ToString();
-                                dataGridView15.Rows[n_filas1 - 1].Cells[0].Value = lnamez;
+                                Dgv_Single_Aperture_Run_Differential.Rows[n_filas1 - 1].Cells[0].Value = lnamez;
                                 Dgv_Single_Aperture_Differential.Rows[n_filas1 - 1].Cells[0].Value = lnamez;
                             }
                         }
-                        dataGridView15.Rows[n_filas1 - 1].Cells[2].Value = Math.Round(val4z, 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[n_filas1 - 1].Cells[2].Value = Math.Round(val4z, 2);
                         Dgv_Single_Aperture_Differential.Rows[n_filas1 - 1].Cells[2].Value = Math.Round(val4z, 2);
 
                         //tercera carrera 95%
@@ -1155,7 +1155,7 @@ namespace LecturaExcel
                                 val5 = comp5;
                             }
                         }
-                        dataGridView4.Rows[0].Cells[3].Value = Math.Round(val5, 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[0].Cells[3].Value = Math.Round(val5, 2);
                         Dgv_ASTM_95_Differential.Rows[0].Cells[3].Value = Math.Round(val5, 2);
 
                         double comp6;
@@ -1169,7 +1169,7 @@ namespace LecturaExcel
                                 val6 = comp6;
                             }
                         }
-                        dataGridView4.Rows[n_filas - 1].Cells[3].Value = Math.Round(val6, 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[n_filas - 1].Cells[3].Value = Math.Round(val6, 2);
                         Dgv_ASTM_95_Differential.Rows[n_filas - 1].Cells[3].Value = Math.Round(val6, 2);
                         //tercera carrera max%
                         double comp5z;
@@ -1183,7 +1183,7 @@ namespace LecturaExcel
                                 val5z = comp5z;
                             }
                         }
-                        dataGridView15.Rows[0].Cells[3].Value = Math.Round(val5z, 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[3].Value = Math.Round(val5z, 2);
                         Dgv_Single_Aperture_Differential.Rows[0].Cells[3].Value = Math.Round(val5z, 2);
 
                         double comp6z;
@@ -1197,7 +1197,7 @@ namespace LecturaExcel
                                 val6z = comp6z;
                             }
                         }
-                        dataGridView15.Rows[n_filas1 - 1].Cells[3].Value = Math.Round(val6z, 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[n_filas1 - 1].Cells[3].Value = Math.Round(val6z, 2);
                         Dgv_Single_Aperture_Differential.Rows[n_filas1 - 1].Cells[3].Value = Math.Round(val6z, 2);
 
                         //Para 95%
@@ -1231,14 +1231,14 @@ namespace LecturaExcel
                             //Primera Corrida
                             while (com < 1)
                             {
-                                acumulador = Convert.ToDouble(dataGridView4.Rows[0].Cells[1].Value);
+                                acumulador = Convert.ToDouble(Dgv_ASTM95_Run_Differentials.Rows[0].Cells[1].Value);
                                 com++;
                             }
                             if (con.Cells[0].Value.ToString() != name.ToString())
                             {
                                 //Operaciones
                                 calculo = Convert.ToDouble(con.Cells[2].Value) - Convert.ToDouble(Dgv_ASTM_D95.Rows[check1].Cells[2].Value.ToString());
-                                dataGridView4.Rows[check].Cells[1].Value = Math.Round(calculo, 2);
+                                Dgv_ASTM95_Run_Differentials.Rows[check].Cells[1].Value = Math.Round(calculo, 2);
                                 Dgv_ASTM_95_Differential.Rows[check].Cells[1].Value = Math.Round(calculo, 2);
                                 //Aumento de acumulador
                                 acumulador = acumulador + Convert.ToDouble(con.Cells[2].Value.ToString());
@@ -1246,14 +1246,14 @@ namespace LecturaExcel
                             //Segunda Corrida
                             while (com1 < 1)
                             {
-                                acumulador1 = Convert.ToDouble(dataGridView4.Rows[0].Cells[2].Value);
+                                acumulador1 = Convert.ToDouble(Dgv_ASTM95_Run_Differentials.Rows[0].Cells[2].Value);
                                 com1++;
                             }
                             if (con.Cells[0].Value.ToString() != name.ToString())
                             {
                                 //Operaciones
                                 calculo1 = ((Convert.ToDouble(con.Cells[3].Value)) - (Convert.ToDouble(Dgv_ASTM_D95.Rows[check1].Cells[3].Value.ToString())));
-                                dataGridView4.Rows[check].Cells[2].Value = Math.Round(calculo1, 2);
+                                Dgv_ASTM95_Run_Differentials.Rows[check].Cells[2].Value = Math.Round(calculo1, 2);
                                 Dgv_ASTM_95_Differential.Rows[check].Cells[2].Value = Math.Round(calculo1, 2);
 
                                 //Aumento de acumulador
@@ -1262,14 +1262,14 @@ namespace LecturaExcel
                             //Tercera Corrida
                             while (com2 < 1)
                             {
-                                acumulador2 = Convert.ToDouble(dataGridView4.Rows[0].Cells[3].Value);
+                                acumulador2 = Convert.ToDouble(Dgv_ASTM95_Run_Differentials.Rows[0].Cells[3].Value);
                                 com2++;
                             }
                             if (con.Cells[0].Value.ToString() != name.ToString())
                             {
                                 //Operaciones
                                 calculo2 = ((Convert.ToDouble(con.Cells[4].Value)) - (Convert.ToDouble(Dgv_ASTM_D95.Rows[check1].Cells[4].Value.ToString())));
-                                dataGridView4.Rows[check].Cells[3].Value = Math.Round(calculo2, 2);
+                                Dgv_ASTM95_Run_Differentials.Rows[check].Cells[3].Value = Math.Round(calculo2, 2);
                                 Dgv_ASTM_95_Differential.Rows[check].Cells[3].Value = Math.Round(calculo2, 2);
 
                                 //Aumento de acumulador
@@ -1284,14 +1284,14 @@ namespace LecturaExcel
                             //Primera Corrida
                             while (comz < 1)
                             {
-                                acumuladorz = Convert.ToDouble(dataGridView15.Rows[0].Cells[1].Value);
+                                acumuladorz = Convert.ToDouble(Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[1].Value);
                                 comz++;
                             }
                             if (con.Cells[0].Value.ToString() != namez.ToString())
                             {
                                 //Operaciones
                                 calculoz = Convert.ToDouble(con.Cells[2].Value) - Convert.ToDouble(Dgv_ASTM_Single_Aperture.Rows[check1z].Cells[2].Value.ToString());
-                                dataGridView15.Rows[checkz].Cells[1].Value = Math.Round(calculoz, 2);
+                                Dgv_Single_Aperture_Run_Differential.Rows[checkz].Cells[1].Value = Math.Round(calculoz, 2);
                                 Dgv_Single_Aperture_Differential.Rows[checkz].Cells[1].Value = Math.Round(calculoz, 2);
                                 //Aumento de acumulador
                                 acumuladorz = acumuladorz + Convert.ToDouble(con.Cells[2].Value.ToString());
@@ -1299,14 +1299,14 @@ namespace LecturaExcel
                             //Segunda Corrida
                             while (com1z < 1)
                             {
-                                acumulador1z = Convert.ToDouble(dataGridView15.Rows[0].Cells[2].Value);
+                                acumulador1z = Convert.ToDouble(Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[2].Value);
                                 com1z++;
                             }
                             if (con.Cells[0].Value.ToString() != namez.ToString())
                             {
                                 //Operaciones
                                 calculo1z = ((Convert.ToDouble(con.Cells[3].Value)) - (Convert.ToDouble(Dgv_ASTM_Single_Aperture.Rows[check1z].Cells[3].Value.ToString())));
-                                dataGridView15.Rows[checkz].Cells[2].Value = Math.Round(calculo1z, 2);
+                                Dgv_Single_Aperture_Run_Differential.Rows[checkz].Cells[2].Value = Math.Round(calculo1z, 2);
                                 Dgv_Single_Aperture_Differential.Rows[checkz].Cells[2].Value = Math.Round(calculo1z, 2);
 
                                 //Aumento de acumulador
@@ -1315,14 +1315,14 @@ namespace LecturaExcel
                             //Tercera Corrida
                             while (com2z < 1)
                             {
-                                acumulador2z = Convert.ToDouble(dataGridView15.Rows[0].Cells[3].Value);
+                                acumulador2z = Convert.ToDouble(Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[3].Value);
                                 com2z++;
                             }
                             if (con.Cells[0].Value.ToString() != namez.ToString())
                             {
                                 //Operaciones
                                 calculo2z = ((Convert.ToDouble(con.Cells[4].Value)) - (Convert.ToDouble(Dgv_ASTM_Single_Aperture.Rows[check1z].Cells[4].Value.ToString())));
-                                dataGridView15.Rows[checkz].Cells[3].Value = Math.Round(calculo2z, 2);
+                                Dgv_Single_Aperture_Run_Differential.Rows[checkz].Cells[3].Value = Math.Round(calculo2z, 2);
                                 Dgv_Single_Aperture_Differential.Rows[checkz].Cells[3].Value = Math.Round(calculo2z, 2);
 
                                 //Aumento de acumulador
@@ -1339,20 +1339,20 @@ namespace LecturaExcel
                     //2 corridas
                     if (Dgv_ASTM_D95.Rows.Count == 2)
                     {
-                        dataGridView4.Visible = true;
-                        dataGridView15.Visible = true;
+                        Dgv_ASTM95_Run_Differentials.Visible = true;
+                        Dgv_Single_Aperture_Run_Differential.Visible = true;
                         //Funciones del diferencial 95%
-                        dataGridView4.Rows.Add();
-                        dataGridView4.Rows.Add();
-                        dataGridView4.Rows.Add();
+                        Dgv_ASTM95_Run_Differentials.Rows.Add();
+                        Dgv_ASTM95_Run_Differentials.Rows.Add();
+                        Dgv_ASTM95_Run_Differentials.Rows.Add();
 
                         Dgv_ASTM_95_Differential.Rows.Add();
                         Dgv_ASTM_95_Differential.Rows.Add();
                         Dgv_ASTM_95_Differential.Rows.Add();
                         //Funciones del diferencial max%
-                        dataGridView15.Rows.Add();
-                        dataGridView15.Rows.Add();
-                        dataGridView15.Rows.Add();
+                        Dgv_Single_Aperture_Run_Differential.Rows.Add();
+                        Dgv_Single_Aperture_Run_Differential.Rows.Add();
+                        Dgv_Single_Aperture_Run_Differential.Rows.Add();
 
                         Dgv_Single_Aperture_Differential.Rows.Add();
                         Dgv_Single_Aperture_Differential.Rows.Add();
@@ -1369,11 +1369,11 @@ namespace LecturaExcel
                             {
                                 val1 = comp1;
                                 name = max1.Cells[0].Value.ToString();
-                                dataGridView4.Rows[0].Cells[0].Value = name;
+                                Dgv_ASTM95_Run_Differentials.Rows[0].Cells[0].Value = name;
                                 Dgv_ASTM_95_Differential.Rows[0].Cells[0].Value = name;
                             }
                         }
-                        dataGridView4.Rows[0].Cells[1].Value = Math.Round(val1, 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[0].Cells[1].Value = Math.Round(val1, 2);
                         Dgv_ASTM_95_Differential.Rows[0].Cells[1].Value = Math.Round(val1, 2);
                         //Asignacion de variables de comparacion max%
                         double comp1z;
@@ -1386,11 +1386,11 @@ namespace LecturaExcel
                             {
                                 val1z = comp1z;
                                 namez = max1.Cells[0].Value.ToString();
-                                dataGridView15.Rows[0].Cells[0].Value = namez;
+                                Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[0].Value = namez;
                                 Dgv_Single_Aperture_Differential.Rows[0].Cells[0].Value = namez;
                             }
                         }
-                        dataGridView15.Rows[0].Cells[1].Value = Math.Round(val1z, 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[1].Value = Math.Round(val1z, 2);
                         Dgv_Single_Aperture_Differential.Rows[0].Cells[1].Value = Math.Round(val1z, 2);
 
                         //2 95%
@@ -1405,7 +1405,7 @@ namespace LecturaExcel
                                 val2 = comp2;
                             }
                         }
-                        dataGridView4.Rows[0].Cells[2].Value = Math.Round(val2, 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[0].Cells[2].Value = Math.Round(val2, 2);
                         Dgv_ASTM_95_Differential.Rows[0].Cells[2].Value = Math.Round(val2, 2);
                         //2 95%
                         double comp2z;
@@ -1419,7 +1419,7 @@ namespace LecturaExcel
                                 val2z = comp2z;
                             }
                         }
-                        dataGridView15.Rows[0].Cells[2].Value = Math.Round(val2z, 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[2].Value = Math.Round(val2z, 2);
                         Dgv_Single_Aperture_Differential.Rows[0].Cells[2].Value = Math.Round(val2z, 2);
 
                         //4 95%
@@ -1434,11 +1434,11 @@ namespace LecturaExcel
                             {
                                 val4 = comp4;
                                 name2 = max4.Cells[0].Value.ToString();
-                                dataGridView4.Rows[2].Cells[0].Value = name2;
+                                Dgv_ASTM95_Run_Differentials.Rows[2].Cells[0].Value = name2;
                                 Dgv_ASTM_95_Differential.Rows[2].Cells[0].Value = name2;
                             }
                         }
-                        dataGridView4.Rows[2].Cells[1].Value = Math.Round(val4, 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[2].Cells[1].Value = Math.Round(val4, 2);
                         Dgv_ASTM_95_Differential.Rows[2].Cells[1].Value = Math.Round(val4, 2);
                         //4 max%
                         double comp4z;
@@ -1452,11 +1452,11 @@ namespace LecturaExcel
                             {
                                 val4z = comp4z;
                                 name2z = max4.Cells[0].Value.ToString();
-                                dataGridView15.Rows[2].Cells[0].Value = name2z;
+                                Dgv_Single_Aperture_Run_Differential.Rows[2].Cells[0].Value = name2z;
                                 Dgv_Single_Aperture_Differential.Rows[2].Cells[0].Value = name2z;
                             }
                         }
-                        dataGridView15.Rows[2].Cells[1].Value = Math.Round(val4z, 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[2].Cells[1].Value = Math.Round(val4z, 2);
                         Dgv_Single_Aperture_Differential.Rows[2].Cells[1].Value = Math.Round(val4z, 2);
 
                         //5 95%
@@ -1471,7 +1471,7 @@ namespace LecturaExcel
                                 val5 = comp5;
                             }
                         }
-                        dataGridView4.Rows[2].Cells[2].Value = Math.Round(val5, 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[2].Cells[2].Value = Math.Round(val5, 2);
                         Dgv_ASTM_95_Differential.Rows[2].Cells[2].Value = Math.Round(val5, 2);
                         //5 max%
                         double comp5z;
@@ -1485,56 +1485,56 @@ namespace LecturaExcel
                                 val5z = comp5z;
                             }
                         }
-                        dataGridView15.Rows[2].Cells[2].Value = Math.Round(val5z, 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[2].Cells[2].Value = Math.Round(val5z, 2);
                         Dgv_Single_Aperture_Differential.Rows[2].Cells[2].Value = Math.Round(val5z, 2);
 
                         //Crear el diferencial 95%
-                        dataGridView4.Rows[1].Cells[1].Value =
-                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(dataGridView4.Rows[2].Cells[1].Value) +
-                        Convert.ToDouble(dataGridView4.Rows[0].Cells[1].Value))), 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[1].Cells[1].Value =
+                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(Dgv_ASTM95_Run_Differentials.Rows[2].Cells[1].Value) +
+                        Convert.ToDouble(Dgv_ASTM95_Run_Differentials.Rows[0].Cells[1].Value))), 2);
 
-                        dataGridView4.Rows[1].Cells[2].Value =
-                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(dataGridView4.Rows[2].Cells[2].Value) +
-                        Convert.ToDouble(dataGridView4.Rows[0].Cells[2].Value))), 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[1].Cells[2].Value =
+                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(Dgv_ASTM95_Run_Differentials.Rows[2].Cells[2].Value) +
+                        Convert.ToDouble(Dgv_ASTM95_Run_Differentials.Rows[0].Cells[2].Value))), 2);
 
                         Dgv_ASTM_95_Differential.Rows[1].Cells[1].Value =
-                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(dataGridView4.Rows[2].Cells[1].Value) +
-                        Convert.ToDouble(dataGridView4.Rows[0].Cells[1].Value))), 2);
+                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(Dgv_ASTM95_Run_Differentials.Rows[2].Cells[1].Value) +
+                        Convert.ToDouble(Dgv_ASTM95_Run_Differentials.Rows[0].Cells[1].Value))), 2);
 
                         Dgv_ASTM_95_Differential.Rows[1].Cells[2].Value =
-                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(dataGridView4.Rows[2].Cells[2].Value) +
-                        Convert.ToDouble(dataGridView4.Rows[0].Cells[2].Value))), 2);
+                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(Dgv_ASTM95_Run_Differentials.Rows[2].Cells[2].Value) +
+                        Convert.ToDouble(Dgv_ASTM95_Run_Differentials.Rows[0].Cells[2].Value))), 2);
         
                         //Crear el diferencial max%
-                        dataGridView15.Rows[1].Cells[1].Value =
-                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(dataGridView15.Rows[2].Cells[1].Value) +
-                        Convert.ToDouble(dataGridView15.Rows[0].Cells[1].Value))), 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[1].Cells[1].Value =
+                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(Dgv_Single_Aperture_Run_Differential.Rows[2].Cells[1].Value) +
+                        Convert.ToDouble(Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[1].Value))), 2);
 
-                        dataGridView15.Rows[1].Cells[2].Value =
-                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(dataGridView15.Rows[2].Cells[2].Value) +
-                        Convert.ToDouble(dataGridView15.Rows[0].Cells[2].Value))), 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[1].Cells[2].Value =
+                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(Dgv_Single_Aperture_Run_Differential.Rows[2].Cells[2].Value) +
+                        Convert.ToDouble(Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[2].Value))), 2);
 
                         Dgv_Single_Aperture_Differential.Rows[1].Cells[1].Value =
-                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(dataGridView15.Rows[2].Cells[1].Value) +
-                        Convert.ToDouble(dataGridView15.Rows[0].Cells[1].Value))), 2);
+                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(Dgv_Single_Aperture_Run_Differential.Rows[2].Cells[1].Value) +
+                        Convert.ToDouble(Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[1].Value))), 2);
 
                         Dgv_Single_Aperture_Differential.Rows[1].Cells[2].Value =
-                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(dataGridView15.Rows[2].Cells[2].Value) +
-                        Convert.ToDouble(dataGridView15.Rows[0].Cells[2].Value))), 2);
+                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(Dgv_Single_Aperture_Run_Differential.Rows[2].Cells[2].Value) +
+                        Convert.ToDouble(Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[2].Value))), 2);
 
                         renombrar();
                     }
                     else if (Dgv_ASTM_D95.Rows.Count > 2)
                     {
-                        dataGridView4.Visible = true;
-                        dataGridView15.Visible = true;
+                        Dgv_ASTM95_Run_Differentials.Visible = true;
+                        Dgv_Single_Aperture_Run_Differential.Visible = true;
 
                         //95%
                         int n_filas = Convert.ToInt32(Dgv_ASTM_D95.Rows.Count.ToString()) + 1;
                         int contador = 1;
                         while (contador < n_filas)
                         {
-                            dataGridView4.Rows.Add();
+                            Dgv_ASTM95_Run_Differentials.Rows.Add();
                             Dgv_ASTM_95_Differential.Rows.Add();
                             contador++;
                         }
@@ -1543,7 +1543,7 @@ namespace LecturaExcel
                         int contador1 = 1;
                         while (contador1 < n_filas1)
                         {
-                            dataGridView15.Rows.Add();
+                            Dgv_Single_Aperture_Run_Differential.Rows.Add();
                             Dgv_Single_Aperture_Differential.Rows.Add();
                             contador1++;
                         }
@@ -1559,11 +1559,11 @@ namespace LecturaExcel
                             {
                                 val = comp;
                                 name = max.Cells[0].Value.ToString();
-                                dataGridView4.Rows[0].Cells[0].Value = name;
+                                Dgv_ASTM95_Run_Differentials.Rows[0].Cells[0].Value = name;
                                 Dgv_ASTM_95_Differential.Rows[0].Cells[0].Value = name;
                             }
                         }
-                        dataGridView4.Rows[0].Cells[1].Value = Math.Round(val, 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[0].Cells[1].Value = Math.Round(val, 2);
                         Dgv_ASTM_95_Differential.Rows[0].Cells[1].Value = Math.Round(val, 2);
 
                         double comp1;
@@ -1577,7 +1577,7 @@ namespace LecturaExcel
                                 val1 = comp1;
                             }
                         }
-                        dataGridView4.Rows[n_filas - 1].Cells[1].Value = Math.Round(val1, 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[n_filas - 1].Cells[1].Value = Math.Round(val1, 2);
                         Dgv_ASTM_95_Differential.Rows[n_filas - 1].Cells[1].Value = Math.Round(val1, 2);
                         //llenar la primera y la ultima columna max%
                         double compz;
@@ -1590,11 +1590,11 @@ namespace LecturaExcel
                             {
                                 valz = compz;
                                 namez = max.Cells[0].Value.ToString();
-                                dataGridView15.Rows[0].Cells[0].Value = namez;
+                                Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[0].Value = namez;
                                 Dgv_Single_Aperture_Differential.Rows[0].Cells[0].Value = namez;
                             }
                         }
-                        dataGridView15.Rows[0].Cells[1].Value = Math.Round(valz, 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[1].Value = Math.Round(valz, 2);
                         Dgv_Single_Aperture_Differential.Rows[0].Cells[1].Value = Math.Round(valz, 2);
 
                         double comp1z;
@@ -1608,7 +1608,7 @@ namespace LecturaExcel
                                 val1z = comp1z;
                             }
                         }
-                        dataGridView15.Rows[n_filas1 - 1].Cells[1].Value = Math.Round(val1z, 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[n_filas1 - 1].Cells[1].Value = Math.Round(val1z, 2);
                         Dgv_Single_Aperture_Differential.Rows[n_filas1 - 1].Cells[1].Value = Math.Round(val1z, 2);
 
                         //segunda carrera 95%
@@ -1623,7 +1623,7 @@ namespace LecturaExcel
                                 val2 = comp2;
                             }
                         }
-                        dataGridView4.Rows[0].Cells[2].Value = Math.Round(val2, 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[0].Cells[2].Value = Math.Round(val2, 2);
                         Dgv_ASTM_95_Differential.Rows[0].Cells[2].Value = Math.Round(val2, 2);
 
                         double comp4;
@@ -1636,11 +1636,11 @@ namespace LecturaExcel
                             {
                                 val4 = comp4;
                                 lname = max4.Cells[0].Value.ToString();
-                                dataGridView4.Rows[n_filas - 1].Cells[0].Value = lname;
+                                Dgv_ASTM95_Run_Differentials.Rows[n_filas - 1].Cells[0].Value = lname;
                                 Dgv_ASTM_95_Differential.Rows[n_filas - 1].Cells[0].Value = lname;
                             }
                         }
-                        dataGridView4.Rows[n_filas - 1].Cells[2].Value = Math.Round(val4, 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[n_filas - 1].Cells[2].Value = Math.Round(val4, 2);
                         Dgv_ASTM_95_Differential.Rows[n_filas - 1].Cells[2].Value = Math.Round(val4, 2);
                         //segunda carrera max%
                         double comp2z;
@@ -1654,7 +1654,7 @@ namespace LecturaExcel
                                 val2z = comp2z;
                             }
                         }
-                        dataGridView15.Rows[0].Cells[2].Value = Math.Round(val2z, 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[2].Value = Math.Round(val2z, 2);
                         Dgv_Single_Aperture_Differential.Rows[0].Cells[2].Value = Math.Round(val2z, 2);
 
                         double comp4z;
@@ -1667,11 +1667,11 @@ namespace LecturaExcel
                             {
                                 val4z = comp4z;
                                 lnamez = max4.Cells[0].Value.ToString();
-                                dataGridView15.Rows[n_filas1 - 1].Cells[0].Value = lnamez;
+                                Dgv_Single_Aperture_Run_Differential.Rows[n_filas1 - 1].Cells[0].Value = lnamez;
                                 Dgv_Single_Aperture_Differential.Rows[n_filas1 - 1].Cells[0].Value = lnamez;
                             }
                         }
-                        dataGridView15.Rows[n_filas1 - 1].Cells[2].Value = Math.Round(val4z, 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[n_filas1 - 1].Cells[2].Value = Math.Round(val4z, 2);
                         Dgv_Single_Aperture_Differential.Rows[n_filas1 - 1].Cells[2].Value = Math.Round(val4z, 2);
 
                         //Para 95%
@@ -1698,14 +1698,14 @@ namespace LecturaExcel
                             //Primera Corrida
                             while (com < 1)
                             {
-                                acumulador = Convert.ToDouble(dataGridView4.Rows[0].Cells[1].Value);
+                                acumulador = Convert.ToDouble(Dgv_ASTM95_Run_Differentials.Rows[0].Cells[1].Value);
                                 com++;
                             }
                             if (con.Cells[0].Value.ToString() != name.ToString())
                             {
                                 //Operaciones
                                 calculo = ((Convert.ToDouble(con.Cells[2].Value)) - (Convert.ToDouble(Dgv_ASTM_D95.Rows[check1].Cells[2].Value.ToString())));
-                                dataGridView4.Rows[check].Cells[1].Value = Math.Round(calculo, 2);
+                                Dgv_ASTM95_Run_Differentials.Rows[check].Cells[1].Value = Math.Round(calculo, 2);
                                 Dgv_ASTM_95_Differential.Rows[check].Cells[1].Value = Math.Round(calculo, 2);
 
                                 //Aumento de acumulador
@@ -1715,14 +1715,14 @@ namespace LecturaExcel
                             //Segunda Corrida
                             while (com1 < 1)
                             {
-                                acumulador1 = Convert.ToDouble(dataGridView4.Rows[0].Cells[2].Value);
+                                acumulador1 = Convert.ToDouble(Dgv_ASTM95_Run_Differentials.Rows[0].Cells[2].Value);
                                 com1++;
                             }
                             if (con.Cells[0].Value.ToString() != name.ToString())
                             {
                                 //Operaciones
                                 calculo1 = ((Convert.ToDouble(con.Cells[3].Value)) - (Convert.ToDouble(Dgv_ASTM_D95.Rows[check1].Cells[3].Value.ToString())));
-                                dataGridView4.Rows[check].Cells[2].Value = Math.Round(calculo1, 2);
+                                Dgv_ASTM95_Run_Differentials.Rows[check].Cells[2].Value = Math.Round(calculo1, 2);
                                 Dgv_ASTM_95_Differential.Rows[check].Cells[2].Value = Math.Round(calculo1, 2);
 
                                 //Aumento de acumulador
@@ -1738,14 +1738,14 @@ namespace LecturaExcel
                             //Primera Corrida
                             while (comz < 1)
                             {
-                                acumuladorz = Convert.ToDouble(dataGridView15.Rows[0].Cells[1].Value);
+                                acumuladorz = Convert.ToDouble(Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[1].Value);
                                 comz++;
                             }
                             if (con.Cells[0].Value.ToString() != namez.ToString())
                             {
                                 //Operaciones
                                 calculoz = ((Convert.ToDouble(con.Cells[2].Value)) - (Convert.ToDouble(Dgv_ASTM_Single_Aperture.Rows[check1z].Cells[2].Value.ToString())));
-                                dataGridView15.Rows[checkz].Cells[1].Value = Math.Round(calculoz, 2);
+                                Dgv_Single_Aperture_Run_Differential.Rows[checkz].Cells[1].Value = Math.Round(calculoz, 2);
                                 Dgv_Single_Aperture_Differential.Rows[checkz].Cells[1].Value = Math.Round(calculoz, 2);
 
                                 //Aumento de acumulador
@@ -1755,14 +1755,14 @@ namespace LecturaExcel
                             //Segunda Corrida
                             while (com1z < 1)
                             {
-                                acumulador1z = Convert.ToDouble(dataGridView15.Rows[0].Cells[2].Value);
+                                acumulador1z = Convert.ToDouble(Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[2].Value);
                                 com1z++;
                             }
                             if (con.Cells[0].Value.ToString() != namez.ToString())
                             {
                                 //Operaciones
                                 calculo1z = ((Convert.ToDouble(con.Cells[3].Value)) - (Convert.ToDouble(Dgv_ASTM_Single_Aperture.Rows[check1z].Cells[3].Value.ToString())));
-                                dataGridView15.Rows[checkz].Cells[2].Value = Math.Round(calculo1z, 2);
+                                Dgv_Single_Aperture_Run_Differential.Rows[checkz].Cells[2].Value = Math.Round(calculo1z, 2);
                                 Dgv_Single_Aperture_Differential.Rows[checkz].Cells[2].Value = Math.Round(calculo1z, 2);
 
                                 //Aumento de acumulador
@@ -1773,134 +1773,56 @@ namespace LecturaExcel
                         }
                         renombrar1();
                     }
-                    dataGridView4.Columns[3].Visible = false;
-                    dataGridView15.Columns[3].Visible = false;
+                    Dgv_ASTM95_Run_Differentials.Columns[3].Visible = false;
+                    Dgv_Single_Aperture_Run_Differential.Columns[3].Visible = false;
                 }
                 else if (Dgv_Particle_Data.Rows[0].Cells[2].Value.ToString() == "Run_1 (Vol%)")
                 {
                     //1 corrida
                     if (Dgv_ASTM_D95.Rows.Count == 2)
                     {
-                        dataGridView4.Visible = true;
-                        dataGridView15.Visible = true;
-                        //Funciones del diferencial 95%
-                        dataGridView4.Rows.Add();
-                        dataGridView4.Rows.Add();
-                        dataGridView4.Rows.Add();
+                        Dgv_ASTM95_Run_Differentials.Visible = true;
+                        Dgv_Single_Aperture_Run_Differential.Visible = true;
 
-                        Dgv_ASTM_95_Differential.Rows.Add();
-                        Dgv_ASTM_95_Differential.Rows.Add();
-                        Dgv_ASTM_95_Differential.Rows.Add();
-                        //Funciones del diferencial max%
-                        dataGridView15.Rows.Add();
-                        dataGridView15.Rows.Add();
-                        dataGridView15.Rows.Add();
+                        Manage_Data data = new Manage_Data();
+                        data.addRowsToDataGridView(Dgv_ASTM95_Run_Differentials);
+                        data.addRowsToDataGridView(Dgv_ASTM_95_Differential);
 
-                        Dgv_Single_Aperture_Differential.Rows.Add();
-                        Dgv_Single_Aperture_Differential.Rows.Add();
-                        Dgv_Single_Aperture_Differential.Rows.Add();
-                        //Asignacion de variables de comparacion 95%
-                        double comp1;
-                        double val1 = 100000;
-                        foreach (DataGridViewRow max1 in Dgv_ASTM_D95.Rows)
-                        {
-                            string max11 = Convert.ToString(max1.Cells[2].Value);
-                            comp1 = Convert.ToDouble(max11);
-                            if (comp1 < val1)
-                            {
-                                val1 = comp1;
-                                name = max1.Cells[0].Value.ToString();
-                                dataGridView4.Rows[0].Cells[0].Value = name;
-                                Dgv_ASTM_95_Differential.Rows[0].Cells[0].Value = name;
-                            }
-                        }
-                        dataGridView4.Rows[0].Cells[1].Value = Math.Round(val1, 2);
-                        Dgv_ASTM_95_Differential.Rows[0].Cells[1].Value = Math.Round(val1, 2);
-                        //Asignacion de variables de comparacion max%
-                        double comp1z;
-                        double val1z = 100000;
-                        foreach (DataGridViewRow max1 in Dgv_ASTM_Single_Aperture.Rows)
-                        {
-                            string max11 = Convert.ToString(max1.Cells[2].Value);
-                            comp1z = Convert.ToDouble(max11);
-                            if (comp1z < val1z)
-                            {
-                                val1z = comp1z;
-                                namez = max1.Cells[0].Value.ToString();
-                                dataGridView15.Rows[0].Cells[0].Value = namez;
-                                Dgv_Single_Aperture_Differential.Rows[0].Cells[0].Value = namez;
-                            }
-                        }
-                        dataGridView15.Rows[0].Cells[1].Value = Math.Round(val1z, 2);
-                        Dgv_Single_Aperture_Differential.Rows[0].Cells[1].Value = Math.Round(val1z, 2);
+                        data.addRowsToDataGridView(Dgv_Single_Aperture_Run_Differential);
+                        data.addRowsToDataGridView(Dgv_Single_Aperture_Differential);
 
-                        //4 95%
-                        double comp4;
-                        double val4 = 1000000;
-                        string name2;
-                        foreach (DataGridViewRow max4 in Dgv_ASTM_D95.Rows)
-                        {
-                            string max41 = Convert.ToString(max4.Cells[3].Value);
-                            comp4 = Convert.ToDouble(max41);
-                            if (comp4 < val4)
-                            {
-                                val4 = comp4;
-                                name2 = max4.Cells[0].Value.ToString();
-                                dataGridView4.Rows[2].Cells[0].Value = name2;
-                                Dgv_ASTM_95_Differential.Rows[2].Cells[0].Value = name2;
-                            }
-                        }
-                        dataGridView4.Rows[2].Cells[1].Value = Math.Round(val4, 2);
-                        Dgv_ASTM_95_Differential.Rows[2].Cells[1].Value = Math.Round(val4, 2);
-                        //4 max%
-                        double comp4z;
-                        double val4z = 1000000;
-                        string name2z;
-                        foreach (DataGridViewRow max4 in Dgv_ASTM_Single_Aperture.Rows)
-                        {
-                            string max41 = Convert.ToString(max4.Cells[3].Value);
-                            comp4z = Convert.ToDouble(max41);
-                            if (comp4z < val4z)
-                            {
-                                val4z = comp4z;
-                                name2z = max4.Cells[0].Value.ToString();
-                                dataGridView15.Rows[2].Cells[0].Value = name2z;
-                                Dgv_Single_Aperture_Differential.Rows[2].Cells[0].Value = name2z;
-                            }
-                        }
-                        dataGridView15.Rows[2].Cells[1].Value = Math.Round(val4z, 2);
-                        Dgv_Single_Aperture_Differential.Rows[2].Cells[1].Value = Math.Round(val4z, 2);
+                        Differential differential = new Differential();
+                        differential.assignComparisonVariable(Dgv_ASTM_D95, Dgv_ASTM95_Run_Differentials);
+                        differential.assignComparisonVariable(Dgv_ASTM_D95, Dgv_ASTM_95_Differential);
 
-                        //Crear el diferencial 95%
-                        dataGridView4.Rows[1].Cells[1].Value =
-                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(dataGridView4.Rows[2].Cells[1].Value) +
-                        Convert.ToDouble(dataGridView4.Rows[0].Cells[1].Value))), 2);
+                        differential.assignComparisonVariable(Dgv_ASTM_Single_Aperture, Dgv_Single_Aperture_Run_Differential);
+                        differential.assignComparisonVariable(Dgv_ASTM_Single_Aperture, Dgv_Single_Aperture_Differential);
 
-                        Dgv_ASTM_95_Differential.Rows[1].Cells[1].Value =
-                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(dataGridView4.Rows[2].Cells[1].Value) +
-                        Convert.ToDouble(dataGridView4.Rows[0].Cells[1].Value))), 2);
-                        //Crear el diferencial max%
-                        dataGridView15.Rows[1].Cells[1].Value =
-                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(dataGridView15.Rows[2].Cells[1].Value) +
-                        Convert.ToDouble(dataGridView15.Rows[0].Cells[1].Value))), 2);
+                        differential.assignComparisonVariableRunTwo(Dgv_ASTM_D95, Dgv_ASTM95_Run_Differentials);
+                        differential.assignComparisonVariableRunTwo(Dgv_ASTM_D95, Dgv_ASTM_95_Differential);
 
-                        Dgv_Single_Aperture_Differential.Rows[1].Cells[1].Value =
-                        Math.Round(Convert.ToDouble(100 - (Convert.ToDouble(dataGridView15.Rows[2].Cells[1].Value) +
-                        Convert.ToDouble(dataGridView15.Rows[0].Cells[1].Value))), 2);
+                        differential.assignComparisonVariableRunTwo(Dgv_ASTM_Single_Aperture, Dgv_Single_Aperture_Run_Differential);
+                        differential.assignComparisonVariableRunTwo(Dgv_ASTM_Single_Aperture, Dgv_Single_Aperture_Differential);
+
+                        differential.createDifferential(Dgv_ASTM95_Run_Differentials);
+                        differential.createDifferential(Dgv_ASTM_95_Differential);
+
+                        differential.createDifferential(Dgv_Single_Aperture_Run_Differential);
+                        differential.createDifferential(Dgv_Single_Aperture_Differential);
 
                         renombrar();
                     }
                     else if (Dgv_ASTM_D95.Rows.Count > 2)
                     {
-                        dataGridView4.Visible = true;
-                        dataGridView15.Visible = true;
+                        Dgv_ASTM95_Run_Differentials.Visible = true;
+                        Dgv_Single_Aperture_Run_Differential.Visible = true;
 
                         //95%
                         int n_filas = Convert.ToInt32(Dgv_ASTM_D95.Rows.Count.ToString()) + 1;
                         int contador = 1;
                         while (contador < n_filas)
                         {
-                            dataGridView4.Rows.Add();
+                            Dgv_ASTM95_Run_Differentials.Rows.Add();
                             Dgv_ASTM_95_Differential.Rows.Add();
                             contador++;
                         }
@@ -1909,7 +1831,7 @@ namespace LecturaExcel
                         int contador1 = 1;
                         while (contador1 < n_filas1)
                         {
-                            dataGridView15.Rows.Add();
+                            Dgv_Single_Aperture_Run_Differential.Rows.Add();
                             Dgv_Single_Aperture_Differential.Rows.Add();
                             contador1++;
                         }
@@ -1925,11 +1847,11 @@ namespace LecturaExcel
                             {
                                 val = comp;
                                 name = max.Cells[0].Value.ToString();
-                                dataGridView4.Rows[0].Cells[0].Value = name;
+                                Dgv_ASTM95_Run_Differentials.Rows[0].Cells[0].Value = name;
                                 Dgv_ASTM_95_Differential.Rows[0].Cells[0].Value = name;
                             }
                         }
-                        dataGridView4.Rows[0].Cells[1].Value = Math.Round(val, 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[0].Cells[1].Value = Math.Round(val, 2);
                         Dgv_ASTM_95_Differential.Rows[0].Cells[1].Value = Math.Round(val, 2);
                         //llenar la primera y la ultima columna max%
                         double comp1;
@@ -1942,11 +1864,11 @@ namespace LecturaExcel
                             {
                                 val1 = comp1;
                                 namez = max.Cells[0].Value.ToString();
-                                dataGridView15.Rows[0].Cells[0].Value = namez;
+                                Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[0].Value = namez;
                                 Dgv_Single_Aperture_Differential.Rows[0].Cells[0].Value = namez;
                             }
                         }
-                        dataGridView15.Rows[0].Cells[1].Value = Math.Round(val1, 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[1].Value = Math.Round(val1, 2);
                         Dgv_Single_Aperture_Differential.Rows[0].Cells[1].Value = Math.Round(val1, 2);
 
                         //2 95%
@@ -1961,7 +1883,7 @@ namespace LecturaExcel
                                 val1z = comp1z;
                             }
                         }
-                        dataGridView4.Rows[n_filas - 1].Cells[1].Value = Math.Round(val1z, 2);
+                        Dgv_ASTM95_Run_Differentials.Rows[n_filas - 1].Cells[1].Value = Math.Round(val1z, 2);
                         Dgv_ASTM_95_Differential.Rows[n_filas - 1].Cells[1].Value = Math.Round(val1z, 2);
                         //2 max%
                         double comp1z1;
@@ -1975,7 +1897,7 @@ namespace LecturaExcel
                                 val1z1 = comp1z1;
                             }
                         }
-                        dataGridView15.Rows[n_filas1 - 1].Cells[1].Value = Math.Round(val1z1, 2);
+                        Dgv_Single_Aperture_Run_Differential.Rows[n_filas1 - 1].Cells[1].Value = Math.Round(val1z1, 2);
                         Dgv_Single_Aperture_Differential.Rows[n_filas1 - 1].Cells[1].Value = Math.Round(val1z1, 2);
 
                         //95%
@@ -1997,14 +1919,14 @@ namespace LecturaExcel
                             //Primera Corrida
                             while (com < 1)
                             {
-                                acumulador = Convert.ToDouble(dataGridView4.Rows[0].Cells[1].Value);
+                                acumulador = Convert.ToDouble(Dgv_ASTM95_Run_Differentials.Rows[0].Cells[1].Value);
                                 com++;
                             }
                             if (con.Cells[0].Value.ToString() != name.ToString())
                             {
                                 //Operaciones
                                 calculo = ((Convert.ToDouble(con.Cells[2].Value)) - (Convert.ToDouble(Dgv_ASTM_D95.Rows[check1].Cells[2].Value.ToString())));
-                                dataGridView4.Rows[check].Cells[1].Value = Math.Round(calculo, 2);
+                                Dgv_ASTM95_Run_Differentials.Rows[check].Cells[1].Value = Math.Round(calculo, 2);
                                 Dgv_ASTM_95_Differential.Rows[check].Cells[1].Value = Math.Round(calculo, 2);
 
                                 //Aumento de acumulador
@@ -2019,14 +1941,14 @@ namespace LecturaExcel
                             //Primera Corrida
                             while (comz < 1)
                             {
-                                acumuladorz = Convert.ToDouble(dataGridView15.Rows[0].Cells[1].Value);
+                                acumuladorz = Convert.ToDouble(Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[1].Value);
                                 comz++;
                             }
                             if (con.Cells[0].Value.ToString() != namez.ToString())
                             {
                                 //Operaciones
                                 calculoz = ((Convert.ToDouble(con.Cells[2].Value)) - (Convert.ToDouble(Dgv_ASTM_Single_Aperture.Rows[check1z].Cells[2].Value.ToString())));
-                                dataGridView15.Rows[checkz].Cells[1].Value = Math.Round(calculoz, 2);
+                                Dgv_Single_Aperture_Run_Differential.Rows[checkz].Cells[1].Value = Math.Round(calculoz, 2);
                                 Dgv_Single_Aperture_Differential.Rows[checkz].Cells[1].Value = Math.Round(calculoz, 2);
 
                                 //Aumento de acumulador
@@ -2037,16 +1959,16 @@ namespace LecturaExcel
                         }
                         renombrar1();
                     }
-                    dataGridView4.Columns[3].Visible = false;
-                    dataGridView4.Columns[2].Visible = false;
-                    dataGridView15.Columns[3].Visible = false;
-                    dataGridView15.Columns[2].Visible = false;
+                    Dgv_ASTM95_Run_Differentials.Columns[3].Visible = false;
+                    Dgv_ASTM95_Run_Differentials.Columns[2].Visible = false;
+                    Dgv_Single_Aperture_Run_Differential.Columns[3].Visible = false;
+                    Dgv_Single_Aperture_Run_Differential.Columns[2].Visible = false;
                 }
             }
             catch (Exception tr)
             {
-                dataGridView4.Visible = false;
-                dataGridView15.Visible = false;
+                Dgv_ASTM95_Run_Differentials.Visible = false;
+                Dgv_Single_Aperture_Run_Differential.Visible = false;
                 MessageBox.Show("It's necessary to mark the cumulative");
             }
 
@@ -2907,7 +2829,7 @@ namespace LecturaExcel
         {
             //Renombrar 95%
             //Se renombran las celdas 0 de los grids 4, 6
-            foreach (DataGridViewRow row in dataGridView4.Rows)
+            foreach (DataGridViewRow row in Dgv_ASTM95_Run_Differentials.Rows)
             {
                 try
                 {
@@ -2931,7 +2853,7 @@ namespace LecturaExcel
             }
             //Renombrar max%
             //Se renombran las celdas 0 de los grids 12, 15
-            foreach (DataGridViewRow renombre in dataGridView15.Rows)
+            foreach (DataGridViewRow renombre in Dgv_Single_Aperture_Run_Differential.Rows)
             {
                 try
                 {
@@ -2956,22 +2878,22 @@ namespace LecturaExcel
             try
             {
                 //Para 95%
-                dataGridView4.Rows[(dataGridView4.Rows.Count - 4)].Cells[0].Value = ("999");
-                dataGridView4.Rows[(dataGridView4.Rows.Count - 3)].Cells[0].Value = (Dgv_ASTM_D95.Rows[(Dgv_ASTM_D95.Rows.Count - 2)].Cells[1].Value);
-                dataGridView4.Rows[(dataGridView4.Rows.Count - 2)].Cells[0].Value = (Dgv_ASTM_D95.Rows[(Dgv_ASTM_D95.Rows.Count - 1)].Cells[1].Value);
+                Dgv_ASTM95_Run_Differentials.Rows[(Dgv_ASTM95_Run_Differentials.Rows.Count - 4)].Cells[0].Value = ("999");
+                Dgv_ASTM95_Run_Differentials.Rows[(Dgv_ASTM95_Run_Differentials.Rows.Count - 3)].Cells[0].Value = (Dgv_ASTM_D95.Rows[(Dgv_ASTM_D95.Rows.Count - 2)].Cells[1].Value);
+                Dgv_ASTM95_Run_Differentials.Rows[(Dgv_ASTM95_Run_Differentials.Rows.Count - 2)].Cells[0].Value = (Dgv_ASTM_D95.Rows[(Dgv_ASTM_D95.Rows.Count - 1)].Cells[1].Value);
 
-                Dgv_ASTM_95_Differential.Rows[(dataGridView4.Rows.Count - 4)].Cells[0].Value = ("999");
-                Dgv_ASTM_95_Differential.Rows[(dataGridView4.Rows.Count - 3)].Cells[0].Value = (Dgv_ASTM_D95.Rows[(Dgv_ASTM_D95.Rows.Count - 2)].Cells[1].Value);
-                Dgv_ASTM_95_Differential.Rows[(dataGridView4.Rows.Count - 2)].Cells[0].Value = (Dgv_ASTM_D95.Rows[(Dgv_ASTM_D95.Rows.Count - 1)].Cells[1].Value);
+                Dgv_ASTM_95_Differential.Rows[(Dgv_ASTM95_Run_Differentials.Rows.Count - 4)].Cells[0].Value = ("999");
+                Dgv_ASTM_95_Differential.Rows[(Dgv_ASTM95_Run_Differentials.Rows.Count - 3)].Cells[0].Value = (Dgv_ASTM_D95.Rows[(Dgv_ASTM_D95.Rows.Count - 2)].Cells[1].Value);
+                Dgv_ASTM_95_Differential.Rows[(Dgv_ASTM95_Run_Differentials.Rows.Count - 2)].Cells[0].Value = (Dgv_ASTM_D95.Rows[(Dgv_ASTM_D95.Rows.Count - 1)].Cells[1].Value);
 
                 //Para max%
-                dataGridView15.Rows[(dataGridView15.Rows.Count - 4)].Cells[0].Value = ("999");
-                dataGridView15.Rows[(dataGridView15.Rows.Count - 3)].Cells[0].Value = (Dgv_ASTM_Single_Aperture.Rows[(Dgv_ASTM_Single_Aperture.Rows.Count - 2)].Cells[1].Value);
-                dataGridView15.Rows[(dataGridView15.Rows.Count - 2)].Cells[0].Value = (Dgv_ASTM_Single_Aperture.Rows[(Dgv_ASTM_Single_Aperture.Rows.Count - 1)].Cells[1].Value);
+                Dgv_Single_Aperture_Run_Differential.Rows[(Dgv_Single_Aperture_Run_Differential.Rows.Count - 4)].Cells[0].Value = ("999");
+                Dgv_Single_Aperture_Run_Differential.Rows[(Dgv_Single_Aperture_Run_Differential.Rows.Count - 3)].Cells[0].Value = (Dgv_ASTM_Single_Aperture.Rows[(Dgv_ASTM_Single_Aperture.Rows.Count - 2)].Cells[1].Value);
+                Dgv_Single_Aperture_Run_Differential.Rows[(Dgv_Single_Aperture_Run_Differential.Rows.Count - 2)].Cells[0].Value = (Dgv_ASTM_Single_Aperture.Rows[(Dgv_ASTM_Single_Aperture.Rows.Count - 1)].Cells[1].Value);
 
-                Dgv_Single_Aperture_Differential.Rows[(dataGridView15.Rows.Count - 4)].Cells[0].Value = ("999");
-                Dgv_Single_Aperture_Differential.Rows[(dataGridView15.Rows.Count - 3)].Cells[0].Value = (Dgv_ASTM_Single_Aperture.Rows[(Dgv_ASTM_Single_Aperture.Rows.Count - 2)].Cells[1].Value);
-                Dgv_Single_Aperture_Differential.Rows[(dataGridView15.Rows.Count - 2)].Cells[0].Value = (Dgv_ASTM_Single_Aperture.Rows[(Dgv_ASTM_Single_Aperture.Rows.Count - 1)].Cells[1].Value);
+                Dgv_Single_Aperture_Differential.Rows[(Dgv_Single_Aperture_Run_Differential.Rows.Count - 4)].Cells[0].Value = ("999");
+                Dgv_Single_Aperture_Differential.Rows[(Dgv_Single_Aperture_Run_Differential.Rows.Count - 3)].Cells[0].Value = (Dgv_ASTM_Single_Aperture.Rows[(Dgv_ASTM_Single_Aperture.Rows.Count - 2)].Cells[1].Value);
+                Dgv_Single_Aperture_Differential.Rows[(Dgv_Single_Aperture_Run_Differential.Rows.Count - 2)].Cells[0].Value = (Dgv_ASTM_Single_Aperture.Rows[(Dgv_ASTM_Single_Aperture.Rows.Count - 1)].Cells[1].Value);
 
             }
             catch (Exception ex)
@@ -2984,7 +2906,7 @@ namespace LecturaExcel
         {
             //Para 95%
             //Se renombran las celdas 0 de los grids 4, 6
-            foreach (DataGridViewRow renombre in dataGridView4.Rows)
+            foreach (DataGridViewRow renombre in Dgv_ASTM95_Run_Differentials.Rows)
             {
                 try
                 {
@@ -3008,7 +2930,7 @@ namespace LecturaExcel
             }
             //Para max%
             //Se renombran las celdas 0 de los grids 12, 5
-            foreach (DataGridViewRow renombre in dataGridView15.Rows)
+            foreach (DataGridViewRow renombre in Dgv_Single_Aperture_Run_Differential.Rows)
             {
                 try
                 {
@@ -3034,13 +2956,13 @@ namespace LecturaExcel
             //Para 95%
             try
             {
-                int rep = Convert.ToInt32(dataGridView4.RowCount) + 2;
+                int rep = Convert.ToInt32(Dgv_ASTM95_Run_Differentials.RowCount) + 2;
                 int cont = 2;
                 int cont2 = 1;
                 while (cont < rep)
                 {
-                    dataGridView4.Rows[dataGridView4.RowCount - cont2].Cells[0].Value = dataGridView4.Rows[dataGridView4.RowCount - cont].Cells[0].Value;
-                    Dgv_ASTM_95_Differential.Rows[dataGridView4.RowCount - cont2].Cells[0].Value = dataGridView4.Rows[dataGridView4.RowCount - cont].Cells[0].Value;
+                    Dgv_ASTM95_Run_Differentials.Rows[Dgv_ASTM95_Run_Differentials.RowCount - cont2].Cells[0].Value = Dgv_ASTM95_Run_Differentials.Rows[Dgv_ASTM95_Run_Differentials.RowCount - cont].Cells[0].Value;
+                    Dgv_ASTM_95_Differential.Rows[Dgv_ASTM95_Run_Differentials.RowCount - cont2].Cells[0].Value = Dgv_ASTM95_Run_Differentials.Rows[Dgv_ASTM95_Run_Differentials.RowCount - cont].Cells[0].Value;
 
                     cont++;
                     cont2++;
@@ -3054,13 +2976,13 @@ namespace LecturaExcel
             //Para max%
             try
             {
-                int rep1 = Convert.ToInt32(dataGridView15.RowCount) + 2;
+                int rep1 = Convert.ToInt32(Dgv_Single_Aperture_Run_Differential.RowCount) + 2;
                 int cont1 = 2;
                 int cont21 = 1;
                 while (cont1 < rep1)
                 {
-                    dataGridView15.Rows[dataGridView15.RowCount - cont21].Cells[0].Value = dataGridView15.Rows[dataGridView15.RowCount - cont1].Cells[0].Value;
-                    Dgv_Single_Aperture_Differential.Rows[dataGridView15.RowCount - cont21].Cells[0].Value = dataGridView15.Rows[dataGridView15.RowCount - cont1].Cells[0].Value;
+                    Dgv_Single_Aperture_Run_Differential.Rows[Dgv_Single_Aperture_Run_Differential.RowCount - cont21].Cells[0].Value = Dgv_Single_Aperture_Run_Differential.Rows[Dgv_Single_Aperture_Run_Differential.RowCount - cont1].Cells[0].Value;
+                    Dgv_Single_Aperture_Differential.Rows[Dgv_Single_Aperture_Run_Differential.RowCount - cont21].Cells[0].Value = Dgv_Single_Aperture_Run_Differential.Rows[Dgv_Single_Aperture_Run_Differential.RowCount - cont1].Cells[0].Value;
 
                     cont1++;
                     cont21++;
@@ -3071,9 +2993,9 @@ namespace LecturaExcel
                 MessageBox.Show(ex.Message);
             }
             //Valores por Default en las celdas 0 row 0
-            dataGridView4.Rows[0].Cells[0].Value = "999";
+            Dgv_ASTM95_Run_Differentials.Rows[0].Cells[0].Value = "999";
             Dgv_ASTM_95_Differential.Rows[0].Cells[0].Value = "999";
-            dataGridView15.Rows[0].Cells[0].Value = "999";
+            Dgv_Single_Aperture_Run_Differential.Rows[0].Cells[0].Value = "999";
             Dgv_Single_Aperture_Differential.Rows[0].Cells[0].Value = "999";
         }
 
@@ -3134,11 +3056,11 @@ namespace LecturaExcel
         {
             //Boton para borrar todos los registros y que se pueda volver a hacer una consulta con el mismo Excel pero con diferentes mallas seleccionadas
             Dgv_ASTM_D95.Visible = false;
-            dataGridView4.Visible = false;
+            Dgv_ASTM95_Run_Differentials.Visible = false;
 
             Dgv_ASTM95_Detector_Number.Rows.Clear();
             Dgv_ASTM_D95.Rows.Clear();
-            dataGridView4.Rows.Clear();
+            Dgv_ASTM95_Run_Differentials.Rows.Clear();
             Dgv_ASTM_D95_Accumulated_rigth_left.Rows.Clear();
             Dgv_ASTM_95_Differential.Rows.Clear();
 
