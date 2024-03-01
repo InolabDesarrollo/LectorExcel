@@ -761,7 +761,6 @@ namespace LecturaExcel
                         differential.assignComparisonVariableRowTwo(Dgv_ASTM_Single_Aperture, Dgv_Single_Aperture_Run_Differential, 5, 1);
                         differential.assignComparisonVariableRowTwo(Dgv_ASTM_Single_Aperture, Dgv_Single_Aperture_Differential, 5, 1);
 
-                        //5 95%
                         double comp5;
                         double val5 = 1000000;
                         foreach (DataGridViewRow max5 in Dgv_ASTM_D95.Rows)
@@ -775,6 +774,8 @@ namespace LecturaExcel
                         }
                         Dgv_ASTM95_Run_Differentials.Rows[2].Cells[2].Value = Math.Round(val5, 2);
                         Dgv_ASTM_95_Differential.Rows[2].Cells[2].Value = Math.Round(val5, 2);
+
+
                         //5 max%
                         double comp5z;
                         double val5z = 1000000;
@@ -2569,7 +2570,6 @@ namespace LecturaExcel
                 manageData.addColumnToDatagridView("Run_1 Cumulative >", dataGridView);
             }          
         }
-
 
         private void addCumulativeValuesForEachRunToDataGridView()
         {
